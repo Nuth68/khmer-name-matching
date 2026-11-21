@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "name": "Catalog",
+      "website": "catalogapp.io",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Customer",
+      "aboutTitle": "Content management",
+      "aboutDescription": "B2B SaaS and content tools",
+      "licenseUse": 78
+    },
+    {
+      "name": "Circooles",
+      "website": "getcircooles.com",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Customer",
+      "aboutTitle": "Design software",
+      "aboutDescription": "Super lightweight vector tools",
+      "licenseUse": 64
+    },
+    {
+      "name": "Command+R",
+      "website": "cmdr.ai",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Customer",
+      "aboutTitle": "Data analytics",
+      "aboutDescription": "Automated workflow reporting",
+      "licenseUse": 88
+    },
+    {
+      "name": "Hourglass",
+      "website": "hourglass.app",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Churned",
+      "aboutTitle": "Time tracking",
+      "aboutDescription": "Time-tracking and invoicing app",
+      "licenseUse": 32
+    },
+    {
+      "name": "Layers",
+      "website": "layers.io",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Customer",
+      "aboutTitle": "Web-based design",
+      "aboutDescription": "Collaborative prototyping tool",
+      "licenseUse": 92
+    },
+    {
+      "name": "Quotient",
+      "website": "quotient.co",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Customer",
+      "aboutTitle": "Sales automation",
+      "aboutDescription": "Proposal and CPQ workflows",
+      "licenseUse": 70
+    },
+    {
+      "name": "Sisyphus",
+      "website": "sisyphus.dev",
+      "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "status": "Churned",
+      "aboutTitle": "Automation platform",
+      "aboutDescription": "DevOps continuous delivery",
+      "licenseUse": 24
+    }
+  ]
+}

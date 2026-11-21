@@ -1,0 +1,17 @@
+export { default as CompleteDashboard } from "./dashboard/CompleteDashboard";
+export { default as RecordsPage } from "./records/RecordsPage";
+export { default as RecordDetailPage } from "./records/RecordDetailPage";
+export { default as SmartSearchPage } from "./search/SmartSearchPage";
+export { default as ImportExportPage } from "./import-export/ImportExportPage";
+export { default as NameComparisonPage } from "./matching/NameComparisonPage";
+export { default as DuplicateDetectionPage } from "./matching/DuplicateDetectionPage";
+export { default as ReviewMergePage } from "./matching/ReviewMergePage";
+export { default as PhoneticMatchingPage } from "./matching/PhoneticMatchingPage";
+export { default as KeyboardDetectionPage } from "./tools/KeyboardDetectionPage";
+export { default as DocumentScannerPage } from "./tools/DocumentScannerPage";
+export { default as RomanisationPage } from "./tools/RomanisationPage";
+export { default as DataQualityPage } from "./quality/DataQualityPage";
+export { default as AlgorithmEvaluationPage } from "./quality/AlgorithmEvaluationPage";
+export { default as DeveloperPage } from "./developer/DeveloperPage";
+export { default as SettingsPage } from "./settings/SettingsPage";
+export { default as OperationalPage, GenericPage } from "./operational/OperationalPage";
