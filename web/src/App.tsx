@@ -18,6 +18,7 @@ import {
   KeyboardDetectionPage,
   DocumentScannerPage,
   RomanisationPage,
+  RomanisationDictionaryPage,
   DataQualityPage,
   AlgorithmEvaluationPage,
   DeveloperPage,
@@ -66,6 +67,8 @@ function App() {
     }
     if (active === "Name Comparison") return <NameComparisonPage />;
     if (active === "Khmer Romanisation" || active === "Romanisation") return <RomanisationPage />;
+    if (active === "Romanisation Dictionary")
+      return <RomanisationDictionaryPage />;
     if (active === "Keyboard Error Detection") return <KeyboardDetectionPage />;
     if (active === "Phonetic Matching") return <PhoneticMatchingPage />;
     if (active === "Smart Search" || active === "Smart Name Search")

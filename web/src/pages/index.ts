@@ -10,6 +10,7 @@ export { default as PhoneticMatchingPage } from "./matching/PhoneticMatchingPage
 export { default as KeyboardDetectionPage } from "./tools/KeyboardDetectionPage";
 export { default as DocumentScannerPage } from "./tools/DocumentScannerPage";
 export { default as RomanisationPage } from "./tools/RomanisationPage";
+export { default as RomanisationDictionaryPage } from "./tools/RomanisationDictionaryPage";
 export { default as DataQualityPage } from "./quality/DataQualityPage";
 export { default as AlgorithmEvaluationPage } from "./quality/AlgorithmEvaluationPage";
 export { default as DeveloperPage } from "./developer/DeveloperPage";
