@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeftRight,
   Check,
@@ -8,22 +8,94 @@ import {
   Info,
 } from "lucide-react";
 import { ProgressBar } from "@/components/base/progress-indicators/progress-indicators";
+import {
+  compareNames,
+  type NameSimilarityResult,
+} from "../../utils/nameSimilarity";
+
+const variantKindLabels = {
+  "mock-reference": "Mock reference",
+  "spelling-candidate": "Spelling candidate",
+  "spacing-candidate": "Spacing candidate",
+  "name-order-candidate": "Name-order candidate",
+};
 
 export default function NameComparison() {
-  const [compared, setCompared] = useState(true);
+  const [compared, setCompared] = useState(false);
   const [left, setLeft] = useState("សុខ ដារ៉ា");
   const [right, setRight] = useState("Sokh Dara");
   const [copied, setCopied] = useState(false);
   const [showExplanation, setShowExplanation] = useState(true);
+  const [comparison, setComparison] = useState<NameSimilarityResult | null>(
+    null,
+  );
+  const [isComparing, setIsComparing] = useState(false);
+  const [apiError, setApiError] = useState("");
+  const requestController = useRef<AbortController | null>(null);
+
+  useEffect(
+    () => () => requestController.current?.abort(),
+    [],
+  );
+
+  const clearComparison = () => {
+    requestController.current?.abort();
+    requestController.current = null;
+    setCompared(false);
+    setComparison(null);
+    setIsComparing(false);
+    setApiError("");
+    setCopied(false);
+  };
+
+  const runComparison = async (firstName: string, secondName: string) => {
+    requestController.current?.abort();
+    const controller = new AbortController();
+    requestController.current = controller;
+    setCompared(true);
+    setComparison(null);
+    setIsComparing(true);
+    setApiError("");
+    setCopied(false);
+
+    try {
+      const result = await compareNames(
+        firstName,
+        secondName,
+        controller.signal,
+      );
+      if (!controller.signal.aborted) {
+        setComparison(result);
+      }
+    } catch (error) {
+      if (!controller.signal.aborted) {
+        setApiError(
+          error instanceof Error
+            ? error.message
+            : "The similarity API request failed.",
+        );
+      }
+    } finally {
+      if (requestController.current === controller) {
+        requestController.current = null;
+        setIsComparing(false);
+      }
+    }
+  };
 
   const handleSwap = () => {
     setLeft(right);
     setRight(left);
+    void runComparison(right, left);
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(
-      `Match Report: ${left} ↔ ${right} | 94% Similarity (Review recommended)`
+    const score =
+      comparison && comparison.score !== null
+        ? `${comparison.score}%`
+        : "unavailable";
+    void navigator.clipboard.writeText(
+      `Match Report: ${left} ↔ ${right} | ${score} baseline similarity (review required)`,
     );
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -49,7 +121,10 @@ export default function NameComparison() {
               <input
                 type="text"
                 value={left}
-                onChange={(e) => setLeft(e.target.value)}
+                onChange={(e) => {
+                  setLeft(e.target.value);
+                  clearComparison();
+                }}
                 className="nc-input is-khmer"
                 placeholder="បញ្ចូលឈ្មោះជាភាសាខ្មែរ..."
               />
@@ -57,8 +132,11 @@ export default function NameComparison() {
                 <button
                   type="button"
                   className="nc-input-clear"
-                  onClick={() => setLeft("")}
-                  aria-label="Clear"
+                  onClick={() => {
+                    setLeft("");
+                    clearComparison();
+                  }}
+                  aria-label="Clear first name"
                 >
                   ×
                 </button>
@@ -73,7 +151,10 @@ export default function NameComparison() {
               <input
                 type="text"
                 value={right}
-                onChange={(e) => setRight(e.target.value)}
+                onChange={(e) => {
+                  setRight(e.target.value);
+                  clearComparison();
+                }}
                 className="nc-input"
                 placeholder="Enter Latin name..."
               />
@@ -81,8 +162,11 @@ export default function NameComparison() {
                 <button
                   type="button"
                   className="nc-input-clear"
-                  onClick={() => setRight("")}
-                  aria-label="Clear"
+                  onClick={() => {
+                    setRight("");
+                    clearComparison();
+                  }}
+                  aria-label="Clear second name"
                 >
                   ×
                 </button>
@@ -104,17 +188,24 @@ export default function NameComparison() {
           </button>
           <button
             type="button"
-            onClick={() => setCompared(true)}
-            disabled={!left.trim() || !right.trim()}
+            onClick={() => void runComparison(left, right)}
+            disabled={!left.trim() || !right.trim() || isComparing}
             className="nc-submit-btn"
           >
-            Compare Names
+            {isComparing ? "Comparing…" : "Compare Names"}
           </button>
         </div>
       </section>
 
+      {apiError && (
+        <p className="nc-api-error" role="alert">
+          Python similarity API error: {apiError} Start the local backend and
+          try again.
+        </p>
+      )}
+
       {/* Comparison Results */}
-      {compared && (
+      {compared && !apiError && (
         <>
           {/* Comparison Result Card */}
           <section className="nc-card">
@@ -123,6 +214,7 @@ export default function NameComparison() {
               <button
                 type="button"
                 onClick={handleCopy}
+                disabled={!comparison || isComparing}
                 style={{
                   background: "transparent",
                   border: 0,
@@ -139,26 +231,61 @@ export default function NameComparison() {
                 {copied ? "Copied" : "Copy report"}
               </button>
             </div>
-            <div className="nc-result-sub">Illustrative similarity score</div>
+            <div className="nc-result-sub">
+              {isComparing
+                ? "Waiting for Python similarity API"
+                : comparison?.method === "dictionary-assisted"
+                ? "Dictionary-assisted Levenshtein baseline"
+                : comparison?.method === "levenshtein"
+                ? "Normalized character-level Levenshtein baseline"
+                : "Baseline unavailable for this cross-script pair"}
+            </div>
 
             <div className="nc-result-score-row">
-              <span className="nc-result-score">94%</span>
-              <span className="nc-badge-review">Review recommended</span>
+              <span className="nc-result-score">
+                {isComparing
+                  ? "..."
+                  : comparison && comparison.score !== null
+                  ? `${comparison.score}%`
+                  : "N/A"}
+              </span>
+              <span className="nc-badge-review">
+                {isComparing
+                  ? "Comparing"
+                  : comparison && comparison.score !== null
+                  ? "Review required"
+                  : "No score"}
+              </span>
             </div>
 
-            <div className="nc-result-bar-box">
-              <ProgressBar
-                labelPosition="none"
-                min={0}
-                max={100}
-                value={94}
-                color="primary"
-              />
-            </div>
+            {comparison && comparison.score !== null ? (
+              <div className="nc-result-bar-box">
+                <ProgressBar
+                  labelPosition="none"
+                  min={0}
+                  max={100}
+                  value={comparison.score}
+                  color="primary"
+                />
+              </div>
+            ) : isComparing ? (
+              <p className="nc-result-sub" aria-live="polite">
+                Comparing names with the Python service…
+              </p>
+            ) : (
+              <p className="nc-result-sub">
+                Add an exact Khmer dictionary entry or compare names in the
+                same script.
+              </p>
+            )}
 
             <div className="nc-result-footer">
               <span className="nc-result-disclaimer">
-                Example only — not a verified matching result.
+                {isComparing
+                  ? "Waiting for the local Python backend."
+                  : comparison && comparison.distance !== null
+                  ? `${comparison.distance} edit(s) over ${comparison.maxLength} Unicode code points. Baseline only; not identity verification.`
+                  : "No score is produced without a cross-script dictionary entry."}
               </span>
               <button
                 type="button"
@@ -180,152 +307,159 @@ export default function NameComparison() {
             <section className="nc-card">
               <h2 className="nc-card-title">Matching Explanation</h2>
               <div className="nc-explanation-list">
-                <div className="nc-explanation-item">
-                  <CheckCircle2 size={17} className="nc-icon-check" />
-                  <span>Possible romanisation variant detected</span>
-                </div>
-                <div className="nc-explanation-item">
-                  <CheckCircle2 size={17} className="nc-icon-check" />
-                  <span>Similar name tokens</span>
-                </div>
-                <div className="nc-explanation-item is-info">
-                  <Info size={17} className="nc-icon-info" />
-                  <span>Additional identity fields are needed to confirm a person</span>
-                </div>
+                {isComparing ? (
+                  <div className="nc-explanation-item is-info">
+                    <Info size={17} className="nc-icon-info" />
+                    <span>Waiting for the local Python comparison service.</span>
+                  </div>
+                ) : comparison && comparison.score !== null ? (
+                  <>
+                    <div className="nc-explanation-item">
+                      <CheckCircle2 size={17} className="nc-icon-check" />
+                      <span>
+                        Compared using NFC, case normalization, and collapsed
+                        whitespace
+                      </span>
+                    </div>
+                    <div className="nc-explanation-item">
+                      <CheckCircle2 size={17} className="nc-icon-check" />
+                      <span>
+                        Levenshtein distance: {comparison.distance} edit(s)
+                        across {comparison.maxLength} Unicode code points
+                      </span>
+                    </div>
+                    {comparison.matchedVariant && comparison.variantType && (
+                      <div className="nc-explanation-item is-info">
+                        <Info size={17} className="nc-icon-info" />
+                        <span>
+                          Best dictionary candidate: “
+                          {comparison.matchedVariant}” (
+                          {variantKindLabels[comparison.variantType]}). Verify
+                          it before using it as an alias.
+                        </span>
+                      </div>
+                    )}
+                    <div className="nc-explanation-item is-info">
+                      <Info size={17} className="nc-icon-info" />
+                      <span>{comparison.explanation}</span>
+                    </div>
+                    <div className="nc-explanation-item is-info">
+                      <Info size={17} className="nc-icon-info" />
+                      <span>
+                        This baseline is not phonetic and cannot confirm a
+                        person's identity.
+                      </span>
+                    </div>
+                  </>
+                ) : comparison ? (
+                  <>
+                    <div className="nc-explanation-item is-info">
+                      <Info size={17} className="nc-icon-info" />
+                      <span>{comparison.explanation}</span>
+                    </div>
+                  </>
+                ) : null}
               </div>
             </section>
           )}
 
           {/* Breakdown & Variants Columns */}
           <div className="nc-columns-grid">
-            {/* Match breakdown with ProgressBar */}
             <section className="nc-card">
-              <h2 className="nc-card-title">Match breakdown</h2>
+              <h2 className="nc-card-title">Baseline breakdown</h2>
               <div className="nc-breakdown-list">
-                {[
-                  {
-                    label: "Romanisation match",
-                    note: "Standard UNGEGN transliteration",
-                    score: 98,
-                  },
-                  {
-                    label: "Phonetic similarity",
-                    note: "IPA sound correlation /sok daːraː/",
-                    score: 96,
-                  },
-                  {
-                    label: "Character alignment",
-                    note: "7 of 8 graphemes aligned",
-                    score: 92,
-                  },
-                  {
-                    label: "Keyboard proximity",
-                    note: "Zero adjacent-key typos detected",
-                    score: 99,
-                  },
-                ].map((item) => (
-                  <div key={item.label} className="nc-breakdown-item">
+                {comparison && comparison.score !== null ? (
+                  <div className="nc-breakdown-item">
                     <div className="nc-breakdown-info">
-                      <strong>{item.label}</strong>
-                      <span>· {item.note}</span>
+                      <strong>Normalized Levenshtein</strong>
+                      <span>
+                        · {comparison.distance} edit(s) / {comparison.maxLength}{" "}
+                        code points
+                      </span>
                     </div>
                     <ProgressBar
                       labelPosition="right"
                       min={0}
                       max={100}
-                      value={item.score}
+                      value={comparison.score}
                       color="primary"
                     />
                   </div>
-                ))}
+                ) : isComparing ? (
+                  <p className="nc-result-sub">Waiting for the Python API…</p>
+                ) : (
+                  <p className="nc-result-sub">
+                    No score is available until a cross-script dictionary entry
+                    is added.
+                  </p>
+                )}
               </div>
             </section>
 
-            {/* Romanisation variants */}
             <section className="nc-card">
               <h2 className="nc-card-title">Romanisation variants</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                {[
-                  {
-                    name: "Sok Dara",
-                    type: "Exact",
-                    desc: "Official UNGEGN Romanisation",
-                    bg: "#ecfdf5",
-                    color: "#065f46",
-                    border: "#a7f3d0",
-                  },
-                  {
-                    name: "Sokh Dara",
-                    type: "Common",
-                    desc: "Colloquial Khmer variation",
-                    bg: "#eaf7f3",
-                    color: "#277962",
-                    border: "#b7dfd3",
-                  },
-                  {
-                    name: "Sok Darra",
-                    type: "Possible",
-                    desc: "Alternative double-r spelling",
-                    bg: "#f8fafc",
-                    color: "#475569",
-                    border: "#e2e8f0",
-                  },
-                  {
-                    name: "Dara Sok",
-                    type: "Reversed",
-                    desc: "Western given + family order",
-                    bg: "#f8fafc",
-                    color: "#475569",
-                    border: "#e2e8f0",
-                  },
-                ].map((v) => (
-                  <div
-                    key={v.name}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      padding: "10px 14px",
-                      borderRadius: "8px",
-                      border: "1px solid var(--border, #e2e8f0)",
-                      background: "var(--surface-subtle, #f8fafc)",
-                    }}
-                  >
-                    <div>
-                      <strong
-                        style={{
-                          display: "block",
-                          fontSize: "13.5px",
-                          fontWeight: 600,
-                          color: "var(--text, #0f172a)",
-                        }}
-                      >
-                        {v.name}
-                      </strong>
-                      <span
-                        style={{
-                          fontSize: "11.5px",
-                          color: "var(--muted, #64748b)",
-                        }}
-                      >
-                        {v.desc}
-                      </span>
-                    </div>
-                    <span
+                {comparison?.dictionaryEntry ? (
+                  comparison.dictionaryEntry.variants.map((variant) => (
+                    <div
+                      key={variant.latin}
                       style={{
-                        padding: "2px 8px",
-                        borderRadius: "999px",
-                        fontSize: "11.5px",
-                        fontWeight: 550,
-                        backgroundColor: v.bg,
-                        color: v.color,
-                        border: `1px solid ${v.border}`,
+                        display: "flex",
+                        alignItems: "flex-start",
+                        justifyContent: "space-between",
+                        gap: "10px",
+                        padding: "10px 14px",
+                        borderRadius: "8px",
+                        border: "1px solid var(--border, #e2e8f0)",
+                        background: "var(--surface-subtle, #f8fafc)",
                       }}
                     >
-                      {v.type}
-                    </span>
-                  </div>
-                ))}
+                      <div>
+                        <strong
+                          style={{
+                            display: "block",
+                            fontSize: "13.5px",
+                            fontWeight: 600,
+                            color: "var(--text, #0f172a)",
+                          }}
+                        >
+                          {variant.latin}
+                        </strong>
+                        <span
+                          style={{
+                            fontSize: "11.5px",
+                            color: "var(--muted, #64748b)",
+                          }}
+                        >
+                          {variant.note}
+                        </span>
+                      </div>
+                      <span
+                        style={{
+                          flexShrink: 0,
+                          padding: "2px 8px",
+                          borderRadius: "999px",
+                          fontSize: "11.5px",
+                          fontWeight: 550,
+                          backgroundColor:
+                            variant.kind === "mock-reference"
+                              ? "#eff6ff"
+                              : "#fff7ed",
+                          color:
+                            variant.kind === "mock-reference"
+                              ? "#1d4ed8"
+                              : "#9a3412",
+                        }}
+                      >
+                        {variantKindLabels[variant.kind]}
+                      </span>
+                    </div>
+                  ))
+                ) : (
+                  <p className="nc-result-sub">
+                    No exact dictionary entry is available for this comparison.
+                  </p>
+                )}
               </div>
             </section>
           </div>

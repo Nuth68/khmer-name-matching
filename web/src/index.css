@@ -8651,6 +8651,224 @@ tbody tr:hover {
   font-size: 9px;
 }
 
+.normalization-preview {
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.normalization-preview b {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.romanisation-reference {
+  margin-top: 14px;
+  padding: 18px;
+}
+
+.romanisation-section-heading {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.romanisation-section-heading h2 {
+  font-size: 13px;
+}
+
+.romanisation-section-heading p,
+.romanisation-footnote {
+  color: var(--muted);
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.normalization-rule-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  display: grid;
+}
+
+.normalization-rule {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--primary);
+  gap: 9px;
+  padding: 12px;
+  display: flex;
+}
+
+.normalization-rule svg,
+.romanisation-caveat svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.normalization-rule strong {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.normalization-rule p,
+.romanisation-caveat p {
+  color: var(--muted);
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.romanisation-caveat {
+  background: var(--surface-subtle);
+  border-radius: 8px;
+  color: var(--primary);
+  gap: 9px;
+  margin-top: 12px;
+  padding: 11px;
+  display: flex;
+}
+
+.romanisation-examples {
+  border-top: 1px solid var(--border);
+}
+
+.romanisation-example-row {
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 42px;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  display: grid;
+}
+
+.romanisation-example-header {
+  min-height: 32px;
+  color: var(--muted);
+  font-size: 8px;
+  letter-spacing: .4px;
+}
+
+.romanisation-example-row button {
+  color: var(--primary);
+  font-size: 10px;
+}
+
+.romanisation-footnote {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.romanisation-dictionary {
+  padding: 18px;
+}
+
+.romanisation-dictionary-toolbar {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.romanisation-dictionary-search {
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  align-items: center;
+  gap: 8px;
+  max-width: 420px;
+  min-height: 38px;
+  padding: 0 10px;
+  color: var(--muted);
+  display: flex;
+  flex: 1;
+}
+
+.romanisation-dictionary-search input {
+  outline: 0;
+  width: 100%;
+  color: var(--text);
+  font-size: 11px;
+}
+
+.romanisation-dictionary-notice {
+  background: var(--surface-subtle);
+  border-radius: 8px;
+  color: var(--primary);
+  gap: 9px;
+  margin: 14px 0;
+  padding: 11px;
+  display: flex;
+}
+
+.romanisation-dictionary-notice svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.romanisation-dictionary-notice p,
+.romanisation-dictionary-name p,
+.romanisation-dictionary-variant p,
+.romanisation-dictionary-empty {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.romanisation-dictionary-list {
+  border-top: 1px solid var(--border);
+}
+
+.romanisation-dictionary-entry {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.romanisation-dictionary-name {
+  margin-bottom: 10px;
+}
+
+.romanisation-dictionary-name strong {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.romanisation-dictionary-name p {
+  margin-top: 3px;
+}
+
+.romanisation-dictionary-variants {
+  border-top: 1px solid var(--border);
+}
+
+.romanisation-dictionary-variant {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+}
+
+.romanisation-dictionary-variant:last-child {
+  border-bottom: 0;
+}
+
+.romanisation-dictionary-variant strong {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.romanisation-dictionary-variant p {
+  margin-top: 2px;
+}
+
+.romanisation-dictionary-empty {
+  padding: 18px 0;
+}
+
 /* ============================================================
    Redesigned Modern Smart Search Styles
    ============================================================ */
@@ -11565,6 +11783,24 @@ tbody tr:hover {
 }
 
 @media (max-width: 560px) {
+  .normalization-rule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .romanisation-dictionary-variant {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .romanisation-examples {
+    overflow-x: auto;
+  }
+
+  .romanisation-example-row {
+    min-width: 420px;
+  }
+
   .utility-actions > button:not(.utility-notification), .utility-profile > div, .utility-profile > svg {
     display: none;
   }
@@ -16799,6 +17035,22 @@ body {
 .nc-submit-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.nc-api-error {
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+}
+
+.dark .nc-api-error {
+  border-color: #7f1d1d;
+  background: #451a1a;
+  color: #fecaca;
 }
 
 /* Comparison Result Card */
