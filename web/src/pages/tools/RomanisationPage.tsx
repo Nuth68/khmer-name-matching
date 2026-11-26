@@ -1,12 +1,5 @@
 import { useState } from "react";
 import {
-<<<<<<< Updated upstream
-  CheckCircle2,
-  ChevronDown,
-  Copy,
-  History,
-  Info,
-=======
   Activity,
   AlertCircle,
   ArrowLeftRight,
@@ -61,7 +54,6 @@ import {
   Users,
   X,
   Zap,
->>>>>>> Stashed changes
 } from "lucide-react";
 import Button from "../../components/common/Button";
 import Badge from "../../components/common/Badge";

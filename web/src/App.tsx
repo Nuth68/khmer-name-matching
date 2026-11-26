@@ -66,17 +66,8 @@ function App() {
     if (active === "Review & Merge") return <ReviewMergePage />;
     // Intelligent Tools
     if (active === "Name Comparison") return <NameComparisonPage />;
-<<<<<<< Updated upstream
-    if (active === "Khmer Romanisation" || active === "Romanisation") return <RomanisationPage />;
-    if (active === "Romanisation Dictionary")
-      return <RomanisationDictionaryPage />;
-    if (active === "Keyboard Error Detection") return <KeyboardDetectionPage />;
-    if (active === "Phonetic Matching") return <PhoneticMatchingPage />;
-    if (active === "Smart Search" || active === "Smart Name Search")
-=======
     if (active === "Khmer Romanisation") return <RomanisationPage />;
     if (active === "Smart Search")
->>>>>>> Stashed changes
       return (
         <SmartSearchPage
           onViewRecord={() => {
