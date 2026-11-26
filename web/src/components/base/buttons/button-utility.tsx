@@ -11,8 +11,7 @@ export type ButtonUtilityColor =
   | "gray"
   | "error";
 
-export interface ButtonUtilityProps
-  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
+export interface ButtonUtilityProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
   icon?: ComponentType<{ size?: number; className?: string; strokeWidth?: number }> | ReactNode;
   size?: ButtonUtilitySize;
   color?: ButtonUtilityColor;
@@ -42,10 +41,8 @@ const colorClasses: Record<ButtonUtilityColor, string> = {
     "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 shadow-xs active:bg-slate-100 dark:active:bg-slate-800/80",
   secondary_gray:
     "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 shadow-xs active:bg-slate-100 dark:active:bg-slate-800/80",
-  primary:
-    "bg-[var(--primary,#2f8f74)] hover:opacity-90 text-white shadow-xs active:opacity-100",
-  gray:
-    "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200/80 dark:hover:bg-slate-700/80 active:bg-slate-300 dark:active:bg-slate-600",
+  primary: "bg-[var(--primary,#2f8f74)] hover:opacity-90 text-white shadow-xs active:opacity-100",
+  gray: "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200/80 dark:hover:bg-slate-700/80 active:bg-slate-300 dark:active:bg-slate-600",
   error:
     "text-red-600 dark:text-red-400 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-950/40 active:bg-red-100 dark:active:bg-red-950/60",
 };

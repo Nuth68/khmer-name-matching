@@ -93,7 +93,16 @@ export default function AppBreadcrumb({
     }
   }
 
-  const groupLabel = group ? (language === "km" ? group.labelKm : group.label) : null;
+  const isNameComparison = activeRoute === "Name Comparison";
+  const groupLabel = group
+    ? isNameComparison
+      ? language === "km"
+        ? "ឧបករណ៍ឆ្លាតវៃ"
+        : "Intelligent Tools"
+      : language === "km"
+        ? group.labelKm
+        : group.label
+    : null;
   const currentLabel = item ? (language === "km" ? item.labelKm : item.label) : activeRoute;
   const GroupIcon = group?.icon;
   const ItemIcon = item?.icon || GroupIcon || LayoutDashboard;
@@ -112,6 +121,23 @@ export default function AppBreadcrumb({
 
         <nav className="breadcrumb-nav" aria-label="Breadcrumb">
           <ol className="breadcrumb-list">
+            {isNameComparison && (
+              <>
+                <li className="breadcrumb-item">
+                  <button
+                    className="breadcrumb-link"
+                    onClick={() => onNavigate("Dashboard")}
+                    title={language === "km" ? "ផ្ទាំងគ្រប់គ្រង" : "Dashboard"}
+                  >
+                    <LayoutDashboard size={16} />
+                    <span>{language === "km" ? "ផ្ទាំងគ្រប់គ្រង" : "Dashboard"}</span>
+                  </button>
+                </li>
+                <li className="breadcrumb-separator" aria-hidden="true">
+                  <ChevronRight size={14} />
+                </li>
+              </>
+            )}
             {group && (
               <>
                 <li className="breadcrumb-item">
@@ -158,7 +184,11 @@ export default function AppBreadcrumb({
                 <li className="breadcrumb-item is-current" aria-current="page">
                   <span className="breadcrumb-current-text">
                     <UserRound size={16} />
-                    <span>{language === "km" && detailItem.labelKm ? detailItem.labelKm : detailItem.label}</span>
+                    <span>
+                      {language === "km" && detailItem.labelKm
+                        ? detailItem.labelKm
+                        : detailItem.label}
+                    </span>
                   </span>
                 </li>
               </>

@@ -2,25 +2,20 @@ import { useEffect, useState } from "react";
 import AppSidebar from "./components/navigation/AppSidebar";
 import AppBreadcrumb from "./components/navigation/AppBreadcrumb";
 import type { SidebarLanguage } from "./components/navigation/sidebarConfig";
-import type { PageKey, IdentityRecord } from "./types";
+import type { PageKey } from "./types";
 
 // Page modules
 import {
   CompleteDashboard,
   RecordsPage,
-  RecordDetailPage,
   SmartSearchPage,
   ImportExportPage,
   NameComparisonPage,
   DuplicateDetectionPage,
   ReviewMergePage,
-  PhoneticMatchingPage,
-  KeyboardDetectionPage,
-  DocumentScannerPage,
   RomanisationPage,
   RomanisationDictionaryPage,
   DataQualityPage,
-  AlgorithmEvaluationPage,
   DeveloperPage,
   SettingsPage,
   OperationalPage,
@@ -28,7 +23,6 @@ import {
 
 function App() {
   const [active, setActive] = useState<PageKey>("Dashboard");
-  const [selectedRecord, setSelectedRecord] = useState<IdentityRecord | null>(null);
   const [collapsed, setCollapsed] = useState(
     () => window.localStorage.getItem("km-sidebar-collapsed") === "true",
   );
@@ -39,7 +33,6 @@ function App() {
   );
 
   const handleNavigate = (route: string) => {
-    setSelectedRecord(null);
     setActive(route);
   };
 
@@ -51,49 +44,53 @@ function App() {
     window.localStorage.setItem("km-sidebar-language", language);
   }, [language]);
 
+  // Each view owns the top of the content area. Do not carry a previous
+  // page's scroll position into the next route (for example, opening
+  // Identity Records while Duplicate Detection is scrolled down).
+  useEffect(() => {
+    document.querySelector<HTMLElement>(".app-main")?.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, [active]);
+
   const content = (() => {
     if (active === "Dashboard") return <CompleteDashboard navigate={handleNavigate} />;
-    if (active === "All Records") {
-      if (selectedRecord) {
-        return (
-          <RecordDetailPage
-            record={selectedRecord}
-            onBack={() => setSelectedRecord(null)}
-            onUpdateRecord={(updated) => setSelectedRecord(updated)}
-          />
-        );
-      }
-      return <RecordsPage onViewRecord={(rec) => setSelectedRecord(rec)} />;
+    // Identity Management
+    if (active === "Identity Records") {
+      return <RecordsPage />;
     }
+    if (active === "Duplicate Detection")
+      return <DuplicateDetectionPage navigate={handleNavigate} />;
+    if (active === "Review & Merge") return <ReviewMergePage />;
+    // Intelligent Tools
     if (active === "Name Comparison") return <NameComparisonPage />;
+<<<<<<< Updated upstream
     if (active === "Khmer Romanisation" || active === "Romanisation") return <RomanisationPage />;
     if (active === "Romanisation Dictionary")
       return <RomanisationDictionaryPage />;
     if (active === "Keyboard Error Detection") return <KeyboardDetectionPage />;
     if (active === "Phonetic Matching") return <PhoneticMatchingPage />;
     if (active === "Smart Search" || active === "Smart Name Search")
+=======
+    if (active === "Khmer Romanisation") return <RomanisationPage />;
+    if (active === "Smart Search")
+>>>>>>> Stashed changes
       return (
         <SmartSearchPage
-          onViewRecord={(rec) => {
-            setSelectedRecord(rec);
-            setActive("All Records");
+          onViewRecord={() => {
+            setActive("Identity Records");
           }}
         />
       );
-    if (active === "Duplicate Detection") return <DuplicateDetectionPage navigate={handleNavigate} />;
-    if (active === "Review & Merge" || active === "Manual Review") return <ReviewMergePage />;
-    if (active === "Document Scanner") return <DocumentScannerPage />;
-    if (
-      active === "Import & Export" ||
-      active === "Import Data" ||
-      active === "Import History" ||
-      active === "Export Data"
-    )
-      return <ImportExportPage onNavigate={handleNavigate} />;
+    // Data Management
+    if (active === "Import & Export") return <ImportExportPage onNavigate={handleNavigate} />;
     if (active === "Data Quality") return <DataQualityPage />;
-    if (active === "Algorithm Evaluation") return <AlgorithmEvaluationPage />;
-    if (active === "API Keys" || active === "API Playground")
+    // Developer
+    if (active === "API Documentation" || active === "API Playground" || active === "API Keys")
       return <DeveloperPage title={active} />;
+    // Settings
     if (active === "Settings") return <SettingsPage />;
     return <OperationalPage title={active} />;
   })();
@@ -120,16 +117,6 @@ function App() {
           onNavigate={handleNavigate}
           language={language}
           onMobileOpen={() => setMobileOpen(true)}
-          detailItem={
-            selectedRecord
-              ? {
-                  id: selectedRecord.id,
-                  label: `${selectedRecord.id} · ${selectedRecord.latin}`,
-                  labelKm: `${selectedRecord.id} · ${selectedRecord.khmer}`,
-                }
-              : null
-          }
-          onClearDetail={() => setSelectedRecord(null)}
         />
         <main className="content">{content}</main>
       </div>

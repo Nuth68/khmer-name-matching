@@ -1,13 +1,59 @@
 import { useState } from "react";
 import {
-  Activity, AlertCircle, ArrowLeftRight, ArrowRight, Bell, BookOpen, Braces,
-CalendarDays, Check, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight,
-CircleGauge, ClipboardCheck, Code2, Copy, Database, Download, Eye,
-FileClock, FileSearch, FileSpreadsheet, FileText, Filter, Fingerprint,
-History, Info, KeyRound, Keyboard, Languages, LayoutDashboard, Menu,
-Merge, Moon, MoreHorizontal, PanelLeftClose, PanelLeftOpen, Plus,
-RefreshCw, ScanLine, Search, Settings, ShieldCheck, SlidersHorizontal,
-Sparkles, Sun, Trash2, UploadCloud, UserRound, UserPlus, Users, X, Zap
+  Activity,
+  AlertCircle,
+  ArrowLeftRight,
+  ArrowRight,
+  Bell,
+  BookOpen,
+  Braces,
+  CalendarDays,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  CircleGauge,
+  ClipboardCheck,
+  Code2,
+  Copy,
+  Database,
+  Download,
+  Eye,
+  FileClock,
+  FileSearch,
+  FileSpreadsheet,
+  FileText,
+  Filter,
+  Fingerprint,
+  History,
+  Info,
+  KeyRound,
+  Keyboard,
+  Languages,
+  LayoutDashboard,
+  Menu,
+  Merge,
+  Moon,
+  MoreHorizontal,
+  PanelLeftClose,
+  PanelLeftOpen,
+  Plus,
+  RefreshCw,
+  ScanLine,
+  Search,
+  Settings,
+  ShieldCheck,
+  SlidersHorizontal,
+  Sparkles,
+  Sun,
+  Trash2,
+  UploadCloud,
+  UserRound,
+  UserPlus,
+  Users,
+  X,
+  Zap,
 } from "lucide-react";
 import Button from "../../components/common/Button";
 import Badge from "../../components/common/Badge";
@@ -29,42 +75,155 @@ export default function DataQualityPage() {
   };
 
   const dimensions = [
-    { label: "Completeness", score: 97.2, color: "#147d6b", bg: "#e8f5f1", issues: 142, desc: "Required fields present" },
-    { label: "Uniqueness", score: 99.0, color: "#147d6b", bg: "#e8f5f1", issues: 1284, desc: "Duplicate-free records" },
-    { label: "Validity", score: 96.8, color: "#d97706", bg: "#fffbeb", issues: 386, desc: "Format & value accuracy" },
-    { label: "Consistency", score: 94.1, color: "#d97706", bg: "#fffbeb", issues: 742, desc: "Cross-field agreement" },
-    { label: "Accuracy", score: 98.4, color: "#147d6b", bg: "#e8f5f1", issues: 204, desc: "Correct real-world data" },
-    { label: "Timeliness", score: 92.3, color: "#dc2626", bg: "#fef2f2", issues: 918, desc: "Up-to-date information" },
+    {
+      label: "Completeness",
+      score: 97.2,
+      color: "#147d6b",
+      bg: "#e8f5f1",
+      issues: 142,
+      desc: "Required fields present",
+    },
+    {
+      label: "Uniqueness",
+      score: 99.0,
+      color: "#147d6b",
+      bg: "#e8f5f1",
+      issues: 1284,
+      desc: "Duplicate-free records",
+    },
+    {
+      label: "Validity",
+      score: 96.8,
+      color: "#d97706",
+      bg: "#fffbeb",
+      issues: 386,
+      desc: "Format & value accuracy",
+    },
+    {
+      label: "Consistency",
+      score: 94.1,
+      color: "#d97706",
+      bg: "#fffbeb",
+      issues: 742,
+      desc: "Cross-field agreement",
+    },
+    {
+      label: "Accuracy",
+      score: 98.4,
+      color: "#147d6b",
+      bg: "#e8f5f1",
+      issues: 204,
+      desc: "Correct real-world data",
+    },
+    {
+      label: "Timeliness",
+      score: 92.3,
+      color: "#dc2626",
+      bg: "#fef2f2",
+      issues: 918,
+      desc: "Up-to-date information",
+    },
   ];
 
   const issues = [
-    { label: "Missing fields", count: "2,418", pct: "1.9%", icon: AlertCircle, tone: "amber" as const, priority: "High", trend: "▼ 12% this week" },
-    { label: "Invalid values", count: "386", pct: "0.3%", icon: X, tone: "red" as const, priority: "Critical", trend: "▲ 4% this week" },
-    { label: "Duplicate records", count: "1,284", pct: "1.0%", icon: Fingerprint, tone: "blue" as const, priority: "High", trend: "▼ 8% this week" },
-    { label: "Inconsistent names", count: "742", pct: "0.6%", icon: Languages, tone: "violet" as const, priority: "Medium", trend: "— Stable" },
+    {
+      label: "Missing fields",
+      count: "2,418",
+      pct: "1.9%",
+      icon: AlertCircle,
+      tone: "amber" as const,
+      priority: "High",
+      trend: "▼ 12% this week",
+    },
+    {
+      label: "Invalid values",
+      count: "386",
+      pct: "0.3%",
+      icon: X,
+      tone: "red" as const,
+      priority: "Critical",
+      trend: "▲ 4% this week",
+    },
+    {
+      label: "Duplicate records",
+      count: "1,284",
+      pct: "1.0%",
+      icon: Fingerprint,
+      tone: "blue" as const,
+      priority: "High",
+      trend: "▼ 8% this week",
+    },
+    {
+      label: "Inconsistent names",
+      count: "742",
+      pct: "0.6%",
+      icon: Languages,
+      tone: "violet" as const,
+      priority: "Medium",
+      trend: "— Stable",
+    },
   ];
 
   const recommendations = [
-    { title: "Review high-confidence duplicates", detail: "386 pairs have over 90% similarity score", gain: "+1.8 pts", action: "Review now", urgency: "critical" },
-    { title: "Complete missing dates of birth", detail: "1,205 records missing this required field", gain: "+0.9 pts", action: "View records", urgency: "high" },
-    { title: "Normalize phone number formats", detail: "384 values can be corrected in bulk", gain: "+0.4 pts", action: "Bulk fix", urgency: "medium" },
-    { title: "Standardize romanisation variants", detail: "742 name pairs with inconsistent spelling", gain: "+0.3 pts", action: "Review", urgency: "medium" },
-    { title: "Re-validate expired document IDs", detail: "918 records haven't been verified in 24+ months", gain: "+0.2 pts", action: "Flag records", urgency: "low" },
+    {
+      title: "Review high-confidence duplicates",
+      detail: "386 pairs have over 90% similarity score",
+      gain: "+1.8 pts",
+      action: "Review now",
+      urgency: "critical",
+    },
+    {
+      title: "Complete missing dates of birth",
+      detail: "1,205 records missing this required field",
+      gain: "+0.9 pts",
+      action: "View records",
+      urgency: "high",
+    },
+    {
+      title: "Normalize phone number formats",
+      detail: "384 values can be corrected in bulk",
+      gain: "+0.4 pts",
+      action: "Bulk fix",
+      urgency: "medium",
+    },
+    {
+      title: "Standardize romanisation variants",
+      detail: "742 name pairs with inconsistent spelling",
+      gain: "+0.3 pts",
+      action: "Review",
+      urgency: "medium",
+    },
+    {
+      title: "Re-validate expired document IDs",
+      detail: "918 records haven't been verified in 24+ months",
+      gain: "+0.2 pts",
+      action: "Flag records",
+      urgency: "low",
+    },
   ];
 
   return (
     <>
-      <PageHeader title="Data Quality" description="Monitor, score and resolve identity record quality across all dimensions">
+      <PageHeader
+        title="Data Quality"
+        description="Monitor, score and resolve identity record quality across all dimensions"
+      >
         <Button variant="secondary">
           <Download size={16} /> Export report
         </Button>
         <Button onClick={runCheck} disabled={runningCheck}>
           {runningCheck ? (
-            <><RefreshCw size={16} className="spin" /> Running check…</>
+            <>
+              <RefreshCw size={16} className="spin" /> Running check…
+            </>
           ) : checkDone ? (
-            <><CheckCircle2 size={16} /> Check complete</>
+            <>
+              <CheckCircle2 size={16} /> Check complete
+            </>
           ) : (
-            <><Zap size={16} /> Run quality check</>
+            <>
+              <Zap size={16} /> Run quality check
+            </>
           )}
         </Button>
       </PageHeader>
@@ -91,8 +250,12 @@ export default function DataQualityPage() {
                 <svg viewBox="0 0 120 120" className="dq-ring-svg">
                   <circle cx="60" cy="60" r="52" fill="none" stroke="#e8f5f1" strokeWidth="12" />
                   <circle
-                    cx="60" cy="60" r="52" fill="none"
-                    stroke="#147d6b" strokeWidth="12"
+                    cx="60"
+                    cy="60"
+                    r="52"
+                    fill="none"
+                    stroke="#147d6b"
+                    strokeWidth="12"
                     strokeDasharray={`${0.948 * 2 * Math.PI * 52} ${2 * Math.PI * 52}`}
                     strokeLinecap="round"
                     transform="rotate(-90 60 60)"
@@ -108,7 +271,8 @@ export default function DataQualityPage() {
                   <CheckCircle2 size={18} /> Strong — Grade A
                 </div>
                 <p className="dq-score-desc">
-                  Your identity registry meets high quality standards. Address duplicate candidates and missing fields to reach 96+.
+                  Your identity registry meets high quality standards. Address duplicate candidates
+                  and missing fields to reach 96+.
                 </p>
                 <div className="dq-score-trend">
                   <span className="dq-trend-up">▲ +1.2 pts</span> vs last month
@@ -218,13 +382,17 @@ export default function DataQualityPage() {
                   <div className="dq-issue-label">{issue.label}</div>
                   <div className="dq-issue-pct">{issue.pct} of records</div>
                   <div className="dq-issue-trend">{issue.trend}</div>
-                  <div className="dq-issue-cta">Resolve <ArrowRight size={14} /></div>
+                  <div className="dq-issue-cta">
+                    Resolve <ArrowRight size={14} />
+                  </div>
                 </button>
               );
             })}
           </div>
           <section className="card" style={{ padding: "24px" }}>
-            <h2 style={{ margin: "0 0 20px", fontSize: "16px", fontWeight: 700 }}>Issue breakdown by field</h2>
+            <h2 style={{ margin: "0 0 20px", fontSize: "16px", fontWeight: 700 }}>
+              Issue breakdown by field
+            </h2>
             {[
               { field: "Date of birth", missing: 1205, invalid: 48, pct: "0.98%" },
               { field: "Phone number", missing: 302, invalid: 384, pct: "0.54%" },
@@ -235,20 +403,40 @@ export default function DataQualityPage() {
                 <span className="dq-field-name">{row.field}</span>
                 <div className="dq-field-bars">
                   {row.missing > 0 && (
-                    <div className="dq-field-seg dq-field-missing" style={{ flex: row.missing }} title={`Missing: ${row.missing}`} />
+                    <div
+                      className="dq-field-seg dq-field-missing"
+                      style={{ flex: row.missing }}
+                      title={`Missing: ${row.missing}`}
+                    />
                   )}
                   {row.invalid > 0 && (
-                    <div className="dq-field-seg dq-field-invalid" style={{ flex: row.invalid }} title={`Invalid: ${row.invalid}`} />
+                    <div
+                      className="dq-field-seg dq-field-invalid"
+                      style={{ flex: row.invalid }}
+                      title={`Invalid: ${row.invalid}`}
+                    />
                   )}
-                  <div className="dq-field-seg dq-field-ok" style={{ flex: 128642 - row.missing - row.invalid }} />
+                  <div
+                    className="dq-field-seg dq-field-ok"
+                    style={{ flex: 128642 - row.missing - row.invalid }}
+                  />
                 </div>
                 <span className="dq-field-pct">{row.pct}</span>
               </div>
             ))}
             <div className="dq-field-legend">
-              <span><i className="dq-leg dq-leg-missing" />Missing</span>
-              <span><i className="dq-leg dq-leg-invalid" />Invalid</span>
-              <span><i className="dq-leg dq-leg-ok" />OK</span>
+              <span>
+                <i className="dq-leg dq-leg-missing" />
+                Missing
+              </span>
+              <span>
+                <i className="dq-leg dq-leg-invalid" />
+                Invalid
+              </span>
+              <span>
+                <i className="dq-leg dq-leg-ok" />
+                OK
+              </span>
             </div>
           </section>
         </>
@@ -278,4 +466,3 @@ export default function DataQualityPage() {
     </>
   );
 }
-

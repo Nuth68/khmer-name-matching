@@ -20,7 +20,7 @@ export default function MetricCard({
     <div className={`card metric-card metric-${tone}`}>
       <div className="metric-top">
         <span>{label}</span>
-        <div className="metric-icon">
+        <div className={`metric-icon ${tone}`}>
           <Icon size={18} />
         </div>
       </div>

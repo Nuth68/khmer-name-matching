@@ -249,7 +249,8 @@ export default function SmartSearchPage({ onViewRecord }: Props) {
   };
 
   const handleExportCSV = () => {
-    const headers = "Record ID,Khmer Name,Latin Name,Gender,DOB,Phone,Province,Doc Type,Doc Number,Similarity Score,Match Classification";
+    const headers =
+      "Record ID,Khmer Name,Latin Name,Gender,DOB,Phone,Province,Doc Type,Doc Number,Similarity Score,Match Classification";
     const rows = filteredIdentities
       .map(
         (i) =>
@@ -580,8 +581,8 @@ export default function SmartSearchPage({ onViewRecord }: Props) {
               </div>
               <h3>No identities matched your search criteria</h3>
               <p>
-                No profiles scored at or above {minSimilarity}% similarity with current filters.
-                Try adjusting the minimum similarity slider or clearing demographic constraints.
+                No profiles scored at or above {minSimilarity}% similarity with current filters. Try
+                adjusting the minimum similarity slider or clearing demographic constraints.
               </p>
               <button className="btn btn-secondary" onClick={handleResetFilters} type="button">
                 <RotateCcw size={15} />
@@ -642,7 +643,9 @@ export default function SmartSearchPage({ onViewRecord }: Props) {
                   <div className="identity-demographics-row">
                     <div className="demographic-item">
                       <Calendar size={13} />
-                      <span>{item.dob} ({item.age}y)</span>
+                      <span>
+                        {item.dob} ({item.age}y)
+                      </span>
                     </div>
                     <div className="demographic-item">
                       <UserRound size={13} />
@@ -650,7 +653,9 @@ export default function SmartSearchPage({ onViewRecord }: Props) {
                     </div>
                     <div className="demographic-item">
                       <FileText size={13} />
-                      <span>{item.docType}: <b>{item.docNumber}</b></span>
+                      <span>
+                        {item.docType}: <b>{item.docNumber}</b>
+                      </span>
                     </div>
                     <div className="demographic-item">
                       <MapPin size={13} />

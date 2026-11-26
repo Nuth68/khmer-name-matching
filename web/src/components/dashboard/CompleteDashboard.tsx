@@ -42,10 +42,42 @@ const activityData = [
 ];
 
 const overviewStats = [
-  { label: "Total records", value: "12,580", change: "+320 this month", tone: "blue", direction: "up", icon: Database, trend: [26, 29, 28, 34, 37, 41, 45] },
-  { label: "Potential duplicates", value: "342", change: "−24 this month", tone: "orange", direction: "down", icon: Fingerprint, trend: [50, 47, 49, 43, 40, 38, 35] },
-  { label: "Verified identities", value: "10,845", change: "+128 this month", tone: "green", direction: "up", icon: ShieldCheck, trend: [20, 23, 22, 27, 30, 34, 39] },
-  { label: "Data quality score", value: "96.4%", change: "+2.1 percentage points", tone: "green", direction: "up", icon: CircleGauge, trend: [70, 72, 75, 74, 78, 82, 86] },
+  {
+    label: "Total records",
+    value: "12,580",
+    change: "+320 this month",
+    tone: "blue",
+    direction: "up",
+    icon: Database,
+    trend: [26, 29, 28, 34, 37, 41, 45],
+  },
+  {
+    label: "Potential duplicates",
+    value: "342",
+    change: "−24 this month",
+    tone: "orange",
+    direction: "down",
+    icon: Fingerprint,
+    trend: [50, 47, 49, 43, 40, 38, 35],
+  },
+  {
+    label: "Verified identities",
+    value: "10,845",
+    change: "+128 this month",
+    tone: "green",
+    direction: "up",
+    icon: ShieldCheck,
+    trend: [20, 23, 22, 27, 30, 34, 39],
+  },
+  {
+    label: "Data quality score",
+    value: "96.4%",
+    change: "+2.1 percentage points",
+    tone: "green",
+    direction: "up",
+    icon: CircleGauge,
+    trend: [70, 72, 75, 74, 78, 82, 86],
+  },
 ];
 
 const periodModes = [
@@ -132,11 +164,7 @@ function DashboardHeader({ navigate }: { navigate: Navigate }) {
   }, []);
 
   const firstDayOffset = (viewMonth.getDay() + 6) % 7;
-  const calendarStart = new Date(
-    viewMonth.getFullYear(),
-    viewMonth.getMonth(),
-    1 - firstDayOffset,
-  );
+  const calendarStart = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), 1 - firstDayOffset);
   const calendarDays = Array.from({ length: 42 }, (_, index) => {
     const date = new Date(calendarStart);
     date.setDate(calendarStart.getDate() + index);
@@ -159,9 +187,7 @@ function DashboardHeader({ navigate }: { navigate: Navigate }) {
 
   const changeView = (direction: -1 | 1) => {
     const step = draftMode === "year" ? 144 : draftMode === "month" ? 12 : 1;
-    setViewMonth(
-      new Date(viewMonth.getFullYear(), viewMonth.getMonth() + direction * step, 1),
-    );
+    setViewMonth(new Date(viewMonth.getFullYear(), viewMonth.getMonth() + direction * step, 1));
   };
 
   const changeMode = (mode: PeriodMode) => {
@@ -259,7 +285,11 @@ function DashboardHeader({ navigate }: { navigate: Navigate }) {
                       <Filter size={15} strokeWidth={2} aria-hidden="true" />
                     </button>
                     {modeListOpen && (
-                      <div className="simple-calendar-mode-list" role="listbox" aria-label="Period type">
+                      <div
+                        className="simple-calendar-mode-list"
+                        role="listbox"
+                        aria-label="Period type"
+                      >
                         {periodModes.map((mode) => {
                           const ModeIcon = mode.icon;
                           return (
@@ -306,7 +336,7 @@ function DashboardHeader({ navigate }: { navigate: Navigate }) {
               {(draftMode === "day" || draftMode === "range") && (
                 <>
                   <div className="simple-calendar-weekdays" aria-hidden="true">
-                    {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day) => (
+                    {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((day) => (
                       <span key={day}>{day}</span>
                     ))}
                   </div>
@@ -318,7 +348,9 @@ function DashboardHeader({ navigate }: { navigate: Navigate }) {
                       const inRange =
                         value >= draftSelection.start.getTime() && value <= rangeEnd.getTime();
                       const isStart = isSameDay(date, draftSelection.start);
-                      const isEnd = draftSelection.end ? isSameDay(date, draftSelection.end) : false;
+                      const isEnd = draftSelection.end
+                        ? isSameDay(date, draftSelection.end)
+                        : false;
                       return (
                         <button
                           type="button"
@@ -467,10 +499,7 @@ function DashboardPanel({
 
 function MatchingActivity() {
   return (
-    <DashboardPanel
-      title="Matching activity"
-      className="simple-activity-panel"
-    >
+    <DashboardPanel title="Matching activity" className="simple-activity-panel">
       <div className="simple-activity-chart">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={activityData} margin={{ top: 10, right: 6, left: -18, bottom: 0 }}>
@@ -554,10 +583,7 @@ const CustomDonutTooltip = ({ active, payload }: any) => {
     return (
       <div className="simple-donut-tooltip">
         <div className="simple-donut-tooltip-header">
-          <span
-            className="simple-donut-tooltip-dot"
-            style={{ background: data.payload.color }}
-          />
+          <span className="simple-donut-tooltip-dot" style={{ background: data.payload.color }} />
           <span className="simple-donut-tooltip-title">{data.name}</span>
         </div>
         <div className="simple-donut-tooltip-stat">
@@ -574,10 +600,7 @@ function ScriptMatchingDistribution() {
   const [activeIndex, setActiveIndex] = useState<number | undefined>(undefined);
 
   return (
-    <DashboardPanel
-      title="Script distribution"
-      className="simple-script-panel"
-    >
+    <DashboardPanel title="Script distribution" className="simple-script-panel">
       <div className="simple-donut-wrapper">
         <ResponsiveContainer width="100%" height={210}>
           <PieChart>
@@ -622,7 +645,9 @@ function ScriptMatchingDistribution() {
               dominantBaseline="middle"
               className="simple-donut-center-label"
             >
-              {activeIndex !== undefined ? scriptMatchData[activeIndex].name.split(" ")[0] : "Total"}
+              {activeIndex !== undefined
+                ? scriptMatchData[activeIndex].name.split(" ")[0]
+                : "Total"}
             </text>
           </PieChart>
         </ResponsiveContainer>

@@ -68,7 +68,13 @@ const NOTIFICATIONS = [
 ];
 
 const WORKSPACES = [
-  { id: "national", name: "National Identity Registry", code: "NIR", initials: "NI", logo: "/assets/gic-logo.png" },
+  {
+    id: "national",
+    name: "National Identity Registry",
+    code: "NIR",
+    initials: "NI",
+    logo: "/assets/gic-logo.png",
+  },
   { id: "civil", name: "Civil Registration", code: "CRD", initials: "CR", logo: null },
   { id: "research", name: "Khmer Name Research Lab", code: "KNR", initials: "KR", logo: null },
 ];
@@ -147,14 +153,18 @@ export default function AppSidebar({
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (
-        notifRef.current && !notifRef.current.contains(e.target as Node) &&
-        bellRef.current && !bellRef.current.contains(e.target as Node)
+        notifRef.current &&
+        !notifRef.current.contains(e.target as Node) &&
+        bellRef.current &&
+        !bellRef.current.contains(e.target as Node)
       ) {
         setNotifOpen(false);
       }
       if (
-        profileRef.current && !profileRef.current.contains(e.target as Node) &&
-        avatarRef.current && !avatarRef.current.contains(e.target as Node)
+        profileRef.current &&
+        !profileRef.current.contains(e.target as Node) &&
+        avatarRef.current &&
+        !avatarRef.current.contains(e.target as Node)
       ) {
         setProfileOpen(false);
         setWorkspaceOpen(false);
@@ -234,13 +244,16 @@ export default function AppSidebar({
               onClick={() => setNotifOpen((v) => !v)}
             >
               <Bell size={21} />
-              {unreadCount > 0 && (
-                <span className="km-notif-badge">{unreadCount}</span>
-              )}
+              {unreadCount > 0 && <span className="km-notif-badge">{unreadCount}</span>}
             </button>
 
             {notifOpen && (
-              <div ref={notifRef} className="km-notif-panel" role="dialog" aria-label="Notifications">
+              <div
+                ref={notifRef}
+                className="km-notif-panel"
+                role="dialog"
+                aria-label="Notifications"
+              >
                 <div className="km-notif-header">
                   <span>Notifications</span>
                   <div className="km-notif-header-actions">
@@ -254,7 +267,11 @@ export default function AppSidebar({
                         <CheckCheck size={16} />
                       </button>
                     )}
-                    <button className="km-notif-close" onClick={() => setNotifOpen(false)} aria-label="Close">
+                    <button
+                      className="km-notif-close"
+                      onClick={() => setNotifOpen(false)}
+                      aria-label="Close"
+                    >
                       <X size={16} />
                     </button>
                   </div>
@@ -370,7 +387,6 @@ export default function AppSidebar({
                     </div>
                     <ChevronRight size={17} />
                   </button>
-
                 </div>
 
                 {workspaceOpen && (
@@ -390,7 +406,11 @@ export default function AppSidebar({
                           aria-selected={selected}
                         >
                           <span>
-                            {workspace.logo ? <img src={workspace.logo} alt="" /> : workspace.initials}
+                            {workspace.logo ? (
+                              <img src={workspace.logo} alt="" />
+                            ) : (
+                              workspace.initials
+                            )}
                           </span>
                           <div>
                             <strong>{workspace.name}</strong>

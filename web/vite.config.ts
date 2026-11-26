@@ -9,7 +9,9 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
       "@untitledui/icons": fileURLToPath(new URL("./src/icons/untitledui.ts", import.meta.url)),
-      "react-aria-components": fileURLToPath(new URL("./src/types/react-aria-components.ts", import.meta.url)),
+      "react-aria-components": fileURLToPath(
+        new URL("./src/types/react-aria-components.ts", import.meta.url),
+      ),
     },
   },
   server: {

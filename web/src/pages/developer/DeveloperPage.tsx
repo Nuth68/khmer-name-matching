@@ -109,4 +109,3 @@ export default function DeveloperPage({ title }: { title: string }) {
     </>
   );
 }
-

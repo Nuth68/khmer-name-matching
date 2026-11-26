@@ -1,20 +1,11 @@
 import { useState } from "react";
 import {
-  ArrowLeft,
-  Calendar,
   Check,
   CheckCircle2,
+  CircleAlert,
   Clock,
-  Copy,
-  Database,
-  Download,
-  Fingerprint,
-  MapPin,
-  Phone,
-  Printer,
-  ShieldCheck,
-  User,
-  UserCheck,
+  Edit3,
+  X,
 } from "lucide-react";
 import type { IdentityRecord } from "./RecordsPage";
 
@@ -26,7 +17,7 @@ type Props = {
 
 export default function RecordDetailPage({ record, onBack, onUpdateRecord }: Props) {
   const [currentRecord, setCurrentRecord] = useState<IdentityRecord>(record);
-  const [copiedField, setCopiedField] = useState<string | null>(null);
+  const [isEditing, setIsEditing] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const showToast = (msg: string) => {
@@ -34,310 +25,219 @@ export default function RecordDetailPage({ record, onBack, onUpdateRecord }: Pro
     setTimeout(() => setToastMessage(null), 2500);
   };
 
-  const copyToClipboard = (text: string, label: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedField(label);
-    showToast(`Copied ${label} to clipboard`);
-    setTimeout(() => setCopiedField(null), 2000);
-  };
-
-  const markVerified = () => {
-    const updated = { ...currentRecord, status: "Verified" as const, accuracy: 99.2 };
+  const handleSaveEdit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const updated: IdentityRecord = {
+      ...currentRecord,
+      khmer: (form.elements.namedItem("khmer") as HTMLInputElement).value || currentRecord.khmer,
+      latin: (form.elements.namedItem("latin") as HTMLInputElement).value || currentRecord.latin,
+      dob: (form.elements.namedItem("dob") as HTMLInputElement).value || currentRecord.dob,
+      gender:
+        ((form.elements.namedItem("gender") as HTMLSelectElement).value as any) ||
+        currentRecord.gender,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value || currentRecord.phone,
+      province:
+        (form.elements.namedItem("province") as HTMLInputElement).value || currentRecord.province,
+      docId: (form.elements.namedItem("docId") as HTMLInputElement).value || currentRecord.docId,
+      status:
+        ((form.elements.namedItem("status") as HTMLSelectElement).value as any) ||
+        currentRecord.status,
+    };
     setCurrentRecord(updated);
     onUpdateRecord?.(updated);
-    showToast(`Record ${currentRecord.id} successfully marked as Verified.`);
+    setIsEditing(false);
+    showToast(`Record ${updated.id} updated successfully.`);
   };
 
-  const avatarLetters = currentRecord.khmer.slice(0, 2);
-
   return (
-    <div className="record-detail-page">
-      {/* Page Header */}
-      <div className="page-header">
-        <div>
-          <button className="btn btn-secondary" onClick={onBack} type="button">
-            <ArrowLeft size={16} />
-            <span>Back</span>
-          </button>
+    <div className="dossier-full-page">
+      {/* Header Bar */}
+      <div className="dossier-header-bar">
+        <div className="dossier-header-left">
+          <h1 className="dossier-title">Citizen Identity Dossier</h1>
+          <span className="dossier-id">{currentRecord.id}</span>
         </div>
-
-        <div className="page-actions">
+        <div className="dossier-header-actions">
           <button
-            className="btn btn-secondary"
-            onClick={() => copyToClipboard(JSON.stringify(currentRecord, null, 2), "Dossier JSON")}
+            className="dossier-icon-btn"
+            onClick={() => setIsEditing(true)}
+            title="Edit record"
             type="button"
           >
-            <Download size={16} />
-            <span>Export dossier</span>
+            <Edit3 size={18} />
           </button>
           <button
-            className="btn btn-secondary"
-            onClick={() => window.print()}
+            className="dossier-icon-btn close"
+            onClick={onBack}
+            title="Close"
             type="button"
           >
-            <Printer size={16} />
-            <span>Print</span>
+            <X size={18} />
           </button>
-          {currentRecord.status !== "Verified" ? (
-            <button className="btn btn-primary" onClick={markVerified} type="button">
-              <UserCheck size={16} />
-              <span>Mark as Verified</span>
-            </button>
-          ) : (
-            <button className="btn btn-primary verified-disabled" disabled type="button">
-              <CheckCircle2 size={16} />
-              <span>Verified Record</span>
-            </button>
-          )}
         </div>
       </div>
 
-      {/* Hero Banner Card */}
-      <section className="card record-hero-card">
-        <div className="hero-avatar-box">
-          <div className="profile-avatar-circle large">{avatarLetters}</div>
+      {/* Top Profile Card */}
+      <section className="dossier-profile-card">
+        <div className="dossier-profile-names">
+          <h2 className="dossier-khmer-name">{currentRecord.khmer}</h2>
+          <span className="dossier-latin-name">{currentRecord.latin}</span>
         </div>
-
-        <div className="hero-info-box">
-          <div className="hero-primary-names">
-            <h2 className="khmer-hero-name">{currentRecord.khmer}</h2>
-            <span className="latin-hero-name">{currentRecord.latin}</span>
-            <span
-              className={`record-status-pill ${
-                currentRecord.status === "Verified"
-                  ? "pill-verified"
-                  : currentRecord.status === "Review"
-                    ? "pill-review"
-                    : "pill-incomplete"
-              }`}
-            >
-              <i className="status-dot" />
-              <span>{currentRecord.status === "Review" ? "Needs Review" : currentRecord.status}</span>
-            </span>
-          </div>
-
-          <div className="hero-chips-row">
-            <div className="hero-chip">
-              <Fingerprint size={15} />
-              <span>{currentRecord.docType}: <b>{currentRecord.docId}</b></span>
-            </div>
-            <div className="hero-chip">
-              <Calendar size={15} />
-              <span>DOB: <b>{currentRecord.dob}</b></span>
-            </div>
-            <div className="hero-chip">
-              <MapPin size={15} />
-              <span>Province: <b>{currentRecord.province}</b></span>
-            </div>
-            <div className="hero-chip">
-              <Phone size={15} />
-              <span>Phone: <b>{currentRecord.phone}</b></span>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero-score-badge">
-          <span className="score-label">MATCH ACCURACY</span>
-          <div className="score-num">
-            {currentRecord.accuracy}
-            <span>%</span>
-          </div>
-          <span className="score-pill">
-            <ShieldCheck size={13} /> High confidence
+        <div>
+          <span
+            className={`record-status-pill ${
+              currentRecord.status === "Verified"
+                ? "pill-verified"
+                : currentRecord.status === "Review"
+                  ? "pill-review"
+                  : "pill-incomplete"
+            }`}
+          >
+            {currentRecord.status === "Verified" && <CheckCircle2 size={14} />}
+            {currentRecord.status === "Review" && <Clock size={14} />}
+            {currentRecord.status === "Incomplete" && <CircleAlert size={14} />}
+            <span>{currentRecord.status === "Review" ? "Needs review" : currentRecord.status}</span>
           </span>
         </div>
       </section>
 
-      {/* Grid of 4 Detail Cards */}
-      <div className="record-sections-grid">
-        {/* Card 1: Civil Credentials */}
-        <section className="card detail-section-card">
-          <div className="section-head-row">
-            <div className="section-head-title">
-              <User size={18} />
-              <h3>Civil Identity & Credentials</h3>
-            </div>
-            <button
-              className="copy-btn"
-              onClick={() => copyToClipboard(currentRecord.docId, "Document ID")}
-              title="Copy Document ID"
-              type="button"
-            >
-              {copiedField === "Document ID" ? <Check size={14} /> : <Copy size={14} />}
-              <span>{copiedField === "Document ID" ? "Copied" : "Copy ID"}</span>
-            </button>
+      {/* Details Card */}
+      <section className="dossier-details-card">
+        <div className="dossier-grid">
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">RECORD ID</span>
+            <span className="dossier-grid-value mono">{currentRecord.id}</span>
           </div>
 
-          <div className="section-kv-grid">
-            <div className="kv-box">
-              <span className="kv-label">Khmer Full Name (ឈ្មោះពេញ)</span>
-              <span className="kv-value khmer">{currentRecord.khmer}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Latin Full Name</span>
-              <span className="kv-value">{currentRecord.latin}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Document Number</span>
-              <span className="kv-value mono">{currentRecord.docId}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Document Type</span>
-              <span className="kv-value">{currentRecord.docType} (Biometric)</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Date of Birth</span>
-              <span className="kv-value">{currentRecord.dob}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Gender</span>
-              <span className="kv-value">{currentRecord.gender}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Nationality</span>
-              <span className="kv-value">Cambodian (ខ្មែរ)</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Place of Origin</span>
-              <span className="kv-value">{currentRecord.province}</span>
-            </div>
-          </div>
-        </section>
-
-        {/* Card 2: Contact & Residential Info */}
-        <section className="card detail-section-card">
-          <div className="section-head-row">
-            <div className="section-head-title">
-              <MapPin size={18} />
-              <h3>Contact & Residence</h3>
-            </div>
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">STATUS</span>
+            <span className="dossier-grid-value">{currentRecord.status}</span>
           </div>
 
-          <div className="section-kv-grid">
-            <div className="kv-box">
-              <span className="kv-label">Primary Phone</span>
-              <span className="kv-value mono">{currentRecord.phone}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Alternate Phone</span>
-              <span className="kv-value mono">+855 12 883 194</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Province / Municipality</span>
-              <span className="kv-value">{currentRecord.province}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">District / Khan</span>
-              <span className="kv-value">Central District</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Commune / Sangkat</span>
-              <span className="kv-value">Prek Preah</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Residence Status</span>
-              <span className="kv-value">Permanent Citizen</span>
-            </div>
-            <div className="kv-box full-span">
-              <span className="kv-label">Full Address</span>
-              <span className="kv-value">House 42, Street 184, {currentRecord.province}, Cambodia</span>
-            </div>
-          </div>
-        </section>
-
-        {/* Card 3: Quality & Matching Engine */}
-        <section className="card detail-section-card">
-          <div className="section-head-row">
-            <div className="section-head-title">
-              <Database size={18} />
-              <h3>Data Quality & Matching Status</h3>
-            </div>
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">DATE OF BIRTH</span>
+            <span className="dossier-grid-value">{currentRecord.dob}</span>
           </div>
 
-          <div className="section-kv-grid">
-            <div className="kv-box">
-              <span className="kv-label">Primary Data Source</span>
-              <span className="kv-value">{currentRecord.source}</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Cross-Database Matches</span>
-              <span className="kv-value match-confirmed">
-                <CheckCircle2 size={15} /> 3 Registries Confirmed
-              </span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Phonetic Algorithm</span>
-              <span className="kv-value">Khmer Multi-Tier Hybrid (IPA)</span>
-            </div>
-            <div className="kv-box">
-              <span className="kv-label">Duplicate Scan Risk</span>
-              <span className="kv-value text-success">
-                <ShieldCheck size={15} /> Clean (0 Duplicates)
-              </span>
-            </div>
-            <div className="kv-box full-span">
-              <span className="kv-label">Validation Summary</span>
-              <span className="kv-value">
-                Biographic details match official National Civil Registry standards. No keyboard errors or phonetic discrepancies detected.
-              </span>
-            </div>
-          </div>
-        </section>
-
-        {/* Card 4: Audit Trail & Timeline */}
-        <section className="card detail-section-card">
-          <div className="section-head-row">
-            <div className="section-head-title">
-              <Clock size={18} />
-              <h3>Audit Trail & Timeline</h3>
-            </div>
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">GENDER</span>
+            <span className="dossier-grid-value">{currentRecord.gender}</span>
           </div>
 
-          <div className="detail-timeline">
-            <div className="timeline-item">
-              <div className="timeline-dot" />
-              <div className="timeline-content">
-                <strong>Record created</strong>
-                <span>Imported from Civil Registry bulk database file</span>
-                <time>{currentRecord.createdAt}, 09:15 AM</time>
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">PHONE NUMBER</span>
+            <span className="dossier-grid-value mono">{currentRecord.phone}</span>
+          </div>
+
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">PROVINCE</span>
+            <span className="dossier-grid-value">{currentRecord.province}</span>
+          </div>
+
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">NATIONAL DOC ID</span>
+            <span className="dossier-grid-value">
+              {currentRecord.docId} ({currentRecord.docType})
+            </span>
+          </div>
+
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">SYSTEM SOURCE</span>
+            <span className="dossier-grid-value">{currentRecord.source}</span>
+          </div>
+
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">MATCHING ACCURACY</span>
+            <span className="dossier-grid-value accuracy">
+              <CheckCircle2 size={15} />
+              {currentRecord.accuracy}% Confidence
+            </span>
+          </div>
+
+          <div className="dossier-grid-item">
+            <span className="dossier-grid-label">CREATED AT</span>
+            <span className="dossier-grid-value">{currentRecord.createdAt}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Edit Record Modal */}
+      {isEditing && (
+        <div className="modal-backdrop" onClick={() => setIsEditing(false)}>
+          <div
+            className="form-modal"
+            role="dialog"
+            aria-modal="true"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="modal-head">
+              <div>
+                <h2>Edit Identity Record</h2>
+                <p>Modify official credentials for {currentRecord.id}.</p>
               </div>
+              <button onClick={() => setIsEditing(false)} aria-label="Close" type="button">
+                <X size={18} />
+              </button>
             </div>
 
-            <div className="timeline-item">
-              <div className="timeline-dot" />
-              <div className="timeline-content">
-                <strong>Automated Romanisation generated</strong>
-                <span>Script mapped: {currentRecord.khmer} ➔ {currentRecord.latin}</span>
-                <time>{currentRecord.createdAt}, 09:16 AM</time>
-              </div>
-            </div>
+            <form className="modal-form" onSubmit={handleSaveEdit}>
+              <label>
+                <span>Khmer full name (ឈ្មោះពេញ)</span>
+                <input name="khmer" defaultValue={currentRecord.khmer} required />
+              </label>
+              <label>
+                <span>Latin full name</span>
+                <input name="latin" defaultValue={currentRecord.latin} required />
+              </label>
+              <label>
+                <span>Date of birth</span>
+                <input name="dob" defaultValue={currentRecord.dob} required />
+              </label>
+              <label>
+                <span>Gender</span>
+                <select name="gender" defaultValue={currentRecord.gender}>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                </select>
+              </label>
+              <label>
+                <span>Phone number</span>
+                <input name="phone" defaultValue={currentRecord.phone} required />
+              </label>
+              <label>
+                <span>Province / Municipality</span>
+                <input name="province" defaultValue={currentRecord.province} required />
+              </label>
+              <label>
+                <span>National Document ID</span>
+                <input name="docId" defaultValue={currentRecord.docId} required />
+              </label>
+              <label>
+                <span>Status</span>
+                <select name="status" defaultValue={currentRecord.status}>
+                  <option value="Verified">Verified</option>
+                  <option value="Review">Review</option>
+                  <option value="Incomplete">Incomplete</option>
+                </select>
+              </label>
 
-            <div className="timeline-item">
-              <div className="timeline-dot" />
-              <div className="timeline-content">
-                <strong>Cross-Registry Matching Scan</strong>
-                <span>Evaluated across 128,642 identities with {currentRecord.accuracy}% confidence</span>
-                <time>22 May 2024, 02:40 PM</time>
+              <div className="modal-actions">
+                <button
+                  className="btn btn-secondary"
+                  type="button"
+                  onClick={() => setIsEditing(false)}
+                >
+                  Cancel
+                </button>
+                <button className="btn btn-primary" type="submit">
+                  <CheckCircle2 size={16} /> Save Changes
+                </button>
               </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className={`timeline-dot ${currentRecord.status === "Verified" ? "verified" : ""}`} />
-              <div className="timeline-content">
-                <strong>
-                  {currentRecord.status === "Verified" ? "Identity Verified" : "Pending Verification Review"}
-                </strong>
-                <span>
-                  {currentRecord.status === "Verified"
-                    ? "Confirmed by Administrator (Chenda Sok)"
-                    : "Awaiting final review confirmation"}
-                </span>
-                <time>Today, 10:45 AM</time>
-              </div>
-            </div>
+            </form>
           </div>
-        </section>
-      </div>
+        </div>
+      )}
 
       {/* Toast Notification */}
       {toastMessage && (

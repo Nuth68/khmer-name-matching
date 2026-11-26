@@ -168,7 +168,11 @@ export default function ImportExportPage({ onNavigate }: Props) {
             <FileSpreadsheet size={16} />
             <span>Download template (.CSV)</span>
           </button>
-          <button className="btn btn-primary" onClick={() => setShowExportModal(true)} type="button">
+          <button
+            className="btn btn-primary"
+            onClick={() => setShowExportModal(true)}
+            type="button"
+          >
             <Download size={16} />
             <span>Export data</span>
           </button>
@@ -275,9 +279,7 @@ export default function ImportExportPage({ onNavigate }: Props) {
                   <UploadCloud size={38} />
                 </div>
                 <h3>Upload identity records dataset</h3>
-                <p>
-                  Drag and drop your spreadsheet file here, or browse files on your computer.
-                </p>
+                <p>Drag and drop your spreadsheet file here, or browse files on your computer.</p>
 
                 <div className="dropzone-actions">
                   <label className="btn btn-primary dropzone-browse-label">
@@ -301,11 +303,7 @@ export default function ImportExportPage({ onNavigate }: Props) {
                     />
                   </label>
 
-                  <button
-                    className="btn btn-secondary"
-                    onClick={handleSelectSample}
-                    type="button"
-                  >
+                  <button className="btn btn-secondary" onClick={handleSelectSample} type="button">
                     <Sparkles size={16} />
                     <span>Try with sample dataset (2,480 records)</span>
                   </button>
@@ -341,11 +339,7 @@ export default function ImportExportPage({ onNavigate }: Props) {
                     >
                       Change file
                     </button>
-                    <button
-                      className="btn btn-primary"
-                      onClick={() => setStep(2)}
-                      type="button"
-                    >
+                    <button className="btn btn-primary" onClick={() => setStep(2)} type="button">
                       <span>Proceed to column mapping</span>
                       <ArrowRight size={16} />
                     </button>
@@ -498,13 +492,21 @@ export default function ImportExportPage({ onNavigate }: Props) {
                       ["#3", "លី ស្រីពេជ្រ", "Ly Sreypich", "CR-88214", "21 Jul 1995", "Valid"],
                     ].map(([row, kh, en, id, dob, status]) => (
                       <tr key={row}>
-                        <td><code>{row}</code></td>
-                        <td><b className="khmer">{kh}</b></td>
+                        <td>
+                          <code>{row}</code>
+                        </td>
+                        <td>
+                          <b className="khmer">{kh}</b>
+                        </td>
                         <td>{en}</td>
-                        <td><code>{id}</code></td>
+                        <td>
+                          <code>{id}</code>
+                        </td>
                         <td>{dob}</td>
                         <td>
-                          <span className="badge-ready"><Check size={12} /> {status}</span>
+                          <span className="badge-ready">
+                            <Check size={12} /> {status}
+                          </span>
                         </td>
                       </tr>
                     ))}
@@ -608,7 +610,9 @@ export default function ImportExportPage({ onNavigate }: Props) {
                       <FileSpreadsheet size={17} className="file-icon" />
                       <div>
                         <strong>{item.filename}</strong>
-                        <span>{item.size} · {item.id}</span>
+                        <span>
+                          {item.size} · {item.id}
+                        </span>
                       </div>
                     </div>
                   </td>
