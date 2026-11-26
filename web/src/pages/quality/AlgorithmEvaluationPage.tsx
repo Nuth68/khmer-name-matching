@@ -9,15 +9,7 @@ import {
   UploadCloud,
   Zap,
 } from "lucide-react";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const datasets = [
   "Cambodian names — validated v3",
@@ -168,8 +160,12 @@ export default function AlgorithmEvaluationPage() {
               <p>Precision and recall by matching model</p>
             </div>
             <div className="ae-chart-legend" aria-label="Chart legend">
-              <span><i className="is-precision" /> Precision</span>
-              <span><i className="is-recall" /> Recall</span>
+              <span>
+                <i className="is-precision" /> Precision
+              </span>
+              <span>
+                <i className="is-recall" /> Recall
+              </span>
             </div>
           </div>
           <div className="ae-chart">

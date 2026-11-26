@@ -1,13 +1,59 @@
 import { useState } from "react";
 import {
-  Activity, AlertCircle, ArrowLeftRight, ArrowRight, Bell, BookOpen, Braces,
-CalendarDays, Check, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight,
-CircleGauge, ClipboardCheck, Code2, Copy, Database, Download, Eye,
-FileClock, FileSearch, FileSpreadsheet, FileText, Filter, Fingerprint,
-History, Info, KeyRound, Keyboard, Languages, LayoutDashboard, Menu,
-Merge, Moon, MoreHorizontal, PanelLeftClose, PanelLeftOpen, Plus,
-RefreshCw, ScanLine, Search, Settings, ShieldCheck, SlidersHorizontal,
-Sparkles, Sun, Trash2, UploadCloud, UserRound, UserPlus, Users, X, Zap
+  Activity,
+  AlertCircle,
+  ArrowLeftRight,
+  ArrowRight,
+  Bell,
+  BookOpen,
+  Braces,
+  CalendarDays,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  CircleGauge,
+  ClipboardCheck,
+  Code2,
+  Copy,
+  Database,
+  Download,
+  Eye,
+  FileClock,
+  FileSearch,
+  FileSpreadsheet,
+  FileText,
+  Filter,
+  Fingerprint,
+  History,
+  Info,
+  KeyRound,
+  Keyboard,
+  Languages,
+  LayoutDashboard,
+  Menu,
+  Merge,
+  Moon,
+  MoreHorizontal,
+  PanelLeftClose,
+  PanelLeftOpen,
+  Plus,
+  RefreshCw,
+  ScanLine,
+  Search,
+  Settings,
+  ShieldCheck,
+  SlidersHorizontal,
+  Sparkles,
+  Sun,
+  Trash2,
+  UploadCloud,
+  UserRound,
+  UserPlus,
+  Users,
+  X,
+  Zap,
 } from "lucide-react";
 import Button from "../../components/common/Button";
 import Badge from "../../components/common/Badge";
@@ -34,7 +80,10 @@ export default function SettingsPage() {
 
   return (
     <>
-      <PageHeader title="Settings" description="Manage your account, matching preferences and workspace configuration">
+      <PageHeader
+        title="Settings"
+        description="Manage your account, matching preferences and workspace configuration"
+      >
         <Button onClick={handleSave}>
           <Check size={16} /> Save changes
         </Button>
@@ -76,7 +125,9 @@ export default function SettingsPage() {
                       <ShieldCheck size={12} /> Administrator
                     </span>
                   </div>
-                  <div className="settings-profile-email">chenda@registry.gov.kh • National Registry of Cambodia</div>
+                  <div className="settings-profile-email">
+                    chenda@registry.gov.kh • National Registry of Cambodia
+                  </div>
                 </div>
                 <div className="settings-profile-actions">
                   <button className="settings-btn-outline" type="button">
@@ -116,7 +167,9 @@ export default function SettingsPage() {
                 <div className="settings-field">
                   <label htmlFor="pf-tz">Timezone</label>
                   <select id="pf-tz" defaultValue="Asia/Phnom_Penh">
-                    <option value="Asia/Phnom_Penh">Asia/Phnom_Penh (GMT+7) — Indochina Time</option>
+                    <option value="Asia/Phnom_Penh">
+                      Asia/Phnom_Penh (GMT+7) — Indochina Time
+                    </option>
                     <option value="Asia/Bangkok">Asia/Bangkok (GMT+7)</option>
                     <option value="UTC">UTC (Coordinated Universal Time)</option>
                   </select>
@@ -138,12 +191,21 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Default similarity threshold</strong>
-                  <span>Minimum confidence score required to flag potential duplicate identities ({threshold}%).</span>
+                  <span>
+                    Minimum confidence score required to flag potential duplicate identities (
+                    {threshold}%).
+                  </span>
                 </div>
                 <select
                   value={threshold}
                   onChange={(e) => setThreshold(e.target.value)}
-                  style={{ width: "220px", height: "42px", borderRadius: "8px", padding: "0 10px", fontSize: "13.5px" }}
+                  style={{
+                    width: "220px",
+                    height: "42px",
+                    borderRadius: "8px",
+                    padding: "0 10px",
+                    fontSize: "13.5px",
+                  }}
                 >
                   <option value="80">80% — Loose matching</option>
                   <option value="85">85% — Balanced (Recommended)</option>
@@ -155,7 +217,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Khmer romanisation expansion</strong>
-                  <span>Automatically generate and match phonetic Latin variants for Khmer names during search and indexing.</span>
+                  <span>
+                    Automatically generate and match phonetic Latin variants for Khmer names during
+                    search and indexing.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -166,7 +231,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Phonetic pronunciation scoring</strong>
-                  <span>Evaluate syllable sound similarity in addition to character-level Levenshtein distance.</span>
+                  <span>
+                    Evaluate syllable sound similarity in addition to character-level Levenshtein
+                    distance.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -177,7 +245,9 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Subscript consonant normalization (ជើងអក្សរ)</strong>
-                  <span>Treat Coeng (U+17D2) combinations and equivalent visual spellings consistently.</span>
+                  <span>
+                    Treat Coeng (U+17D2) combinations and equivalent visual spellings consistently.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -188,7 +258,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Automated duplicate candidate flagging</strong>
-                  <span>Notify reviewers automatically when high-confidence duplicate records are imported.</span>
+                  <span>
+                    Notify reviewers automatically when high-confidence duplicate records are
+                    imported.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -203,7 +276,9 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Two-Factor Authentication (2FA)</strong>
-                  <span>Require a TOTP verification code from an authenticator app when signing in.</span>
+                  <span>
+                    Require a TOTP verification code from an authenticator app when signing in.
+                  </span>
                 </div>
                 <span className="settings-profile-badge">
                   <CheckCircle2 size={13} /> Enabled
@@ -213,7 +288,9 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Change password</strong>
-                  <span>Last updated 42 days ago. Minimum 12 characters with symbols and numerals.</span>
+                  <span>
+                    Last updated 42 days ago. Minimum 12 characters with symbols and numerals.
+                  </span>
                 </div>
                 <button className="settings-btn-outline" type="button">
                   <KeyRound size={14} /> Update password
@@ -225,15 +302,28 @@ export default function SettingsPage() {
                   <strong>Current active session</strong>
                   <span>macOS Chrome • Phnom Penh, Cambodia • IP: 10.20.4.18 (Current)</span>
                 </div>
-                <span style={{ fontSize: "13px", color: "var(--primary)", fontWeight: 600 }}>Active now</span>
+                <span style={{ fontSize: "13px", color: "var(--primary)", fontWeight: 600 }}>
+                  Active now
+                </span>
               </div>
 
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Session idle timeout</strong>
-                  <span>Automatically log out when inactive to protect sensitive registry records.</span>
+                  <span>
+                    Automatically log out when inactive to protect sensitive registry records.
+                  </span>
                 </div>
-                <select defaultValue="30" style={{ width: "160px", height: "42px", borderRadius: "8px", padding: "0 10px", fontSize: "13.5px" }}>
+                <select
+                  defaultValue="30"
+                  style={{
+                    width: "160px",
+                    height: "42px",
+                    borderRadius: "8px",
+                    padding: "0 10px",
+                    fontSize: "13.5px",
+                  }}
+                >
                   <option value="15">15 minutes</option>
                   <option value="30">30 minutes</option>
                   <option value="60">1 hour</option>
@@ -248,9 +338,20 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>System interface language</strong>
-                  <span>Select the primary display language for navigation menus, alerts and tables.</span>
+                  <span>
+                    Select the primary display language for navigation menus, alerts and tables.
+                  </span>
                 </div>
-                <select defaultValue="en" style={{ width: "180px", height: "42px", borderRadius: "8px", padding: "0 10px", fontSize: "13.5px" }}>
+                <select
+                  defaultValue="en"
+                  style={{
+                    width: "180px",
+                    height: "42px",
+                    borderRadius: "8px",
+                    padding: "0 10px",
+                    fontSize: "13.5px",
+                  }}
+                >
                   <option value="en">English (US)</option>
                   <option value="km">ភាសាខ្មែរ (Khmer)</option>
                 </select>
@@ -259,9 +360,20 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Khmer font family</strong>
-                  <span>Preferred font used for rendering Khmer consonants, vowels and diacritics.</span>
+                  <span>
+                    Preferred font used for rendering Khmer consonants, vowels and diacritics.
+                  </span>
                 </div>
-                <select defaultValue="kantumruy" style={{ width: "220px", height: "42px", borderRadius: "8px", padding: "0 10px", fontSize: "13.5px" }}>
+                <select
+                  defaultValue="kantumruy"
+                  style={{
+                    width: "220px",
+                    height: "42px",
+                    borderRadius: "8px",
+                    padding: "0 10px",
+                    fontSize: "13.5px",
+                  }}
+                >
                   <option value="kantumruy">Kantumruy Pro (Modern Sans)</option>
                   <option value="battambang">Battambang (Traditional)</option>
                   <option value="siemreap">Siemreap (Condensed)</option>
@@ -271,9 +383,20 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Numeral display format</strong>
-                  <span>Format numbers and record IDs using Western Arabic or Khmer script numerals.</span>
+                  <span>
+                    Format numbers and record IDs using Western Arabic or Khmer script numerals.
+                  </span>
                 </div>
-                <select defaultValue="latin" style={{ width: "200px", height: "42px", borderRadius: "8px", padding: "0 10px", fontSize: "13.5px" }}>
+                <select
+                  defaultValue="latin"
+                  style={{
+                    width: "200px",
+                    height: "42px",
+                    borderRadius: "8px",
+                    padding: "0 10px",
+                    fontSize: "13.5px",
+                  }}
+                >
                   <option value="latin">Western Arabic (1, 2, 3)</option>
                   <option value="khmer">Khmer Numerals (១, ២, ៣)</option>
                 </select>
@@ -286,7 +409,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Color theme mode</strong>
-                  <span>Choose between clean light mode or comfortable dark mode for low-light environments.</span>
+                  <span>
+                    Choose between clean light mode or comfortable dark mode for low-light
+                    environments.
+                  </span>
                 </div>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <button className="settings-btn-outline" type="button">
@@ -301,7 +427,9 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>High contrast table borders</strong>
-                  <span>Increase border definitions and contrast for record tables and comparison diffs.</span>
+                  <span>
+                    Increase border definitions and contrast for record tables and comparison diffs.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -312,7 +440,9 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Compact table density</strong>
-                  <span>Reduce row padding to display more records simultaneously on large monitors.</span>
+                  <span>
+                    Reduce row padding to display more records simultaneously on large monitors.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" />
@@ -327,7 +457,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Duplicate match alerts</strong>
-                  <span>Receive immediate email notifications when duplicate identity confidence exceeds 95%.</span>
+                  <span>
+                    Receive immediate email notifications when duplicate identity confidence exceeds
+                    95%.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -338,7 +471,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Daily matching summary digest</strong>
-                  <span>Receive an automated daily email report summarizing comparison volumes and accuracy.</span>
+                  <span>
+                    Receive an automated daily email report summarizing comparison volumes and
+                    accuracy.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -349,7 +485,10 @@ export default function SettingsPage() {
               <div className="settings-list-item">
                 <div className="settings-list-item-info">
                   <strong>Security & audit events</strong>
-                  <span>Alert on sensitive administrative actions such as role modifications and bulk exports.</span>
+                  <span>
+                    Alert on sensitive administrative actions such as role modifications and bulk
+                    exports.
+                  </span>
                 </div>
                 <label className="settings-switch">
                   <input type="checkbox" defaultChecked />
@@ -377,4 +516,3 @@ export default function SettingsPage() {
     </>
   );
 }
-

@@ -1,7 +1,11 @@
 import React from "react";
 export * from "./identity";
 
-export type IconType = React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>;
+export type IconType = React.ComponentType<{
+  size?: number;
+  strokeWidth?: number;
+  className?: string;
+}>;
 
 export type PageKey =
   | "Dashboard"

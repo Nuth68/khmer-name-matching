@@ -17,9 +17,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   color = "blue",
   className = "",
 }) => {
-  const percentage = Math.round(
-    Math.min(100, Math.max(0, ((value - min) / (max - min)) * 100))
-  );
+  const percentage = Math.round(Math.min(100, Math.max(0, ((value - min) / (max - min)) * 100)));
 
   const fillColors: Record<string, string> = {
     primary: "var(--primary, #2f8f74)",

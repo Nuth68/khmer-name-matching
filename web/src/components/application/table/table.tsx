@@ -18,10 +18,7 @@ export interface TableCardRootProps {
   className?: string;
 }
 
-export const TableCardRoot: React.FC<TableCardRootProps> = ({
-  children,
-  className = "",
-}) => {
+export const TableCardRoot: React.FC<TableCardRootProps> = ({ children, className = "" }) => {
   return (
     <div
       className={`relative w-full overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm ${className}`}
@@ -45,15 +42,13 @@ export const TableCardHeader: React.FC<TableCardHeaderProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`relative px-4 py-5 md:px-6 border-b border-slate-200 dark:border-slate-800 ${className}`}>
+    <div
+      className={`relative px-4 py-5 md:px-6 border-b border-slate-200 dark:border-slate-800 ${className}`}
+    >
       <div className="pr-12 md:pr-14">
-        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
-          {title}
-        </h3>
+        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{title}</h3>
         {description && (
-          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            {description}
-          </p>
+          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{description}</p>
         )}
       </div>
       {contentTrailing}
@@ -101,12 +96,11 @@ export interface TableHeaderProps {
   className?: string;
 }
 
-export const TableHeader: React.FC<TableHeaderProps> = ({
-  children,
-  className = "",
-}) => {
+export const TableHeader: React.FC<TableHeaderProps> = ({ children, className = "" }) => {
   return (
-    <thead className={`border-b border-slate-200 dark:border-slate-800 text-xs font-medium text-slate-500 dark:text-slate-400 ${className}`}>
+    <thead
+      className={`border-b border-slate-200 dark:border-slate-800 text-xs font-medium text-slate-500 dark:text-slate-400 ${className}`}
+    >
       <tr>{children}</tr>
     </thead>
   );
@@ -152,7 +146,11 @@ export const TableHead: React.FC<TableHeadProps> = ({
         {allowsSorting && id && (
           <span className="inline-flex text-slate-400">
             {isSorted ? (
-              isAsc ? <ArrowUp size={14} /> : <ArrowDown size={14} />
+              isAsc ? (
+                <ArrowUp size={14} />
+              ) : (
+                <ArrowDown size={14} />
+              )
             ) : (
               <span className="w-3.5 h-3.5 inline-block opacity-0 group-hover:opacity-100" />
             )}
@@ -169,11 +167,7 @@ export interface TableBodyProps<T = any> {
   className?: string;
 }
 
-export function TableBody<T = any>({
-  items,
-  children,
-  className = "",
-}: TableBodyProps<T>) {
+export function TableBody<T = any>({ items, children, className = "" }: TableBodyProps<T>) {
   if (items && typeof children === "function") {
     return (
       <tbody className={`divide-y divide-slate-200 dark:divide-slate-800 text-sm ${className}`}>
@@ -195,12 +189,11 @@ export interface TableRowProps {
   className?: string;
 }
 
-export const TableRow: React.FC<TableRowProps> = ({
-  children,
-  className = "",
-}) => {
+export const TableRow: React.FC<TableRowProps> = ({ children, className = "" }) => {
   return (
-    <tr className={`transition-colors hover:bg-slate-50/70 dark:hover:bg-slate-800/40 ${className}`}>
+    <tr
+      className={`transition-colors hover:bg-slate-50/70 dark:hover:bg-slate-800/40 ${className}`}
+    >
       {children}
     </tr>
   );
@@ -211,15 +204,8 @@ export interface TableCellProps {
   className?: string;
 }
 
-export const TableCell: React.FC<TableCellProps> = ({
-  children,
-  className = "",
-}) => {
-  return (
-    <td className={`px-4 py-4 md:px-6 align-middle ${className}`}>
-      {children}
-    </td>
-  );
+export const TableCell: React.FC<TableCellProps> = ({ children, className = "" }) => {
+  return <td className={`px-4 py-4 md:px-6 align-middle ${className}`}>{children}</td>;
 };
 
 export const Table = Object.assign(TableRoot, {

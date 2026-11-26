@@ -7,11 +7,7 @@ export interface PageHeaderProps {
   children?: React.ReactNode;
 }
 
-export default function PageHeader({
-  title,
-  description,
-  children,
-}: PageHeaderProps) {
+export default function PageHeader({ title, description, children }: PageHeaderProps) {
   return (
     <div className="page-header">
       <div>

@@ -118,7 +118,7 @@ function OperationalPage({ title }: { title: string }) {
   const filteredRows = useMemo(() => {
     if (!search.trim()) return config.rows;
     return config.rows.filter((row) =>
-      row.some((cell) => cell.toLowerCase().includes(search.toLowerCase()))
+      row.some((cell) => cell.toLowerCase().includes(search.toLowerCase())),
     );
   }, [config.rows, search]);
 
@@ -230,7 +230,6 @@ function GenericPage({ title }: { title: string }) {
     </>
   );
 }
-
 
 export default OperationalPage;
 export { GenericPage };
