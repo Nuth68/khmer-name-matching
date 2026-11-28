@@ -1,0 +1,5852 @@
+[
+  {
+    "pair_id": "P03275",
+    "name_a": "ឃឹង នុភាព",
+    "name_b": "Kheung Nuo Pheap",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03276",
+    "name_a": "Kheung Nuo Pheap",
+    "name_b": "Kheung Nuo Peap",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03277",
+    "name_a": "ឃឹង នុភាព",
+    "name_b": "Kheung Nuo Peap",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03278",
+    "name_a": "ឃឹង នុភាព",
+    "name_b": "ឃឹងនុភាព",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03279",
+    "name_a": "ឃឹង នុភាព",
+    "name_b": "ពៅ សុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03280",
+    "name_a": "Kheung Nuo Pheap",
+    "name_b": "Pou Sophiep",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03281",
+    "name_a": "ឃឹង នុភាព",
+    "name_b": "Pou Sophiep",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03282",
+    "name_a": "ឃឹង នុភាព",
+    "name_b": "Nou Hach",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03283",
+    "name_a": "ពៅ សុភាព",
+    "name_b": "Pou Sophiep",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03284",
+    "name_a": "Pou Sophiep",
+    "name_b": "Pu Sophiep",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03285",
+    "name_a": "ពៅ សុភាព",
+    "name_b": "សុភាព ពៅ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03286",
+    "name_a": "ពៅ សុភាព",
+    "name_b": "ពេជ្រ សោភា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03287",
+    "name_a": "Pou Sophiep",
+    "name_b": "Pich Sophea",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03288",
+    "name_a": "ពៅ សុភាព",
+    "name_b": "Pich Sophea",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03289",
+    "name_a": "Pou Sophiep",
+    "name_b": "Thong Vorolak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03290",
+    "name_a": "រ៉ូហ្វី អូស្មាន",
+    "name_b": "Rofi Osman",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03291",
+    "name_a": "Rofi Osman",
+    "name_b": "Rofi-Osman",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03292",
+    "name_a": "រ៉ូហ្វី អូស្មាន",
+    "name_b": "Rofi-Osman",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03293",
+    "name_a": "រ៉ូហ្វី អូស្មាន",
+    "name_b": "រ៉ូហ្វី​អូស្មាន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03294",
+    "name_a": "រ៉ូហ្វី អូស្មាន",
+    "name_b": "សឺន សាន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03295",
+    "name_a": "Rofi Osman",
+    "name_b": "Son Sann",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03296",
+    "name_a": "រ៉ូហ្វី អូស្មាន",
+    "name_b": "Son Sann",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03297",
+    "name_a": "រ៉ូហ្វី អូស្មាន",
+    "name_b": "Ung Huot",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03298",
+    "name_a": "លន់ និល",
+    "name_b": "Lon Nil",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03299",
+    "name_a": "Lon Nil",
+    "name_b": "Lon-Nil",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03300",
+    "name_a": "លន់ និល",
+    "name_b": "Lon-Nil",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03301",
+    "name_a": "លន់ និល",
+    "name_b": "កញ្ញា លន់ និល",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03302",
+    "name_a": "លន់ និល",
+    "name_b": "សឺន សាន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03303",
+    "name_a": "Lon Nil",
+    "name_b": "Son Sann",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03304",
+    "name_a": "លន់ និល",
+    "name_b": "Son Sann",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03305",
+    "name_a": "លន់ និល",
+    "name_b": "រស់ សាផន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03306",
+    "name_a": "KEUT RITH",
+    "name_b": "Koeut Rith",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03307",
+    "name_a": "KEUT RITH",
+    "name_b": "Ieng Thirith",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03308",
+    "name_a": "KEUT RITH",
+    "name_b": "San Sarana",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03309",
+    "name_a": "លី ធាមតេង",
+    "name_b": "Ly Theam Teng",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03310",
+    "name_a": "Ly Theam Teng",
+    "name_b": "Ly Team Teng",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03311",
+    "name_a": "លី ធាមតេង",
+    "name_b": "Ly Team Teng",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03312",
+    "name_a": "លី ធាមតេង",
+    "name_b": "លីធាមតេង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03313",
+    "name_a": "លី ធាមតេង",
+    "name_b": "សាយ ភូថង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03314",
+    "name_a": "Ly Theam Teng",
+    "name_b": "Say Phouthang",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03315",
+    "name_a": "លី ធាមតេង",
+    "name_b": "Say Phouthang",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03316",
+    "name_a": "លី ធាមតេង",
+    "name_b": "Sok Sreymom",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03317",
+    "name_a": "ផន ចន្ថា",
+    "name_b": "Phon Chantha",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03318",
+    "name_a": "Phon Chantha",
+    "name_b": "Phon Channtha",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03319",
+    "name_a": "ផន ចន្ថា",
+    "name_b": "Phon Channtha",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03320",
+    "name_a": "ផន ចន្ថា",
+    "name_b": "អ្នកស្រី ផន ចន្ថា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03321",
+    "name_a": "ផន ចន្ថា",
+    "name_b": "នឹម ច័ន្ទតារា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03322",
+    "name_a": "Phon Chantha",
+    "name_b": "Nim Chantarā",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03323",
+    "name_a": "ផន ចន្ថា",
+    "name_b": "Nim Chantarā",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03324",
+    "name_a": "ផន ចន្ថា",
+    "name_b": "Chev Kimheng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03325",
+    "name_a": "សុខ អាន",
+    "name_b": "Sok An",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03326",
+    "name_a": "Sok An",
+    "name_b": "Sokh An",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03327",
+    "name_a": "សុខ អាន",
+    "name_b": "Sokh An",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03328",
+    "name_a": "សុខ អាន",
+    "name_b": "អាន សុខ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03329",
+    "name_a": "សុខ អាន",
+    "name_b": "សុខ ស្រីមុំ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03330",
+    "name_a": "Sok An",
+    "name_b": "Sok Sreymom",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03331",
+    "name_a": "សុខ អាន",
+    "name_b": "Sok Sreymom",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03332",
+    "name_a": "សុខ អាន",
+    "name_b": "ឈុត វុទ្ធី",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03333",
+    "name_a": "កែ ពក",
+    "name_b": "Ke Pauk",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03334",
+    "name_a": "កែ ពក",
+    "name_b": "ពក កែ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03335",
+    "name_a": "កែ ពក",
+    "name_b": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03336",
+    "name_a": "Ke Pauk",
+    "name_b": "Ken Chansopheak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03337",
+    "name_a": "កែ ពក",
+    "name_b": "Ken Chansopheak",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03338",
+    "name_a": "Ke Pauk",
+    "name_b": "Chan Nak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03339",
+    "name_a": "អៀង ធីរិទ្ធ",
+    "name_b": "Ieng Thirith",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03340",
+    "name_a": "Ieng Thirith",
+    "name_b": "Ieng Tirith",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03341",
+    "name_a": "អៀង ធីរិទ្ធ",
+    "name_b": "Ieng Tirith",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03342",
+    "name_a": "អៀង ធីរិទ្ធ",
+    "name_b": "អៀងធីរិទ្ធ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03343",
+    "name_a": "អៀង ធីរិទ្ធ",
+    "name_b": "KEUT RITH",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03344",
+    "name_a": "Ieng Thirith",
+    "name_b": "Mao Bunnarin",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03345",
+    "name_a": "ហ៊ុល គឹមហ៊ុយ",
+    "name_b": "Hul Kimhuy",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03346",
+    "name_a": "ហ៊ុល គឹមហ៊ុយ",
+    "name_b": "ហ៊ុល​គឹមហ៊ុយ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03347",
+    "name_a": "ហ៊ុល គឹមហ៊ុយ",
+    "name_b": "លឹម គិមយ៉ា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03348",
+    "name_a": "Hul Kimhuy",
+    "name_b": "Lim Kimya",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03349",
+    "name_a": "ហ៊ុល គឹមហ៊ុយ",
+    "name_b": "Lim Kimya",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03350",
+    "name_a": "Hul Kimhuy",
+    "name_b": "Yudai Ogawa",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03351",
+    "name_a": "ទៀ វិញ",
+    "name_b": "Tea Vinh",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03352",
+    "name_a": "Tea Vinh",
+    "name_b": "Te Vinh",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03353",
+    "name_a": "ទៀ វិញ",
+    "name_b": "Te Vinh",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03354",
+    "name_a": "ទៀ វិញ",
+    "name_b": "ទៀ​វិញ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03355",
+    "name_a": "ទៀ វិញ",
+    "name_b": "ប្រាសាទ ដាវីន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03356",
+    "name_a": "Tea Vinh",
+    "name_b": "Davin Prasath",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03357",
+    "name_a": "ទៀ វិញ",
+    "name_b": "Davin Prasath",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03358",
+    "name_a": "Tea Vinh",
+    "name_b": "Kim Sovanna",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03359",
+    "name_a": "នរោត្តម នរិន្រ្ទពង្ស",
+    "name_b": "Norodom Narindrapong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03360",
+    "name_a": "នរោត្តម នរិន្រ្ទពង្ស",
+    "name_b": "នរិន្រ្ទពង្ស នរោត្តម",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03361",
+    "name_a": "នរោត្តម នរិន្រ្ទពង្ស",
+    "name_b": "នរោត្តម នរិន្ទដេត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03362",
+    "name_a": "Norodom Narindrapong",
+    "name_b": "Norodom Norindeth",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03363",
+    "name_a": "នរោត្តម នរិន្រ្ទពង្ស",
+    "name_b": "Norodom Norindeth",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03364",
+    "name_a": "Norodom Narindrapong",
+    "name_b": "Kong Bunchhoeun",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03365",
+    "name_a": "នឹម ច័ន្ទតារា",
+    "name_b": "Nim Chantarā",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03366",
+    "name_a": "Nim Chantarā",
+    "name_b": "Nim Channtarā",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03367",
+    "name_a": "នឹម ច័ន្ទតារា",
+    "name_b": "Nim Channtarā",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03368",
+    "name_a": "នឹម ច័ន្ទតារា",
+    "name_b": "ច័ន្ទតារា នឹម",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03369",
+    "name_a": "នឹម ច័ន្ទតារា",
+    "name_b": "Phon Chantha",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03370",
+    "name_a": "នឹម ច័ន្ទតារា",
+    "name_b": "ម៉ាត់ សេត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03371",
+    "name_a": "សាន ណារិទ្ធ",
+    "name_b": "San Narith",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03372",
+    "name_a": "San Narith",
+    "name_b": "San-Narith",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03373",
+    "name_a": "សាន ណារិទ្ធ",
+    "name_b": "សាន​ណារិទ្ធ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03374",
+    "name_a": "សាន ណារិទ្ធ",
+    "name_b": "សន សារ៉ាណា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03375",
+    "name_a": "San Narith",
+    "name_b": "San Sarana",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03376",
+    "name_a": "សាន ណារិទ្ធ",
+    "name_b": "San Sarana",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03377",
+    "name_a": "សាន ណារិទ្ធ",
+    "name_b": "Ken Chansopheak",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03378",
+    "name_a": "បុង សាំយូអ៊េល",
+    "name_b": "Bong Samuel",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03379",
+    "name_a": "Bong Samuel",
+    "name_b": "Samuel Bong",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03380",
+    "name_a": "បុង សាំយូអ៊េល",
+    "name_b": "Samuel Bong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03381",
+    "name_a": "បុង សាំយូអ៊េល",
+    "name_b": "សាំយូអ៊េល បុង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03382",
+    "name_a": "បុង សាំយូអ៊េល",
+    "name_b": "គង់ សំអុល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03383",
+    "name_a": "Bong Samuel",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03384",
+    "name_a": "បុង សាំយូអ៊េល",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03385",
+    "name_a": "បុង សាំយូអ៊េល",
+    "name_b": "ហ៊ូ ស្រ៊ី",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03386",
+    "name_a": "សោ ភឹម",
+    "name_b": "So Phim",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03387",
+    "name_a": "So Phim",
+    "name_b": "So Pim",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03388",
+    "name_a": "សោ ភឹម",
+    "name_b": "ភឹម សោ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03389",
+    "name_a": "សោ ភឹម",
+    "name_b": "ពៅ សុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03390",
+    "name_a": "So Phim",
+    "name_b": "Pou Sophiep",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03391",
+    "name_a": "សោ ភឹម",
+    "name_b": "Pou Sophiep",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03392",
+    "name_a": "សោ ភឹម",
+    "name_b": "Duong Sovang",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03393",
+    "name_a": "ប៉ង់ សុគន្ធវឌ្ឍនា",
+    "name_b": "Vatana Pang",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03394",
+    "name_a": "Vatana Pang",
+    "name_b": "Pang Vatana",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03395",
+    "name_a": "ប៉ង់ សុគន្ធវឌ្ឍនា",
+    "name_b": "Pang Vatana",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03396",
+    "name_a": "ប៉ង់ សុគន្ធវឌ្ឍនា",
+    "name_b": "សុគន្ធវឌ្ឍនា ប៉ង់",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03397",
+    "name_a": "ប៉ង់ សុគន្ធវឌ្ឍនា",
+    "name_b": "មិថុនា ភូថង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03398",
+    "name_a": "Vatana Pang",
+    "name_b": "Mithuna Phuthong",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03399",
+    "name_a": "ប៉ង់ សុគន្ធវឌ្ឍនា",
+    "name_b": "Mithuna Phuthong",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03400",
+    "name_a": "ប៉ង់ សុគន្ធវឌ្ឍនា",
+    "name_b": "កង បូរាណ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03401",
+    "name_a": "លឹម ពិសុទ្ធ",
+    "name_b": "Lim Pisoth",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03402",
+    "name_a": "Lim Pisoth",
+    "name_b": "Lim-Pisoth",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03403",
+    "name_a": "លឹម ពិសុទ្ធ",
+    "name_b": "Lim-Pisoth",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03404",
+    "name_a": "លឹម ពិសុទ្ធ",
+    "name_b": "ពិសុទ្ធ លឹម",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03405",
+    "name_a": "លឹម ពិសុទ្ធ",
+    "name_b": "លឹម គិមយ៉ា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03406",
+    "name_a": "Lim Pisoth",
+    "name_b": "Lim Kimya",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03407",
+    "name_a": "លឹម ពិសុទ្ធ",
+    "name_b": "Lim Kimya",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03408",
+    "name_a": "លឹម ពិសុទ្ធ",
+    "name_b": "Chay Borin",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03409",
+    "name_a": "រស់ សាផន",
+    "name_b": "Ros Saphon",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03410",
+    "name_a": "រស់ សាផន",
+    "name_b": "សាផន រស់",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03411",
+    "name_a": "រស់ សាផន",
+    "name_b": "និន សាផុន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03412",
+    "name_a": "Ros Saphon",
+    "name_b": "Nin Saphon",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03413",
+    "name_a": "រស់ សាផន",
+    "name_b": "Nin Saphon",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03414",
+    "name_a": "រស់ សាផន",
+    "name_b": "ម៉ាត់ សេត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03415",
+    "name_a": "ចេវ គឹមហេង",
+    "name_b": "Chev Kimheng",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03416",
+    "name_a": "Chev Kimheng",
+    "name_b": "Chev-Kimheng",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03417",
+    "name_a": "ចេវ គឹមហេង",
+    "name_b": "ចេវ​គឹមហេង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03418",
+    "name_a": "ចេវ គឹមហេង",
+    "name_b": "កែវ សុខផេង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03419",
+    "name_a": "Chev Kimheng",
+    "name_b": "Keo Sokpheng",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03420",
+    "name_a": "ចេវ គឹមហេង",
+    "name_b": "Keo Sokpheng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03421",
+    "name_a": "Chev Kimheng",
+    "name_b": "Prak Mony Udom",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03422",
+    "name_a": "ឃួង ស្រេង",
+    "name_b": "Khuong Sreng",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03423",
+    "name_a": "Khuong Sreng",
+    "name_b": "Kuong Sreng",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03424",
+    "name_a": "ឃួង ស្រេង",
+    "name_b": "ឃួងស្រេង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03425",
+    "name_a": "ឃួង ស្រេង",
+    "name_b": "ឌួង សុវ៉ាង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03426",
+    "name_a": "Khuong Sreng",
+    "name_b": "Duong Sovang",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03427",
+    "name_a": "ឃួង ស្រេង",
+    "name_b": "Duong Sovang",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03428",
+    "name_a": "ឃួង ស្រេង",
+    "name_b": "ដៀន ដែល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03429",
+    "name_a": "អុី ឡុង",
+    "name_b": "Ei Long",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03430",
+    "name_a": "Ei Long",
+    "name_b": "Long Ei",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03431",
+    "name_a": "អុី ឡុង",
+    "name_b": "អីុ ឡុង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Khmer diacritic typing order variant"
+  },
+  {
+    "pair_id": "P03432",
+    "name_a": "អុី ឡុង",
+    "name_b": "សាក់ ស៊ីស្បោង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03433",
+    "name_a": "Ei Long",
+    "name_b": "Saksi Sbong",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03434",
+    "name_a": "អុី ឡុង",
+    "name_b": "Saksi Sbong",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03435",
+    "name_a": "អុី ឡុង",
+    "name_b": "ហ៊ឺ វីរៈ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03436",
+    "name_a": "លឹម គិមយ៉ា",
+    "name_b": "Lim Kimya",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03437",
+    "name_a": "លឹម គិមយ៉ា",
+    "name_b": "លឹមគិមយ៉ា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03438",
+    "name_a": "លឹម គិមយ៉ា",
+    "name_b": "Lim Pisoth",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03439",
+    "name_a": "លឹម គិមយ៉ា",
+    "name_b": "KEUT RITH",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03440",
+    "name_a": "យ៉ាន់ សោគុណ",
+    "name_b": "Yann Sokan",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03441",
+    "name_a": "Yann Sokan",
+    "name_b": "Yan Sokan",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03442",
+    "name_a": "យ៉ាន់ សោគុណ",
+    "name_b": "យ៉ាន់សោគុណ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03443",
+    "name_a": "យ៉ាន់ សោគុណ",
+    "name_b": "វ៉ាន់ សុផាន់ណា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03444",
+    "name_a": "Yann Sokan",
+    "name_b": "Van Sophanna",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03445",
+    "name_a": "យ៉ាន់ សោគុណ",
+    "name_b": "Van Sophanna",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03446",
+    "name_a": "យ៉ាន់ សោគុណ",
+    "name_b": "យឹម លាត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03447",
+    "name_a": "និន សាផុន",
+    "name_b": "Nin Saphon",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03448",
+    "name_a": "Nin Saphon",
+    "name_b": "Saphon Nin",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03449",
+    "name_a": "និន សាផុន",
+    "name_b": "និនសាផុន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03450",
+    "name_a": "និន សាផុន",
+    "name_b": "Ros Saphon",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03451",
+    "name_a": "និន សាផុន",
+    "name_b": "Sok Sreymom",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03452",
+    "name_a": "សាក់ ស៊ីស្បោង",
+    "name_b": "Saksi Sbong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03453",
+    "name_a": "សាក់ ស៊ីស្បោង",
+    "name_b": "ស៊ីស្បោង សាក់",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03454",
+    "name_a": "សាក់ ស៊ីស្បោង",
+    "name_b": "Ei Long",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03455",
+    "name_a": "សាក់ ស៊ីស្បោង",
+    "name_b": "វីរៈ ដារ៉ា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03456",
+    "name_a": "ជឹម សុខខុន",
+    "name_b": "Chim Sokkhun",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03457",
+    "name_a": "Chim Sokkhun",
+    "name_b": "Chim Sokhun",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03458",
+    "name_a": "ជឹម សុខខុន",
+    "name_b": "ជឹម​សុខខុន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03459",
+    "name_a": "Chim Sokkhun",
+    "name_b": "Mom Chim Huy",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03460",
+    "name_a": "ជឹម សុខខុន",
+    "name_b": "Mom Chim Huy",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03461",
+    "name_a": "ជឹម សុខខុន",
+    "name_b": "បុង សាំយូអ៊េល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03462",
+    "name_a": "សឺន សាន",
+    "name_b": "Son Sann",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03463",
+    "name_a": "Son Sann",
+    "name_b": "Son San",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03464",
+    "name_a": "សឺន សាន",
+    "name_b": "Son San",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03465",
+    "name_a": "សឺន សាន",
+    "name_b": "សឺនសាន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03466",
+    "name_a": "សឺន សាន",
+    "name_b": "សុខ អាន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03467",
+    "name_a": "Son Sann",
+    "name_b": "Sok An",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03468",
+    "name_a": "សឺន សាន",
+    "name_b": "Sok An",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03469",
+    "name_a": "Son Sann",
+    "name_b": "Sao Khoradin",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03470",
+    "name_a": "សាយ សំអាល់",
+    "name_b": "Say Sam Al",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03471",
+    "name_a": "Say Sam Al",
+    "name_b": "Sai Sam Al",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03472",
+    "name_a": "សាយ សំអាល់",
+    "name_b": "សំអាល់ សាយ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03473",
+    "name_a": "សាយ សំអាល់",
+    "name_b": "គង់ សំអុល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03474",
+    "name_a": "Say Sam Al",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03475",
+    "name_a": "សាយ សំអាល់",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03476",
+    "name_a": "សាយ សំអាល់",
+    "name_b": "ដៀន ដែល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03477",
+    "name_a": "កង បូរាណ",
+    "name_b": "Kong Boran",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03478",
+    "name_a": "Kong Boran",
+    "name_b": "Kong-Boran",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03479",
+    "name_a": "កង បូរាណ",
+    "name_b": "Kong-Boran",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03480",
+    "name_a": "កង បូរាណ",
+    "name_b": "កងបូរាណ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03481",
+    "name_a": "កង បូរាណ",
+    "name_b": "គង្គ ប៊ុនឈឿន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03482",
+    "name_a": "Kong Boran",
+    "name_b": "Kong Bunchhoeun",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03483",
+    "name_a": "កង បូរាណ",
+    "name_b": "Kong Bunchhoeun",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03484",
+    "name_a": "Kong Boran",
+    "name_b": "Heu Vireak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03485",
+    "name_a": "ហ៊ុន ម៉ាណិត",
+    "name_b": "Hun Manith",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03486",
+    "name_a": "Hun Manith",
+    "name_b": "Hun-Manith",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03487",
+    "name_a": "ហ៊ុន ម៉ាណិត",
+    "name_b": "Hun-Manith",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03488",
+    "name_a": "ហ៊ុន ម៉ាណិត",
+    "name_b": "លោក ហ៊ុន ម៉ាណិត",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03489",
+    "name_a": "ហ៊ុន ម៉ាណិត",
+    "name_b": "ផន ចន្ថា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03490",
+    "name_a": "Hun Manith",
+    "name_b": "Phon Chantha",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03491",
+    "name_a": "ហ៊ុន ម៉ាណិត",
+    "name_b": "Phon Chantha",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03492",
+    "name_a": "Hun Manith",
+    "name_b": "Sar Kheng",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03493",
+    "name_a": "ដៀន ដែល",
+    "name_b": "Dien Del",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03494",
+    "name_a": "Dien Del",
+    "name_b": "Dien-Del",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03495",
+    "name_a": "ដៀន ដែល",
+    "name_b": "លោក ដៀន ដែល",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03496",
+    "name_a": "ដៀន ដែល",
+    "name_b": "បុង សាំយូអ៊េល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03497",
+    "name_a": "Dien Del",
+    "name_b": "Bong Samuel",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03498",
+    "name_a": "ដៀន ដែល",
+    "name_b": "Bong Samuel",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03499",
+    "name_a": "Dien Del",
+    "name_b": "Sok An",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03500",
+    "name_a": "ស៊ិន សុវណ្ណមករា",
+    "name_b": "Sin Sovannmakara",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03501",
+    "name_a": "Sin Sovannmakara",
+    "name_b": "Sin Sovannnmakara",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03502",
+    "name_a": "ស៊ិន សុវណ្ណមករា",
+    "name_b": "Sin Sovannnmakara",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03503",
+    "name_a": "ស៊ិន សុវណ្ណមករា",
+    "name_b": "អ្នកស្រី ស៊ិន សុវណ្ណមករា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03504",
+    "name_a": "ស៊ិន សុវណ្ណមករា",
+    "name_b": "គឹម សុវណ្ណា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03505",
+    "name_a": "Sin Sovannmakara",
+    "name_b": "Kim Sovanna",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03506",
+    "name_a": "ស៊ិន សុវណ្ណមករា",
+    "name_b": "Kim Sovanna",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03507",
+    "name_a": "ស៊ិន សុវណ្ណមករា",
+    "name_b": "អ៊ុក ខុត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03508",
+    "name_a": "សៅ ខូរ៉ាឌីន",
+    "name_b": "Sao Khoradin",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03509",
+    "name_a": "Sao Khoradin",
+    "name_b": "Sao Koradin",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03510",
+    "name_a": "សៅ ខូរ៉ាឌីន",
+    "name_b": "សៅខូរ៉ាឌីន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03511",
+    "name_a": "សៅ ខូរ៉ាឌីន",
+    "name_b": "ស ខេង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03512",
+    "name_a": "Sao Khoradin",
+    "name_b": "Sar Kheng",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03513",
+    "name_a": "សៅ ខូរ៉ាឌីន",
+    "name_b": "Sar Kheng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03514",
+    "name_a": "Sao Khoradin",
+    "name_b": "Chut Wutty",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03515",
+    "name_a": "គឹម សុវណ្ណា",
+    "name_b": "Kim Sovanna",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03516",
+    "name_a": "Kim Sovanna",
+    "name_b": "Kim Sovana",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03517",
+    "name_a": "គឹម សុវណ្ណា",
+    "name_b": "គឹម​សុវណ្ណា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03518",
+    "name_a": "គឹម សុវណ្ណា",
+    "name_b": "Sin Sovannmakara",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03519",
+    "name_a": "Kim Sovanna",
+    "name_b": "Phon Chantha",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03520",
+    "name_a": "ពេជ ច័ន្ទមុនី",
+    "name_b": "Pich Chanmony",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03521",
+    "name_a": "Pich Chanmony",
+    "name_b": "Pech Chanmony",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03522",
+    "name_a": "ពេជ ច័ន្ទមុនី",
+    "name_b": "ច័ន្ទមុនី ពេជ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03523",
+    "name_a": "ពេជ ច័ន្ទមុនី",
+    "name_b": "ពេជ្រ សោភា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03524",
+    "name_a": "Pich Chanmony",
+    "name_b": "Pich Sophea",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03525",
+    "name_a": "ពេជ ច័ន្ទមុនី",
+    "name_b": "Pich Sophea",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03526",
+    "name_a": "ពេជ ច័ន្ទមុនី",
+    "name_b": "បុង សាំយូអ៊េល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03527",
+    "name_a": "អ៊ឹម ចាន់ថុល",
+    "name_b": "Um Chantol",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03528",
+    "name_a": "Um Chantol",
+    "name_b": "Um Channtol",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03529",
+    "name_a": "អ៊ឹម ចាន់ថុល",
+    "name_b": "Um Channtol",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03530",
+    "name_a": "អ៊ឹម ចាន់ថុល",
+    "name_b": "លោក អ៊ឹម ចាន់ថុល",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03531",
+    "name_a": "អ៊ឹម ចាន់ថុល",
+    "name_b": "នឹម ច័ន្ទតារា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03532",
+    "name_a": "Um Chantol",
+    "name_b": "Nim Chantarā",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03533",
+    "name_a": "អ៊ឹម ចាន់ថុល",
+    "name_b": "Nim Chantarā",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03534",
+    "name_a": "Um Chantol",
+    "name_b": "Norodom Norindeth",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03535",
+    "name_a": "នរោត្តម យុវនាថ",
+    "name_b": "Norodom Yuvaneath",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03536",
+    "name_a": "Norodom Yuvaneath",
+    "name_b": "Norodom Yuvaneth",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03537",
+    "name_a": "នរោត្តម យុវនាថ",
+    "name_b": "យុវនាថ នរោត្តម",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03538",
+    "name_a": "នរោត្តម យុវនាថ",
+    "name_b": "នរោត្តម នរិន្ទដេត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03539",
+    "name_a": "Norodom Yuvaneath",
+    "name_b": "Norodom Norindeth",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03540",
+    "name_a": "នរោត្តម យុវនាថ",
+    "name_b": "Norodom Norindeth",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03541",
+    "name_a": "នរោត្តម យុវនាថ",
+    "name_b": "Keo Sokpheng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03542",
+    "name_a": "ច័ន្ទ នរ៉ា",
+    "name_b": "Chan Nora",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03543",
+    "name_a": "Chan Nora",
+    "name_b": "Chann Nora",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03544",
+    "name_a": "ច័ន្ទ នរ៉ា",
+    "name_b": "Chann Nora",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03545",
+    "name_a": "ច័ន្ទ នរ៉ា",
+    "name_b": "នរ៉ា ច័ន្ទ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03546",
+    "name_a": "ច័ន្ទ នរ៉ា",
+    "name_b": "ចាន់ ណាក់",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03547",
+    "name_a": "Chan Nora",
+    "name_b": "Chan Nak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03548",
+    "name_a": "ច័ន្ទ នរ៉ា",
+    "name_b": "Chan Nak",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03549",
+    "name_a": "ច័ន្ទ នរ៉ា",
+    "name_b": "Mom Chim Huy",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03550",
+    "name_a": "អ៊ឹង កន្ថាផាវី",
+    "name_b": "Ing Kantha PHAVI",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03551",
+    "name_a": "អ៊ឹង កន្ថាផាវី",
+    "name_b": "Ing Kuntha Phavi",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03552",
+    "name_a": "Ing Kantha PHAVI",
+    "name_b": "Ing Kuntha Phavi",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03553",
+    "name_a": "អ៊ឹង កន្ថាផាវី",
+    "name_b": "អ៊ឹងកន្ថាផាវី",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03554",
+    "name_a": "អ៊ឹង កន្ថាផាវី",
+    "name_b": "ឃឹង នុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03555",
+    "name_a": "Ing Kantha PHAVI",
+    "name_b": "Kheung Nuo Pheap",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03556",
+    "name_a": "អ៊ឹង កន្ថាផាវី",
+    "name_b": "Kheung Nuo Pheap",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03557",
+    "name_a": "អ៊ឹង កន្ថាផាវី",
+    "name_b": "ស ខេង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03558",
+    "name_a": "Mom Chim Huy",
+    "name_b": "Mum Chim Huy",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03559",
+    "name_a": "ប៉ុន ណារ៉ែន",
+    "name_b": "Pon Naren",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03560",
+    "name_a": "Pon Naren",
+    "name_b": "Naren Pon",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03561",
+    "name_a": "ប៉ុន ណារ៉ែន",
+    "name_b": "អ្នកស្រី ប៉ុន ណារ៉ែន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03562",
+    "name_a": "ប៉ុន ណារ៉ែន",
+    "name_b": "សឺន សាន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03563",
+    "name_a": "Pon Naren",
+    "name_b": "Son Sann",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03564",
+    "name_a": "ប៉ុន ណារ៉ែន",
+    "name_b": "Son Sann",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03565",
+    "name_a": "ប៉ុន ណារ៉ែន",
+    "name_b": "Yudai Ogawa",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03566",
+    "name_a": "ចាន់ ណាក់",
+    "name_b": "Chan Nak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03567",
+    "name_a": "Chan Nak",
+    "name_b": "Chann Nak",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03568",
+    "name_a": "ចាន់ ណាក់",
+    "name_b": "Chann Nak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03569",
+    "name_a": "ចាន់ ណាក់",
+    "name_b": "លោក ចាន់ ណាក់",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03570",
+    "name_a": "ចាន់ ណាក់",
+    "name_b": "Chan Nora",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03571",
+    "name_a": "ចាន់ ណាក់",
+    "name_b": "KEUT RITH",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03572",
+    "name_a": "អ៊ឹង ហួត",
+    "name_b": "Ung Huot",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03573",
+    "name_a": "Ung Huot",
+    "name_b": "Huot Ung",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03574",
+    "name_a": "អ៊ឹង ហួត",
+    "name_b": "Huot Ung",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03575",
+    "name_a": "អ៊ឹង ហួត",
+    "name_b": "អ្នកស្រី អ៊ឹង ហួត",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03576",
+    "name_a": "អ៊ឹង ហួត",
+    "name_b": "អ៊ុក ខុត",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03577",
+    "name_a": "Ung Huot",
+    "name_b": "Uk Khot",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03578",
+    "name_a": "អ៊ឹង ហួត",
+    "name_b": "Uk Khot",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03579",
+    "name_a": "អ៊ឹង ហួត",
+    "name_b": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03580",
+    "name_a": "ពេជ្រ ជីវ័ន",
+    "name_b": "Pech Chi Vann",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03581",
+    "name_a": "Pech Chi Vann",
+    "name_b": "Pech Chi Van",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03582",
+    "name_a": "ពេជ្រ ជីវ័ន",
+    "name_b": "ជីវ័ន ពេជ្រ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03583",
+    "name_a": "ពេជ្រ ជីវ័ន",
+    "name_b": "ពេជ ច័ន្ទមុនី",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03584",
+    "name_a": "Pech Chi Vann",
+    "name_b": "Pich Chanmony",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03585",
+    "name_a": "ពេជ្រ ជីវ័ន",
+    "name_b": "Pich Chanmony",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03586",
+    "name_a": "ពេជ្រ ជីវ័ន",
+    "name_b": "KEUT RITH",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03587",
+    "name_a": "នូ ហាច",
+    "name_b": "Nou Hach",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03588",
+    "name_a": "Nou Hach",
+    "name_b": "Nu Hach",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03589",
+    "name_a": "នូ ហាច",
+    "name_b": "Nu Hach",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03590",
+    "name_a": "នូ ហាច",
+    "name_b": "នូហាច",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03591",
+    "name_a": "នូ ហាច",
+    "name_b": "នរិន្ទ ឆាយ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03592",
+    "name_a": "Nou Hach",
+    "name_b": "Norin Chai",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03593",
+    "name_a": "នូ ហាច",
+    "name_b": "Norin Chai",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03594",
+    "name_a": "នូ ហាច",
+    "name_b": "ខឹម វាសនា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03595",
+    "name_a": "វ៉ាន់ សុផាន់ណា",
+    "name_b": "Van Sophanna",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03596",
+    "name_a": "Van Sophanna",
+    "name_b": "Van Sophana",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03597",
+    "name_a": "វ៉ាន់ សុផាន់ណា",
+    "name_b": "Van Sophana",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03598",
+    "name_a": "វ៉ាន់ សុផាន់ណា",
+    "name_b": "វ៉ាន់សុផាន់ណា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03599",
+    "name_a": "វ៉ាន់ សុផាន់ណា",
+    "name_b": "Yann Sokan",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03600",
+    "name_a": "វ៉ាន់ សុផាន់ណា",
+    "name_b": "Heu Vireak",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03601",
+    "name_a": "យូឌៃ អូកាវ៉ា",
+    "name_b": "Yudai Ogawa",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03602",
+    "name_a": "Yudai Ogawa",
+    "name_b": "Yudai-Ogawa",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03603",
+    "name_a": "យូឌៃ អូកាវ៉ា",
+    "name_b": "Yudai-Ogawa",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03604",
+    "name_a": "យូឌៃ អូកាវ៉ា",
+    "name_b": "អូកាវ៉ា យូឌៃ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03605",
+    "name_a": "យូឌៃ អូកាវ៉ា",
+    "name_b": "ប្រាសាទ ដាវីន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03606",
+    "name_a": "Yudai Ogawa",
+    "name_b": "Davin Prasath",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03607",
+    "name_a": "យូឌៃ អូកាវ៉ា",
+    "name_b": "Davin Prasath",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03608",
+    "name_a": "Yudai Ogawa",
+    "name_b": "Bong Samuel",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03609",
+    "name_a": "ប្រាក់ សុខុន",
+    "name_b": "Prak Sokhon",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03610",
+    "name_a": "ប្រាក់ សុខុន",
+    "name_b": "Prak Sokhonn",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03611",
+    "name_a": "Prak Sokhon",
+    "name_b": "Prak Sokhonn",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03612",
+    "name_a": "Prak Sokhon",
+    "name_b": "Sokhonn Prak",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03613",
+    "name_a": "Prak Sokhonn",
+    "name_b": "Sokhonn Prak",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03614",
+    "name_a": "ប្រាក់ សុខុន",
+    "name_b": "សុខុន ប្រាក់",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03615",
+    "name_a": "ប្រាក់ សុខុន",
+    "name_b": "ប្រាក់ មុន្នីឧត្តម",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03616",
+    "name_a": "Prak Sokhon",
+    "name_b": "Prak Mony Udom",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03617",
+    "name_a": "ប្រាក់ សុខុន",
+    "name_b": "Prak Mony Udom",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03618",
+    "name_a": "ប្រាក់ សុខុន",
+    "name_b": "ឃឹង នុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03619",
+    "name_a": "ប្រាក់ មុន្នីឧត្តម",
+    "name_b": "Prak Mony Udom",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03620",
+    "name_a": "ប្រាក់ មុន្នីឧត្តម",
+    "name_b": "ប្រាក់​មុន្នីឧត្តម",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03621",
+    "name_a": "ប្រាក់ មុន្នីឧត្តម",
+    "name_b": "Prak Sokhon",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03622",
+    "name_a": "Prak Mony Udom",
+    "name_b": "Heu Vireak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03623",
+    "name_a": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "name_b": "Mam Manivan Phanivong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03624",
+    "name_a": "Mam Manivan Phanivong",
+    "name_b": "Mam Manivan Panivong",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03625",
+    "name_a": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "name_b": "Mam Manivan Panivong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03626",
+    "name_a": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "name_b": "ផានីវង្ស ម៉ានីវណ្ណ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03627",
+    "name_a": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "name_b": "វ៉ាន់ សុផាន់ណា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03628",
+    "name_a": "Mam Manivan Phanivong",
+    "name_b": "Van Sophanna",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03629",
+    "name_a": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "name_b": "Van Sophanna",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03630",
+    "name_a": "ម៉ានីវណ្ណ ផានីវង្ស",
+    "name_b": "Vireak Dara",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03631",
+    "name_a": "កែវ សុខផេង",
+    "name_b": "Keo Sokpheng",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03632",
+    "name_a": "Keo Sokpheng",
+    "name_b": "Keo Sokhpheng",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03633",
+    "name_a": "កែវ សុខផេង",
+    "name_b": "សុខផេង កែវ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03634",
+    "name_a": "កែវ សុខផេង",
+    "name_b": "ពៅ សុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03635",
+    "name_a": "Keo Sokpheng",
+    "name_b": "Pou Sophiep",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03636",
+    "name_a": "កែវ សុខផេង",
+    "name_b": "Pou Sophiep",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03637",
+    "name_a": "Keo Sokpheng",
+    "name_b": "Nim Chantarā",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03638",
+    "name_a": "ឡោក ហ៊ួរ",
+    "name_b": "Loak Huor",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03639",
+    "name_a": "Loak Huor",
+    "name_b": "Loak-Huor",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03640",
+    "name_a": "ឡោក ហ៊ួរ",
+    "name_b": "ឡោក​ហ៊ួរ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03641",
+    "name_a": "ឡោក ហ៊ួរ",
+    "name_b": "ប្រាក់ សុខុន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03642",
+    "name_a": "Loak Huor",
+    "name_b": "Prak Sokhon",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03643",
+    "name_a": "ឡោក ហ៊ួរ",
+    "name_b": "Prak Sokhon",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03644",
+    "name_a": "Loak Huor",
+    "name_b": "Nov Sam",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03645",
+    "name_a": "ពេជ្រ សោភា",
+    "name_b": "Pich Sophea",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03646",
+    "name_a": "Pich Sophea",
+    "name_b": "Pich Sophe",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03647",
+    "name_a": "ពេជ្រ សោភា",
+    "name_b": "សោភា ពេជ្រ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03648",
+    "name_a": "ពេជ្រ សោភា",
+    "name_b": "Pich Chanmony",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03649",
+    "name_a": "ពេជ្រ សោភា",
+    "name_b": "KEUT RITH",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03650",
+    "name_a": "យឹម លាត",
+    "name_b": "Yim Leat",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03651",
+    "name_a": "Yim Leat",
+    "name_b": "Yim Let",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03652",
+    "name_a": "យឹម លាត",
+    "name_b": "Yim Let",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03653",
+    "name_a": "យឹម លាត",
+    "name_b": "លាត យឹម",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03654",
+    "name_a": "យឹម លាត",
+    "name_b": "យិម វឿនថន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03655",
+    "name_a": "Yim Leat",
+    "name_b": "Yim Voeunthon",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03656",
+    "name_a": "យឹម លាត",
+    "name_b": "Yim Voeunthon",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03657",
+    "name_a": "Yim Leat",
+    "name_b": "Sok Sreymom",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03658",
+    "name_a": "ប្រាសាទ ដាវីន",
+    "name_b": "Davin Prasath",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03659",
+    "name_a": "Davin Prasath",
+    "name_b": "Prasath Davin",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03660",
+    "name_a": "ប្រាសាទ ដាវីន",
+    "name_b": "ដាវីន ប្រាសាទ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03661",
+    "name_a": "ប្រាសាទ ដាវីន",
+    "name_b": "សាន ណារិទ្ធ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03662",
+    "name_a": "Davin Prasath",
+    "name_b": "San Narith",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03663",
+    "name_a": "ប្រាសាទ ដាវីន",
+    "name_b": "San Narith",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03664",
+    "name_a": "ប្រាសាទ ដាវីន",
+    "name_b": "ពេជ ច័ន្ទមុនី",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03665",
+    "name_a": "ឈុត វុទ្ធី",
+    "name_b": "Chut Wutty",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03666",
+    "name_a": "Chut Wutty",
+    "name_b": "Chut-Wutty",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03667",
+    "name_a": "ឈុត វុទ្ធី",
+    "name_b": "Chut-Wutty",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03668",
+    "name_a": "ឈុត វុទ្ធី",
+    "name_b": "វុទ្ធី ឈុត",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03669",
+    "name_a": "ឈុត វុទ្ធី",
+    "name_b": "ហ៊ុល គឹមហ៊ុយ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03670",
+    "name_a": "Chut Wutty",
+    "name_b": "Hul Kimhuy",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03671",
+    "name_a": "ឈុត វុទ្ធី",
+    "name_b": "Hul Kimhuy",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03672",
+    "name_a": "Chut Wutty",
+    "name_b": "Mao Bunnarin",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03673",
+    "name_a": "នៅ សំ",
+    "name_b": "Nov Sam",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03674",
+    "name_a": "Nov Sam",
+    "name_b": "Sam Nov",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03675",
+    "name_a": "នៅ សំ",
+    "name_b": "Sam Nov",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03676",
+    "name_a": "នៅ សំ",
+    "name_b": "សំ នៅ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03677",
+    "name_a": "នៅ សំ",
+    "name_b": "គង់ សំអុល",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03678",
+    "name_a": "Nov Sam",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03679",
+    "name_a": "នៅ សំ",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03680",
+    "name_a": "នៅ សំ",
+    "name_b": "មិថុនា ភូថង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03681",
+    "name_a": "ម៉ាត់ សេត",
+    "name_b": "Mat Set",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03682",
+    "name_a": "Mat Set",
+    "name_b": "Mat-Set",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03683",
+    "name_a": "ម៉ាត់ សេត",
+    "name_b": "កញ្ញា ម៉ាត់ សេត",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03684",
+    "name_a": "ម៉ាត់ សេត",
+    "name_b": "ម៉ាក សែនសូនីតា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03685",
+    "name_a": "Mat Set",
+    "name_b": "Mak Sensonita",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03686",
+    "name_a": "ម៉ាត់ សេត",
+    "name_b": "Mak Sensonita",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03687",
+    "name_a": "Mat Set",
+    "name_b": "Heu Vireak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03688",
+    "name_a": "ផាច សុជាវីឡា",
+    "name_b": "Phach Socheavila",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03689",
+    "name_a": "Phach Socheavila",
+    "name_b": "Phach Sochevila",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03690",
+    "name_a": "ផាច សុជាវីឡា",
+    "name_b": "លោក ផាច សុជាវីឡា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03691",
+    "name_a": "ផាច សុជាវីឡា",
+    "name_b": "ពេជ្រ សោភា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03692",
+    "name_a": "Phach Socheavila",
+    "name_b": "Pich Sophea",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03693",
+    "name_a": "ផាច សុជាវីឡា",
+    "name_b": "Pich Sophea",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03694",
+    "name_a": "ផាច សុជាវីឡា",
+    "name_b": "Prak Mony Udom",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03695",
+    "name_a": "នរោត្តម នរិន្ទដេត",
+    "name_b": "Norodom Norindeth",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03696",
+    "name_a": "Norodom Norindeth",
+    "name_b": "Norindeth Norodom",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03697",
+    "name_a": "នរោត្តម នរិន្ទដេត",
+    "name_b": "លោក នរោត្តម នរិន្ទដេត",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03698",
+    "name_a": "នរោត្តម នរិន្ទដេត",
+    "name_b": "Norodom Yuvaneath",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03699",
+    "name_a": "នរោត្តម នរិន្ទដេត",
+    "name_b": "Chim Sokkhun",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03700",
+    "name_a": "មិថុនា ភូថង",
+    "name_b": "Mithuna Phuthong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03701",
+    "name_a": "Mithuna Phuthong",
+    "name_b": "Mithuna Puthong",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03702",
+    "name_a": "មិថុនា ភូថង",
+    "name_b": "Mithuna Puthong",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03703",
+    "name_a": "មិថុនា ភូថង",
+    "name_b": "ភូថង មិថុនា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03704",
+    "name_a": "មិថុនា ភូថង",
+    "name_b": "សាយ ភូថង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03705",
+    "name_a": "Mithuna Phuthong",
+    "name_b": "Say Phouthang",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03706",
+    "name_a": "មិថុនា ភូថង",
+    "name_b": "Say Phouthang",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03707",
+    "name_a": "Mithuna Phuthong",
+    "name_b": "Lim Kimya",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03708",
+    "name_a": "យិម វឿនថន",
+    "name_b": "Yim Voeunthon",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03709",
+    "name_a": "Yim Voeunthon",
+    "name_b": "Yim-Voeunthon",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03710",
+    "name_a": "យិម វឿនថន",
+    "name_b": "Yim-Voeunthon",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03711",
+    "name_a": "យិម វឿនថន",
+    "name_b": "យិម​វឿនថន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03712",
+    "name_a": "យិម វឿនថន",
+    "name_b": "Yim Leat",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03713",
+    "name_a": "យិម វឿនថន",
+    "name_b": "Chay Borin",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03714",
+    "name_a": "ចាយ បូរិន",
+    "name_b": "Chay Borin",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03715",
+    "name_a": "Chay Borin",
+    "name_b": "Chai Borin",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03716",
+    "name_a": "ចាយ បូរិន",
+    "name_b": "Chai Borin",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03717",
+    "name_a": "ចាយ បូរិន",
+    "name_b": "ចាយ​បូរិន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03718",
+    "name_a": "ចាយ បូរិន",
+    "name_b": "ច័ន្ទ នរ៉ា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03719",
+    "name_a": "Chay Borin",
+    "name_b": "Chan Nora",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03720",
+    "name_a": "ចាយ បូរិន",
+    "name_b": "Chan Nora",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03721",
+    "name_a": "Chay Borin",
+    "name_b": "Ung Huot",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03722",
+    "name_a": "សុខ ស្រីមុំ",
+    "name_b": "Sok Sreymom",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03723",
+    "name_a": "Sok Sreymom",
+    "name_b": "Sok Srymom",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03724",
+    "name_a": "សុខ ស្រីមុំ",
+    "name_b": "Sok Srymom",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03725",
+    "name_a": "សុខ ស្រីមុំ",
+    "name_b": "អ្នកស្រី សុខ ស្រីមុំ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03726",
+    "name_a": "សុខ ស្រីមុំ",
+    "name_b": "Sok An",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03727",
+    "name_a": "សុខ ស្រីមុំ",
+    "name_b": "ពេជ្រ ជីវ័ន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03728",
+    "name_a": "គង្គ ប៊ុនឈឿន",
+    "name_b": "Kong Bunchhoeun",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03729",
+    "name_a": "គង្គ ប៊ុនឈឿន",
+    "name_b": "គង្គប៊ុនឈឿន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03730",
+    "name_a": "គង្គ ប៊ុនឈឿន",
+    "name_b": "Kong Boran",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03731",
+    "name_a": "Kong Bunchhoeun",
+    "name_b": "Heu Vireak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03732",
+    "name_a": "ហ៊ូ ស្រ៊ី",
+    "name_b": "Hu Sry",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03733",
+    "name_a": "Hu Sry",
+    "name_b": "Sry Hu",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03734",
+    "name_a": "ហ៊ូ ស្រ៊ី",
+    "name_b": "Sry Hu",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03735",
+    "name_a": "ហ៊ូ ស្រ៊ី",
+    "name_b": "ហ៊ូ​ស្រ៊ី",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03736",
+    "name_a": "ហ៊ូ ស្រ៊ី",
+    "name_b": "ឃួង ស្រេង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03737",
+    "name_a": "Hu Sry",
+    "name_b": "Khuong Sreng",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03738",
+    "name_a": "ហ៊ូ ស្រ៊ី",
+    "name_b": "Khuong Sreng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03739",
+    "name_a": "ហ៊ូ ស្រ៊ី",
+    "name_b": "គង្គ ប៊ុនឈឿន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03740",
+    "name_a": "សាយ ភូថង",
+    "name_b": "Say Phouthang",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03741",
+    "name_a": "Say Phouthang",
+    "name_b": "Sai Phouthang",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03742",
+    "name_a": "សាយ ភូថង",
+    "name_b": "Sai Phouthang",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03743",
+    "name_a": "សាយ ភូថង",
+    "name_b": "សាយភូថង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03744",
+    "name_a": "សាយ ភូថង",
+    "name_b": "សាយ សំអាល់",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03745",
+    "name_a": "Say Phouthang",
+    "name_b": "Say Sam Al",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03746",
+    "name_a": "សាយ ភូថង",
+    "name_b": "Say Sam Al",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03747",
+    "name_a": "សាយ ភូថង",
+    "name_b": "Kheung Nuo Pheap",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03748",
+    "name_a": "នរិន្ទ ឆាយ",
+    "name_b": "Norin Chai",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03749",
+    "name_a": "Norin Chai",
+    "name_b": "Norin-Chai",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Hyphenated name formatting"
+  },
+  {
+    "pair_id": "P03750",
+    "name_a": "នរិន្ទ ឆាយ",
+    "name_b": "Norin-Chai",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03751",
+    "name_a": "នរិន្ទ ឆាយ",
+    "name_b": "លោក នរិន្ទ ឆាយ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03752",
+    "name_a": "នរិន្ទ ឆាយ",
+    "name_b": "Nou Hach",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03753",
+    "name_a": "Norin Chai",
+    "name_b": "HEM VANDY",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03754",
+    "name_a": "ថោង វរលក្ខណ៍",
+    "name_b": "Thong Vorolak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03755",
+    "name_a": "Thong Vorolak",
+    "name_b": "Tong Vorolak",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03756",
+    "name_a": "ថោង វរលក្ខណ៍",
+    "name_b": "Tong Vorolak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03757",
+    "name_a": "ថោង វរលក្ខណ៍",
+    "name_b": "វរលក្ខណ៍ ថោង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03758",
+    "name_a": "ថោង វរលក្ខណ៍",
+    "name_b": "កង បូរាណ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03759",
+    "name_a": "Thong Vorolak",
+    "name_b": "Kong Boran",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03760",
+    "name_a": "ថោង វរលក្ខណ៍",
+    "name_b": "Kong Boran",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03761",
+    "name_a": "ថោង វរលក្ខណ៍",
+    "name_b": "Kim Sovanna",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03762",
+    "name_a": "HEM VANDY",
+    "name_b": "Vanndy Hem",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03763",
+    "name_a": "HEM VANDY",
+    "name_b": "Khem Veasna",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03764",
+    "name_a": "ម៉ាក សែនសូនីតា",
+    "name_b": "Mak Sensonita",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03765",
+    "name_a": "ម៉ាក សែនសូនីតា",
+    "name_b": "អ្នកស្រី ម៉ាក សែនសូនីតា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03766",
+    "name_a": "ម៉ាក សែនសូនីតា",
+    "name_b": "Mat Set",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03767",
+    "name_a": "Mak Sensonita",
+    "name_b": "Chut Wutty",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03768",
+    "name_a": "អ៊ុក ខុត",
+    "name_b": "Uk Khot",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03769",
+    "name_a": "Uk Khot",
+    "name_b": "Uk Kot",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03770",
+    "name_a": "អ៊ុក ខុត",
+    "name_b": "ខុត អ៊ុក",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03771",
+    "name_a": "អ៊ុក ខុត",
+    "name_b": "Ung Huot",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03772",
+    "name_a": "អ៊ុក ខុត",
+    "name_b": "Say Sam Al",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03773",
+    "name_a": "កែ ច័ន្ទមុនី",
+    "name_b": "Kaev Chanmoni",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03774",
+    "name_a": "Kaev Chanmoni",
+    "name_b": "Kaev Channmoni",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03775",
+    "name_a": "កែ ច័ន្ទមុនី",
+    "name_b": "Kaev Channmoni",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03776",
+    "name_a": "កែ ច័ន្ទមុនី",
+    "name_b": "កែ​ច័ន្ទមុនី",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Zero-width space instead of regular space"
+  },
+  {
+    "pair_id": "P03777",
+    "name_a": "កែ ច័ន្ទមុនី",
+    "name_b": "ពេជ ច័ន្ទមុនី",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03778",
+    "name_a": "Kaev Chanmoni",
+    "name_b": "Pich Chanmony",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03779",
+    "name_a": "កែ ច័ន្ទមុនី",
+    "name_b": "Pich Chanmony",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03780",
+    "name_a": "កែ ច័ន្ទមុនី",
+    "name_b": "Pan Soursak",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03781",
+    "name_a": "សន សារ៉ាណា",
+    "name_b": "San Sarana",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03782",
+    "name_a": "សន សារ៉ាណា",
+    "name_b": "សនសារ៉ាណា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03783",
+    "name_a": "សន សារ៉ាណា",
+    "name_b": "San Narith",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03784",
+    "name_a": "សន សារ៉ាណា",
+    "name_b": "កែ ច័ន្ទមុនី",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03785",
+    "name_a": "ស ខេង",
+    "name_b": "Sar Kheng",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03786",
+    "name_a": "Sar Kheng",
+    "name_b": "Sar Keng",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03787",
+    "name_a": "ស ខេង",
+    "name_b": "សខេង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03788",
+    "name_a": "ស ខេង",
+    "name_b": "ចេវ គឹមហេង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03789",
+    "name_a": "Sar Kheng",
+    "name_b": "Chev Kimheng",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03790",
+    "name_a": "ស ខេង",
+    "name_b": "Chev Kimheng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03791",
+    "name_a": "ស ខេង",
+    "name_b": "KEUT RITH",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03792",
+    "name_a": "គង់ សំអុល",
+    "name_b": "Kong Sam Ol",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions+Wikidata)"
+  },
+  {
+    "pair_id": "P03793",
+    "name_a": "គង់ សំអុល",
+    "name_b": "គង់សំអុល",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03794",
+    "name_a": "គង់ សំអុល",
+    "name_b": "Say Sam Al",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03795",
+    "name_a": "គង់ សំអុល",
+    "name_b": "Tea Vinh",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03796",
+    "name_a": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "name_b": "Ken Chansopheak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03797",
+    "name_a": "Ken Chansopheak",
+    "name_b": "Ken Chansophek",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03798",
+    "name_a": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "name_b": "Ken Chansophek",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03799",
+    "name_a": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "name_b": "ច័ន្ទសុភ័ក្រ្ត កែន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03800",
+    "name_a": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "name_b": "ឃឹង នុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03801",
+    "name_a": "Ken Chansopheak",
+    "name_b": "Kheung Nuo Pheap",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03802",
+    "name_a": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "name_b": "Kheung Nuo Pheap",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03803",
+    "name_a": "កែន ច័ន្ទសុភ័ក្រ្ត",
+    "name_b": "យិម វឿនថន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03804",
+    "name_a": "ម៉ៅ ប៊ុនណារិន",
+    "name_b": "Mao Bunnarin",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03805",
+    "name_a": "Mao Bunnarin",
+    "name_b": "Mao Bunarin",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03806",
+    "name_a": "ម៉ៅ ប៊ុនណារិន",
+    "name_b": "Mao Bunarin",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03807",
+    "name_a": "ម៉ៅ ប៊ុនណារិន",
+    "name_b": "ម៉ៅប៊ុនណារិន",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03808",
+    "name_a": "ម៉ៅ ប៊ុនណារិន",
+    "name_b": "ប៉ុន ណារ៉ែន",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03809",
+    "name_a": "Mao Bunnarin",
+    "name_b": "Pon Naren",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03810",
+    "name_a": "ម៉ៅ ប៊ុនណារិន",
+    "name_b": "Pon Naren",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03811",
+    "name_a": "Mao Bunnarin",
+    "name_b": "Ken Chansopheak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03812",
+    "name_a": "វីរៈ ដារ៉ា",
+    "name_b": "Vireak Dara",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03813",
+    "name_a": "Vireak Dara",
+    "name_b": "Virek Dara",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03814",
+    "name_a": "វីរៈ ដារ៉ា",
+    "name_b": "លោក វីរៈ ដារ៉ា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03815",
+    "name_a": "វីរៈ ដារ៉ា",
+    "name_b": "ហ៊ឺ វីរៈ",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03816",
+    "name_a": "Vireak Dara",
+    "name_b": "Heu Vireak",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03817",
+    "name_a": "វីរៈ ដារ៉ា",
+    "name_b": "Heu Vireak",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03818",
+    "name_a": "វីរៈ ដារ៉ា",
+    "name_b": "Ung Huot",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03819",
+    "name_a": "ប៉ាន សូរស័ក្តិ",
+    "name_b": "Pan Soursak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03820",
+    "name_a": "Pan Soursak",
+    "name_b": "Pan Sursak",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03821",
+    "name_a": "ប៉ាន សូរស័ក្តិ",
+    "name_b": "Pan Sursak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03822",
+    "name_a": "ប៉ាន សូរស័ក្តិ",
+    "name_b": "អ្នកស្រី ប៉ាន សូរស័ក្តិ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03823",
+    "name_a": "ប៉ាន សូរស័ក្តិ",
+    "name_b": "ច័ន្ទ នរ៉ា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03824",
+    "name_a": "Pan Soursak",
+    "name_b": "Chan Nora",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03825",
+    "name_a": "ប៉ាន សូរស័ក្តិ",
+    "name_b": "Chan Nora",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03826",
+    "name_a": "Pan Soursak",
+    "name_b": "Um Chantol",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03827",
+    "name_a": "ឌួង សុវ៉ាង",
+    "name_b": "Duong Sovang",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03828",
+    "name_a": "Duong Sovang",
+    "name_b": "Duong Sovanng",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03829",
+    "name_a": "ឌួង សុវ៉ាង",
+    "name_b": "សុវ៉ាង ឌួង",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03830",
+    "name_a": "ឌួង សុវ៉ាង",
+    "name_b": "Khuong Sreng",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03831",
+    "name_a": "ឌួង សុវ៉ាង",
+    "name_b": "អុី ឡុង",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03832",
+    "name_a": "ហ៊ឺ វីរៈ",
+    "name_b": "Heu Vireak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03833",
+    "name_a": "Heu Vireak",
+    "name_b": "Heu Virek",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03834",
+    "name_a": "ហ៊ឺ វីរៈ",
+    "name_b": "កញ្ញា ហ៊ឺ វីរៈ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Added Khmer honorific prefix"
+  },
+  {
+    "pair_id": "P03835",
+    "name_a": "ហ៊ឺ វីរៈ",
+    "name_b": "Vireak Dara",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: same surname/given name, different person"
+  },
+  {
+    "pair_id": "P03836",
+    "name_a": "ហ៊ឺ វីរៈ",
+    "name_b": "Yim Voeunthon",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated cross-script names"
+  },
+  {
+    "pair_id": "P03837",
+    "name_a": "វីរៈ តារា",
+    "name_b": "Virak Dara",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03838",
+    "name_a": "Virak Dara",
+    "name_b": "Dara Virak",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped family/given name order"
+  },
+  {
+    "pair_id": "P03839",
+    "name_a": "វីរៈ តារា",
+    "name_b": "Dara Virak",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03840",
+    "name_a": "វីរៈ តារា",
+    "name_b": "តារា វីរៈ",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03841",
+    "name_a": "វីរៈ តារា",
+    "name_b": "សន សារ៉ាណា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03842",
+    "name_a": "Virak Dara",
+    "name_b": "San Sarana",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03843",
+    "name_a": "វីរៈ តារា",
+    "name_b": "San Sarana",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03844",
+    "name_a": "វីរៈ តារា",
+    "name_b": "ឃឹង នុភាព",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Khmer names"
+  },
+  {
+    "pair_id": "P03845",
+    "name_a": "ខឹម វាសនា",
+    "name_b": "Khem Veasna",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (Wikidata)"
+  },
+  {
+    "pair_id": "P03846",
+    "name_a": "Khem Veasna",
+    "name_b": "Kem Veasna",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Simulated romanisation spelling variant"
+  },
+  {
+    "pair_id": "P03847",
+    "name_a": "ខឹម វាសនា",
+    "name_b": "Kem Veasna",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "phonetic_variant",
+    "split": "test",
+    "notes": "Khmer to variant Latin spelling"
+  },
+  {
+    "pair_id": "P03848",
+    "name_a": "ខឹម វាសនា",
+    "name_b": "ខឹមវាសនា",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Removed space in Khmer name"
+  },
+  {
+    "pair_id": "P03849",
+    "name_a": "ខឹម វាសនា",
+    "name_b": "HEM VANDY",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03850",
+    "name_a": "Khem Veasna",
+    "name_b": "Lon Nil",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03851",
+    "name_a": "CHAM NIMMOL",
+    "name_b": "Cham Nimul",
+    "script_pair": "la-la",
+    "label": 1,
+    "case_type": "romanisation_variant",
+    "split": "test",
+    "notes": "Real alias (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03852",
+    "name_a": "CHAM NIMMOL",
+    "name_b": "Chan Nora",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03853",
+    "name_a": "CHAM NIMMOL",
+    "name_b": "Son Sann",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  },
+  {
+    "pair_id": "P03854",
+    "name_a": "លី ស៊ុគ្រី",
+    "name_b": "Li Sukhrii",
+    "script_pair": "kh-la",
+    "label": 1,
+    "case_type": "transliteration",
+    "split": "test",
+    "notes": "Real match (OpenSanctions)"
+  },
+  {
+    "pair_id": "P03855",
+    "name_a": "លី ស៊ុគ្រី",
+    "name_b": "ស៊ុគ្រី លី",
+    "script_pair": "kh-kh",
+    "label": 1,
+    "case_type": "order_or_format",
+    "split": "test",
+    "notes": "Swapped Khmer name order"
+  },
+  {
+    "pair_id": "P03856",
+    "name_a": "លី ស៊ុគ្រី",
+    "name_b": "លឹម គិមយ៉ា",
+    "script_pair": "kh-kh",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03857",
+    "name_a": "Li Sukhrii",
+    "name_b": "Lim Kimya",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "High-similarity different person"
+  },
+  {
+    "pair_id": "P03858",
+    "name_a": "លី ស៊ុគ្រី",
+    "name_b": "Lim Kimya",
+    "script_pair": "kh-la",
+    "label": 0,
+    "case_type": "hard_negative",
+    "split": "test",
+    "notes": "Cross-script: high-similarity different person"
+  },
+  {
+    "pair_id": "P03859",
+    "name_a": "Li Sukhrii",
+    "name_b": "Kaev Chanmoni",
+    "script_pair": "la-la",
+    "label": 0,
+    "case_type": "easy_negative",
+    "split": "test",
+    "notes": "Unrelated Latin names"
+  }
+]

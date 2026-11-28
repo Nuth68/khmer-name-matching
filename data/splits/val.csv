@@ -1,0 +1,569 @@
+﻿pair_id,name_a,name_b,script_pair,label,case_type,split,notes
+P02707,ថាវ គឹមឡុង,Thav Kimlong,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02708,Thav Kimlong,Tav Kimlong,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02709,ថាវ គឹមឡុង,អ្នកស្រី ថាវ គឹមឡុង,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02710,ថាវ គឹមឡុង,នុត ស៊ីនួន,kh-kh,0,hard_negative,val,High-similarity different person
+P02711,Thav Kimlong,Nuth Sinoun,la-la,0,hard_negative,val,High-similarity different person
+P02712,ថាវ គឹមឡុង,Nuth Sinoun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02713,Thav Kimlong,Nen Malai,la-la,0,easy_negative,val,Unrelated Latin names
+P02714,ស៊ីសុវត្ថិ យុត្តិវង្ស,Sisowath Youtevong,kh-la,1,transliteration,val,Real match (Wikidata)
+P02715,Sisowath Youtevong,Sisowath Yutevong,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02716,ស៊ីសុវត្ថិ យុត្តិវង្ស,ស៊ីសុវត្ថិ​យុត្តិវង្ស,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02717,ស៊ីសុវត្ថិ យុត្តិវង្ស,ស៊ីសុវត្ថិ សិរិមតះ,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02718,Sisowath Youtevong,Sisowath Sirik Matak,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02719,ស៊ីសុវត្ថិ យុត្តិវង្ស,Sisowath Sirik Matak,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02720,Sisowath Youtevong,Voan Savay,la-la,0,easy_negative,val,Unrelated Latin names
+P02721,សឺង ង៉ុកមិញ,Son Ngoc Minh,kh-la,1,transliteration,val,Real match (Wikidata)
+P02722,សឺង ង៉ុកមិញ,សឺង​ង៉ុកមិញ,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02723,សឺង ង៉ុកមិញ,សឺន ស៊ូប៊ែរ្តិ៍,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02724,Son Ngoc Minh,Son Soubert,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02725,សឺង ង៉ុកមិញ,Son Soubert,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02726,សឺង ង៉ុកមិញ,នរោត្ដម ចន្ទរង្សី,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02727,ស៊ីសុវត្ថិ សិរិមតះ,Sisowath Sirik Matak,kh-la,1,transliteration,val,Real match (Wikidata)
+P02728,ស៊ីសុវត្ថិ សិរិមតះ,ស៊ីសុវត្ថិសិរិមតះ,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02729,ស៊ីសុវត្ថិ សិរិមតះ,Sisowath Youtevong,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02730,Sisowath Sirik Matak,Chey Sun,la-la,0,easy_negative,val,Unrelated Latin names
+P02731,លន់ លឹមថៃ,Lon Limthai,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02732,Lon Limthai,Limthai Lon,la-la,1,order_or_format,val,Swapped family/given name order
+P02733,លន់ លឹមថៃ,Limthai Lon,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02734,លន់ លឹមថៃ,លន់​លឹមថៃ,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02735,លន់ លឹមថៃ,ផាន់ សិទ្ធី,kh-kh,0,hard_negative,val,High-similarity different person
+P02736,Lon Limthai,Phan Sithi,la-la,0,hard_negative,val,High-similarity different person
+P02737,លន់ លឹមថៃ,Phan Sithi,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02738,Lon Limthai,Lay Raksmey,la-la,0,easy_negative,val,Unrelated Latin names
+P02739,អ៊ូ វីរៈ,Virak Ou,kh-la,1,transliteration,val,Real match (Wikidata)
+P02740,Virak Ou,Ou Virak,la-la,1,order_or_format,val,Swapped family/given name order
+P02741,អ៊ូ វីរៈ,អ៊ូវីរៈ,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02742,អ៊ូ វីរៈ,អ៊ូ សំអួន,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02743,Virak Ou,Ou Sam Oun,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02744,អ៊ូ វីរៈ,Ou Sam Oun,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02745,អ៊ូ វីរៈ,សារ៉េត គ្រីយ៉ា,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02746,ចម ប្រសិទ្ធ,Cham Prasidh,kh-la,1,transliteration,val,Real match (OpenSanctions+Wikidata)
+P02747,ចម ប្រសិទ្ធ,Cham Prasit,kh-la,1,transliteration,val,Real match (OpenSanctions+Wikidata)
+P02748,Cham Prasidh,Cham Prasit,la-la,1,romanisation_variant,val,Real alias (OpenSanctions+Wikidata)
+P02749,ចម ប្រសិទ្ធ,ចមប្រសិទ្ធ,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02750,ចម ប្រសិទ្ធ,សម រង្ស៊ី,kh-kh,0,hard_negative,val,High-similarity different person
+P02751,Cham Prasidh,Sam Rainsy,la-la,0,hard_negative,val,High-similarity different person
+P02752,ចម ប្រសិទ្ធ,Sam Rainsy,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02753,ចម ប្រសិទ្ធ,Nhok Them,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02754,ពិសិដ្ឋ ពីលីកា,Pisith Pilika,kh-la,1,transliteration,val,Real match (Wikidata)
+P02755,ពិសិដ្ឋ ពីលីកា,ពីលីកា ពិសិដ្ឋ,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02756,ពិសិដ្ឋ ពីលីកា,ស៊ីសុវត្ថិ សិរិមតះ,kh-kh,0,hard_negative,val,High-similarity different person
+P02757,Pisith Pilika,Sisowath Sirik Matak,la-la,0,hard_negative,val,High-similarity different person
+P02758,ពិសិដ្ឋ ពីលីកា,Sisowath Sirik Matak,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02759,ពិសិដ្ឋ ពីលីកា,អ៊ុន ប៊ុនហាន,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02760,ពេជ្រ ប៊ុនធិន,Pech Buntin,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02761,Pech Buntin,Pich Buntin,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02762,ពេជ្រ ប៊ុនធិន,ពេជ្រ​ប៊ុនធិន,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02763,ពេជ្រ ប៊ុនធិន,ឈុន ស៊ីរុន,kh-kh,0,hard_negative,val,High-similarity different person
+P02764,Pech Buntin,Chhun Sirun,la-la,0,hard_negative,val,High-similarity different person
+P02765,ពេជ្រ ប៊ុនធិន,Chhun Sirun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02766,Pech Buntin,Nguon Nhel,la-la,0,easy_negative,val,Unrelated Latin names
+P02767,ឆេង ម៉េង,Cheng Meng,kh-la,1,transliteration,val,Real match (Wikidata)
+P02768,Cheng Meng,Meng Cheng,la-la,1,order_or_format,val,Swapped family/given name order
+P02769,ឆេង ម៉េង,ឆេងម៉េង,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02770,ឆេង ម៉េង,ឈាន វ៉ម,kh-kh,0,hard_negative,val,High-similarity different person
+P02771,Cheng Meng,Chhean Vam,la-la,0,hard_negative,val,High-similarity different person
+P02772,ឆេង ម៉េង,Chhean Vam,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02773,ឆេង ម៉េង,Nuom Sopheap,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02774,ហែម ចៀវ,Hem Chieu,kh-la,1,transliteration,val,Real match (Wikidata)
+P02775,Hem Chieu,Hem-Chieu,la-la,1,order_or_format,val,Hyphenated name formatting
+P02776,ហែម ចៀវ,ចៀវ ហែម,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02777,Hem Chieu,Cheam Yeab,la-la,0,hard_negative,val,High-similarity different person
+P02778,ហែម ចៀវ,Cheam Yeab,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02779,ហែម ចៀវ,Chhorn Sovannareach,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02780,សម រង្ស៊ី,Sam Rainsy,kh-la,1,transliteration,val,Real match (Wikidata)
+P02781,Sam Rainsy,Sam-Rainsy,la-la,1,order_or_format,val,Hyphenated name formatting
+P02782,សម រង្ស៊ី,សម​រង្ស៊ី,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02783,សម រង្ស៊ី,គ្រួច សំអាន,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02784,Sam Rainsy,Kruoch Sam An,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02785,សម រង្ស៊ី,Kruoch Sam An,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02786,សម រង្ស៊ី,Sisowath Sirik Matak,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02787,វណ្ឌី រតនា,Vandy Rattana,kh-la,1,transliteration,val,Real match (Wikidata)
+P02788,Vandy Rattana,Rattana Vandy,la-la,1,order_or_format,val,Swapped family/given name order
+P02789,វណ្ឌី រតនា,រតនា វណ្ឌី,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02790,វណ្ឌី រតនា,អ៊ឹង រចនា,kh-kh,0,hard_negative,val,High-similarity different person
+P02791,Vandy Rattana,Ung Rachana,la-la,0,hard_negative,val,High-similarity different person
+P02792,វណ្ឌី រតនា,Ung Rachana,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02793,វណ្ឌី រតនា,គីង សំណាង,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02794,វ័ន សាវ៉ៃ,Voan Savay,kh-la,1,transliteration,val,Real match (Wikidata)
+P02795,Voan Savay,Voan Savai,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02796,វ័ន សាវ៉ៃ,វ័ន​សាវ៉ៃ,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02797,វ័ន សាវ៉ៃ,គង់ ណៃ,kh-kh,0,hard_negative,val,High-similarity different person
+P02798,Voan Savay,Kong Nay,la-la,0,hard_negative,val,High-similarity different person
+P02799,វ័ន សាវ៉ៃ,Kong Nay,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02800,Voan Savay,Yin Kim Sean,la-la,0,easy_negative,val,Unrelated Latin names
+P02801,ជ័យ សុន,Chey Sun,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02802,Chey Sun,Chy Sun,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02803,ជ័យ សុន,សុន ជ័យ,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02804,ជ័យ សុន,ឈុន ស៊ីរុន,kh-kh,0,hard_negative,val,High-similarity different person
+P02805,Chey Sun,Chhun Sirun,la-la,0,hard_negative,val,High-similarity different person
+P02806,ជ័យ សុន,Chhun Sirun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02807,ជ័យ សុន,សារ៉េត គ្រីយ៉ា,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02808,នេន ម៉ាល័យ,Nen Malai,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02809,Nen Malai,Malai Nen,la-la,1,order_or_format,val,Swapped family/given name order
+P02810,នេន ម៉ាល័យ,Malai Nen,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02811,នេន ម៉ាល័យ,នេន​ម៉ាល័យ,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02812,នេន ម៉ាល័យ,ខេង សំវ៉ាដា,kh-kh,0,hard_negative,val,High-similarity different person
+P02813,Nen Malai,Kheng Samvada,la-la,0,hard_negative,val,High-similarity different person
+P02814,នេន ម៉ាល័យ,Kheng Samvada,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02815,នេន ម៉ាល័យ,គ្រួច សំអាន,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02816,ព្រំ សំណាង,Prom Samnang,kh-la,1,transliteration,val,Real match (Wikidata)
+P02817,Prom Samnang,Samnang Prom,la-la,1,order_or_format,val,Swapped family/given name order
+P02818,ព្រំ សំណាង,Samnang Prom,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02819,ព្រំ សំណាង,ព្រំ​សំណាង,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02820,ព្រំ សំណាង,គីង សំណាង,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02821,Prom Samnang,King Samnang,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02822,ព្រំ សំណាង,King Samnang,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02823,Prom Samnang,Mạc Cửu,la-la,0,easy_negative,val,Unrelated Latin names
+P02824,អ៊ុន ប៊ុនហាន,Un Bunhan,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02825,អ៊ុន ប៊ុនហាន,អ៊ុនប៊ុនហាន,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02826,អ៊ុន ប៊ុនហាន,អ៊ឹង រចនា,kh-kh,0,hard_negative,val,High-similarity different person
+P02827,Un Bunhan,Ung Rachana,la-la,0,hard_negative,val,High-similarity different person
+P02828,អ៊ុន ប៊ុនហាន,Ung Rachana,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02829,អ៊ុន ប៊ុនហាន,អ៊ូ វីរៈ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02830,គ្រួច សំអាន,Kruoch Sam An,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02831,គ្រួច សំអាន,គ្រួច​សំអាន,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02832,គ្រួច សំអាន,អ៊ូ សំអួន,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02833,Kruoch Sam An,Ou Sam Oun,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02834,គ្រួច សំអាន,Ou Sam Oun,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02835,គ្រួច សំអាន,សេង ញ៉ក់,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02836,ដួង វណ្ណា,Doung Vanna,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02837,ដួង វណ្ណា,Duong Vanna,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02838,Doung Vanna,Duong Vanna,la-la,1,romanisation_variant,val,Real alias (OpenSanctions)
+P02839,ដួង វណ្ណា,ដួង​វណ្ណា,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02840,ដួង វណ្ណា,អ៊ឹង រចនា,kh-kh,0,hard_negative,val,High-similarity different person
+P02841,Doung Vanna,Ung Rachana,la-la,0,hard_negative,val,High-similarity different person
+P02842,ដួង វណ្ណា,Ung Rachana,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02843,ដួង វណ្ណា,Khim Tit,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02844,ម៉ែន កួន,Maen Koun,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02845,Maen Koun,Maen Kun,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02846,ម៉ែន កួន,Maen Kun,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02847,ម៉ែន កួន,ម៉ែន​កួន,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02848,ម៉ែន កួន,មាន សូនីតា,kh-kh,0,hard_negative,val,High-similarity different person
+P02849,Maen Koun,Mean Sonyta,la-la,0,hard_negative,val,High-similarity different person
+P02850,ម៉ែន កួន,Mean Sonyta,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02851,ម៉ែន កួន,Cham Prasidh,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02852,កែវ ពេជ្រពិសី,Keo Pich Pisey,kh-la,1,transliteration,val,Real match (Wikidata)
+P02853,Keo Pich Pisey,Keo Pech Pisey,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02854,កែវ ពេជ្រពិសី,Keo Pech Pisey,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02855,កែវ ពេជ្រពិសី,កែវ​ពេជ្រពិសី,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02856,កែវ ពេជ្រពិសី,ហែម ចៀវ,kh-kh,0,hard_negative,val,High-similarity different person
+P02857,Keo Pich Pisey,Hem Chieu,la-la,0,hard_negative,val,High-similarity different person
+P02858,កែវ ពេជ្រពិសី,Hem Chieu,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02859,កែវ ពេជ្រពិសី,Mean Sonyta,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02860,សុខ សុវណ្ណ,Sok Sovan,kh-la,1,transliteration,val,Real match (Wikidata)
+P02861,Sok Sovan,Sokh Sovan,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02862,សុខ សុវណ្ណ,Sokh Sovan,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02863,សុខ សុវណ្ណ,កញ្ញា សុខ សុវណ្ណ,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02864,សុខ សុវណ្ណ,សារ៉ន សុវិជ្ជា,kh-kh,0,hard_negative,val,High-similarity different person
+P02865,Sok Sovan,Saron Sovichea,la-la,0,hard_negative,val,High-similarity different person
+P02866,សុខ សុវណ្ណ,Saron Sovichea,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02867,សុខ សុវណ្ណ,ចម ប្រសិទ្ធ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02868,ភួ ពុយ,Phou Puy,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02869,Phou Puy,Pou Puy,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02870,ភួ ពុយ,អ្នកស្រី ភួ ពុយ,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02871,ភួ ពុយ,សួន រិនឌី,kh-kh,0,hard_negative,val,High-similarity different person
+P02872,Phou Puy,Soun Rindy,la-la,0,hard_negative,val,High-similarity different person
+P02873,ភួ ពុយ,Soun Rindy,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02874,ភួ ពុយ,អូស្មានហាស្សាន់,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02875,ណុប ណែម,Nop Nem,kh-la,1,transliteration,val,Real match (Wikidata)
+P02876,Nop Nem,Nop-Nem,la-la,1,order_or_format,val,Hyphenated name formatting
+P02877,ណុប ណែម,Nop-Nem,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02878,ណុប ណែម,ណុបណែម,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02879,ណុប ណែម,ញ៉ុក ថែម,kh-kh,0,hard_negative,val,High-similarity different person
+P02880,Nop Nem,Nhok Them,la-la,0,hard_negative,val,High-similarity different person
+P02881,ណុប ណែម,Nhok Them,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02882,Nop Nem,Phou Puy,la-la,0,easy_negative,val,Unrelated Latin names
+P02883,ឡាយ រស្មី,Lay Raksmey,kh-la,1,transliteration,val,Real match (Wikidata)
+P02884,Lay Raksmey,Lai Raksmey,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02885,ឡាយ រស្មី,ឡាយ​រស្មី,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02886,ឡាយ រស្មី,សម រង្ស៊ី,kh-kh,0,hard_negative,val,High-similarity different person
+P02887,Lay Raksmey,Sam Rainsy,la-la,0,hard_negative,val,High-similarity different person
+P02888,ឡាយ រស្មី,Sam Rainsy,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02889,Lay Raksmey,Eh Phoutong,la-la,0,easy_negative,val,Unrelated Latin names
+P02890,នរោត្តម វេជ្ជរ៉ា,Norodom Vichara,kh-la,1,transliteration,val,Real match (Wikidata)
+P02891,Norodom Vichara,Vichara Norodom,la-la,1,order_or_format,val,Swapped family/given name order
+P02892,នរោត្តម វេជ្ជរ៉ា,Vichara Norodom,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02893,នរោត្តម វេជ្ជរ៉ា,នរោត្តមវេជ្ជរ៉ា,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02894,នរោត្តម វេជ្ជរ៉ា,នរោត្ដម ចន្ទរង្សី,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02895,Norodom Vichara,Norodom Chantaraingsey,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02896,នរោត្តម វេជ្ជរ៉ា,Norodom Chantaraingsey,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02897,នរោត្តម វេជ្ជរ៉ា,Nen Malai,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02898,Choulong Somora,Tioulong Saumura,la-la,1,romanisation_variant,val,Real alias (OpenSanctions)
+P02899,Choulong Somora,Chhun Sirun,la-la,0,hard_negative,val,High-similarity different person
+P02900,ប៊ុន រ៉ានី,Bun Rany,kh-la,1,transliteration,val,Real match (Wikidata)
+P02901,Bun Rany,Rany Bun,la-la,1,order_or_format,val,Swapped family/given name order
+P02902,ប៊ុន រ៉ានី,ប៊ុនរ៉ានី,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02903,ប៊ុន រ៉ានី,សួន រិនឌី,kh-kh,0,hard_negative,val,High-similarity different person
+P02904,Bun Rany,Soun Rindy,la-la,0,hard_negative,val,High-similarity different person
+P02905,ប៊ុន រ៉ានី,Soun Rindy,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02906,Bun Rany,Khim Tit,la-la,0,easy_negative,val,Unrelated Latin names
+P02907,សារិន ឆាក,Sarin Chhak,kh-la,1,transliteration,val,Real match (Wikidata)
+P02908,សារិន ឆាក,អ្នកស្រី សារិន ឆាក,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02909,សារិន ឆាក,សារ៉ន សុវិជ្ជា,kh-kh,0,hard_negative,val,High-similarity different person
+P02910,Sarin Chhak,Saron Sovichea,la-la,0,hard_negative,val,High-similarity different person
+P02911,សារិន ឆាក,Saron Sovichea,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02912,សារិន ឆាក,គ្រួច សំអាន,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02913,សួន រិនឌី,Soun Rindy,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02914,Soun Rindy,Sun Rindy,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02915,សួន រិនឌី,សួន​រិនឌី,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02916,សួន រិនឌី,Bun Rany,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02917,Soun Rindy,Seang Suththong,la-la,0,easy_negative,val,Unrelated Latin names
+P02918,ទេព វង្ស,Tep Vong,kh-la,1,transliteration,val,Real match (Wikidata)
+P02919,Tep Vong,Tep-Vong,la-la,1,order_or_format,val,Hyphenated name formatting
+P02920,ទេព វង្ស,ទេពវង្ស,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02921,ទេព វង្ស,ថាវ គឹមឡុង,kh-kh,0,hard_negative,val,High-similarity different person
+P02922,Tep Vong,Thav Kimlong,la-la,0,hard_negative,val,High-similarity different person
+P02923,ទេព វង្ស,Thav Kimlong,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02924,ទេព វង្ស,Bu Lam,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02925,ខេង សំវ៉ាដា,Kheng Samvada,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02926,Kheng Samvada,Keng Samvada,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02927,ខេង សំវ៉ាដា,សំវ៉ាដា ខេង,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02928,ខេង សំវ៉ាដា,គីង សំណាង,kh-kh,0,hard_negative,val,High-similarity different person
+P02929,Kheng Samvada,King Samnang,la-la,0,hard_negative,val,High-similarity different person
+P02930,ខេង សំវ៉ាដា,King Samnang,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02931,Kheng Samvada,Mạc Cửu,la-la,0,easy_negative,val,Unrelated Latin names
+P02932,នរោត្តម ជេនណា,Norodom Jenna,kh-la,1,transliteration,val,Real match (Wikidata)
+P02933,Norodom Jenna,Norodom Jena,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02934,នរោត្តម ជេនណា,នរោត្តម​ជេនណា,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02935,នរោត្តម ជេនណា,នរោត្តម វេជ្ជរ៉ា,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02936,Norodom Jenna,Norodom Vichara,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02937,នរោត្តម ជេនណា,Norodom Vichara,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02938,នរោត្តម ជេនណា,Soun Rindy,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02939,គីង សំណាង,King Samnang,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02940,King Samnang,King-Samnang,la-la,1,order_or_format,val,Hyphenated name formatting
+P02941,គីង សំណាង,គីង​សំណាង,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P02942,គីង សំណាង,Prom Samnang,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02943,គីង សំណាង,Lon Limthai,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02944,ម៉ាក់ គូ,Mạc Cửu,kh-la,1,transliteration,val,Real match (Wikidata)
+P02945,ម៉ាក់ គូ,កញ្ញា ម៉ាក់ គូ,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02946,ម៉ាក់ គូ,ហែម ចៀវ,kh-kh,0,hard_negative,val,High-similarity different person
+P02947,Mạc Cửu,Hem Chieu,la-la,0,hard_negative,val,High-similarity different person
+P02948,ម៉ាក់ គូ,Hem Chieu,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02949,ម៉ាក់ គូ,សួន សេរីរដ្ឋា,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02950,ស៊ុន សាភឿន,Sun Saphuon,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02951,Sun Saphuon,Saphuon Sun,la-la,1,order_or_format,val,Swapped family/given name order
+P02952,ស៊ុន សាភឿន,Saphuon Sun,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02953,ស៊ុន សាភឿន,លោក ស៊ុន សាភឿន,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02954,ស៊ុន សាភឿន,អ៊ូ សំអួន,kh-kh,0,hard_negative,val,High-similarity different person
+P02955,Sun Saphuon,Ou Sam Oun,la-la,0,hard_negative,val,High-similarity different person
+P02956,ស៊ុន សាភឿន,Ou Sam Oun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02957,Sun Saphuon,Sisowath Sirik Matak,la-la,0,easy_negative,val,Unrelated Latin names
+P02958,ឈុន ស៊ីរុន,Chhun Sirun,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02959,Chhun Sirun,Sirun Chhun,la-la,1,order_or_format,val,Swapped family/given name order
+P02960,ឈុន ស៊ីរុន,ឈុនស៊ីរុន,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02961,ឈុន ស៊ីរុន,Pech Buntin,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02962,ឈុន ស៊ីរុន,សុខ សុវណ្ណ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P02963,អូស្មានហាស្សាន់,Othsman Hassan,kh-la,1,transliteration,val,Real match (Wikidata)
+P02964,Othsman Hassan,Hassan Othsman,la-la,1,order_or_format,val,Swapped family/given name order
+P02965,អូស្មានហាស្សាន់,Hassan Othsman,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P02966,អូស្មានហាស្សាន់,អ្នកស្រី អូស្មានហាស្សាន់,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P02967,អូស្មានហាស្សាន់,សាន្ត អរុណ,kh-kh,0,hard_negative,val,High-similarity different person
+P02968,Othsman Hassan,San Arun,la-la,0,hard_negative,val,High-similarity different person
+P02969,អូស្មានហាស្សាន់,San Arun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02970,Othsman Hassan,Kong Nay,la-la,0,easy_negative,val,Unrelated Latin names
+P02971,ឃឹម ទិត,Khim Tit,kh-la,1,transliteration,val,Real match (Wikidata)
+P02972,Khim Tit,Kim Tit,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02973,ឃឹម ទិត,ទិត ឃឹម,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02974,ឃឹម ទិត,ឃឹម បូរី,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02975,Khim Tit,Khim Borey,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02976,ឃឹម ទិត,Khim Borey,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02977,ឃឹម ទិត,Doung Vanna,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02978,នុត ជា,Nut Chea,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P02979,Nut Chea,Nut Che,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P02980,នុត ជា,ជា នុត,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02981,នុត ជា,ជា យុទ្ធថន,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P02982,Nut Chea,Chea Yuthorn,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P02983,នុត ជា,Chea Yuthorn,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P02984,នុត ជា,Mean Sonyta,kh-la,0,easy_negative,val,Unrelated cross-script names
+P02985,ណារ៉ុង កក្កដា,Narong Kakada,kh-la,1,transliteration,val,Real match (Wikidata)
+P02986,Narong Kakada,Kakada Narong,la-la,1,order_or_format,val,Swapped family/given name order
+P02987,ណារ៉ុង កក្កដា,ណារ៉ុងកក្កដា,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P02988,ណារ៉ុង កក្កដា,ខេង សំវ៉ាដា,kh-kh,0,hard_negative,val,High-similarity different person
+P02989,Narong Kakada,Kheng Samvada,la-la,0,hard_negative,val,High-similarity different person
+P02990,ណារ៉ុង កក្កដា,Kheng Samvada,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02991,Narong Kakada,Hok Sochetra,la-la,0,easy_negative,val,Unrelated Latin names
+P02992,ទុយ រី,Tuy Ry,kh-la,1,transliteration,val,Real match (Wikidata)
+P02993,Tuy Ry,Tuy-Ry,la-la,1,order_or_format,val,Hyphenated name formatting
+P02994,ទុយ រី,រី ទុយ,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P02995,ទុយ រី,ប៊ុន រ៉ានី,kh-kh,0,hard_negative,val,High-similarity different person
+P02996,Tuy Ry,Bun Rany,la-la,0,hard_negative,val,High-similarity different person
+P02997,ទុយ រី,Bun Rany,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P02998,Tuy Ry,Seang Suththong,la-la,0,easy_negative,val,Unrelated Latin names
+P02999,សារ៉ន សុវិជ្ជា,Saron Sovichea,kh-la,1,transliteration,val,Real match (Wikidata)
+P03000,Saron Sovichea,Saron Soviche,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03001,សារ៉ន សុវិជ្ជា,Saron Soviche,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03002,សារ៉ន សុវិជ្ជា,សារ៉ន​សុវិជ្ជា,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03003,សារ៉ន សុវិជ្ជា,Sarin Chhak,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03004,សារ៉ន សុវិជ្ជា,អូស្មានហាស្សាន់,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03005,ឈាន វ៉ម,Chhean Vam,kh-la,1,transliteration,val,Real match (Wikidata)
+P03006,Chhean Vam,Chhen Vam,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03007,ឈាន វ៉ម,Chhen Vam,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03008,ឈាន វ៉ម,ឈាន​វ៉ម,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03009,ឈាន វ៉ម,Cheng Meng,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03010,ឈាន វ៉ម,Ang Snguon,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03011,Yim Chhaily,Yim Chhay Ly,la-la,1,romanisation_variant,val,Real alias (OpenSanctions)
+P03012,Yim Chhaily,Sin Chanchhaya,la-la,0,hard_negative,val,High-similarity different person
+P03013,Yim Chhaily,Choulong Somora,la-la,0,easy_negative,val,Unrelated Latin names
+P03014,Cheam Yeab,Cheam Yeap,la-la,1,romanisation_variant,val,Real alias (OpenSanctions)
+P03015,Cheam Yeab,Cham Prasidh,la-la,0,hard_negative,val,High-similarity different person
+P03016,ហូ នឹម,Hu Nim,kh-la,1,transliteration,val,Real match (Wikidata)
+P03017,Hu Nim,Hu-Nim,la-la,1,order_or_format,val,Hyphenated name formatting
+P03018,ហូ នឹម,ហូ​នឹម,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03019,ហូ នឹម,ប៊ូ ឡាំ,kh-kh,0,hard_negative,val,High-similarity different person
+P03020,Hu Nim,Bu Lam,la-la,0,hard_negative,val,High-similarity different person
+P03021,ហូ នឹម,Bu Lam,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03022,Hu Nim,Kol Thearin,la-la,0,easy_negative,val,Unrelated Latin names
+P03023,បាន ស្រីមុំ,Ban Sreymom,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03024,Ban Sreymom,Ban Srymom,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03025,បាន ស្រីមុំ,Ban Srymom,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03026,បាន ស្រីមុំ,កញ្ញា បាន ស្រីមុំ,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03027,បាន ស្រីមុំ,អង្គម៉ី,kh-kh,0,hard_negative,val,High-similarity different person
+P03028,Ban Sreymom,Ang Mey,la-la,0,hard_negative,val,High-similarity different person
+P03029,បាន ស្រីមុំ,Ang Mey,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03030,បាន ស្រីមុំ,សុខ សុវណ្ណ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03031,ទូច ស៊ុននិច,Touch Sunnix,kh-la,1,transliteration,val,Real match (Wikidata)
+P03032,Touch Sunnix,Tuch Sunnix,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03033,ទូច ស៊ុននិច,ទូច​ស៊ុននិច,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03034,ទូច ស៊ុននិច,ជ័យ សុន,kh-kh,0,hard_negative,val,High-similarity different person
+P03035,Touch Sunnix,Chey Sun,la-la,0,hard_negative,val,High-similarity different person
+P03036,ទូច ស៊ុននិច,Chey Sun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03037,ទូច ស៊ុននិច,នេន ម៉ាល័យ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03038,ទ្រឿង មាលី,Truong Mealy,kh-la,1,transliteration,val,Real match (Wikidata)
+P03039,Truong Mealy,Truong Mely,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03040,ទ្រឿង មាលី,Truong Mely,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03041,ទ្រឿង មាលី,មាលី ទ្រឿង,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03042,ទ្រឿង មាលី,អង្គម៉ី,kh-kh,0,hard_negative,val,High-similarity different person
+P03043,Truong Mealy,Ang Mey,la-la,0,hard_negative,val,High-similarity different person
+P03044,ទ្រឿង មាលី,Ang Mey,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03045,ទ្រឿង មាលី,ភួ ពុយ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03046,គង់ ណៃ,Kong Nay,kh-la,1,transliteration,val,Real match (Wikidata)
+P03047,Kong Nay,Kong Nai,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03048,គង់ ណៃ,Kong Nai,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03049,គង់ ណៃ,ណៃ គង់,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03050,គង់ ណៃ,ដួង វណ្ណា,kh-kh,0,hard_negative,val,High-similarity different person
+P03051,Kong Nay,Doung Vanna,la-la,0,hard_negative,val,High-similarity different person
+P03052,គង់ ណៃ,Doung Vanna,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03053,គង់ ណៃ,Chea Yuthorn,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03054,អេ ភូថង,Eh Phoutong,kh-la,1,transliteration,val,Real match (Wikidata)
+P03055,Eh Phoutong,Eh Poutong,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03056,អេ ភូថង,អេភូថង,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03057,អេ ភូថង,ស៊ីសុវត្ថិ យុត្តិវង្ស,kh-kh,0,hard_negative,val,High-similarity different person
+P03058,Eh Phoutong,Sisowath Youtevong,la-la,0,hard_negative,val,High-similarity different person
+P03059,អេ ភូថង,Sisowath Youtevong,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03060,Eh Phoutong,Son Ngoc Minh,la-la,0,easy_negative,val,Unrelated Latin names
+P03061,ម៉ុក ម៉ារ៉េត,Mok Maret,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03062,ម៉ុក ម៉ារ៉េត,Mok Mareth,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03063,Mok Maret,Mok Mareth,la-la,1,romanisation_variant,val,Real alias (OpenSanctions)
+P03064,ម៉ុក ម៉ារ៉េត,លោក ម៉ុក ម៉ារ៉េត,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03065,ម៉ុក ម៉ារ៉េត,អ៊ុក ម៉ិច,kh-kh,0,hard_negative,val,High-similarity different person
+P03066,Mok Maret,Ouk Mic,la-la,0,hard_negative,val,High-similarity different person
+P03067,ម៉ុក ម៉ារ៉េត,Ouk Mic,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03068,Mok Maret,Lay Raksmey,la-la,0,easy_negative,val,Unrelated Latin names
+P03069,សឺន ស៊ូប៊ែរ្តិ៍,Son Soubert,kh-la,1,transliteration,val,Real match (Wikidata)
+P03070,Son Soubert,Son Subert,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03071,សឺន ស៊ូប៊ែរ្តិ៍,Son Subert,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03072,សឺន ស៊ូប៊ែរ្តិ៍,លោក សឺន ស៊ូប៊ែរ្តិ៍,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03073,សឺន ស៊ូប៊ែរ្តិ៍,Son Ngoc Minh,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03074,សឺន ស៊ូប៊ែរ្តិ៍,អ៊ឹង រចនា,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03075,នួម សុភ័ណ,Nuom Sopheap,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03076,Nuom Sopheap,Nuom Sophep,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03077,នួម សុភ័ណ,Nuom Sophep,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03078,នួម សុភ័ណ,នួមសុភ័ណ,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03079,នួម សុភ័ណ,នុត ជា,kh-kh,0,hard_negative,val,High-similarity different person
+P03080,Nuom Sopheap,Nut Chea,la-la,0,hard_negative,val,High-similarity different person
+P03081,នួម សុភ័ណ,Nut Chea,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03082,នួម សុភ័ណ,ម៉ាក់ គូ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03083,ផាន់ សិទ្ធី,Phan Sithi,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03084,Phan Sithi,Pan Sithi,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03085,ផាន់ សិទ្ធី,Pan Sithi,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03086,ផាន់ សិទ្ធី,ផាន់សិទ្ធី,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03087,ផាន់ សិទ្ធី,ចម ប្រសិទ្ធ,kh-kh,0,hard_negative,val,High-similarity different person
+P03088,Phan Sithi,Cham Prasidh,la-la,0,hard_negative,val,High-similarity different person
+P03089,ផាន់ សិទ្ធី,Cham Prasidh,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03090,Phan Sithi,Thav Kimlong,la-la,0,easy_negative,val,Unrelated Latin names
+P03091,នុត ស៊ីនួន,Nuth Sinoun,kh-la,1,transliteration,val,Real match (Wikidata)
+P03092,Nuth Sinoun,Nuth Sinun,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03093,នុត ស៊ីនួន,លោក នុត ស៊ីនួន,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03094,នុត ស៊ីនួន,អ៊ូ សំអួន,kh-kh,0,hard_negative,val,High-similarity different person
+P03095,Nuth Sinoun,Ou Sam Oun,la-la,0,hard_negative,val,High-similarity different person
+P03096,នុត ស៊ីនួន,Ou Sam Oun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03097,Nuth Sinoun,Kheng Samvada,la-la,0,easy_negative,val,Unrelated Latin names
+P03098,ស៊ីន ច័ន្ទឆាយា,Sin Chanchhaya,kh-la,1,transliteration,val,Real match (Wikidata)
+P03099,Sin Chanchhaya,Sin Chanchhaia,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03100,ស៊ីន ច័ន្ទឆាយា,Sin Chanchhaia,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03101,ស៊ីន ច័ន្ទឆាយា,លោក ស៊ីន ច័ន្ទឆាយា,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03102,ស៊ីន ច័ន្ទឆាយា,សារិន ឆាក,kh-kh,0,hard_negative,val,High-similarity different person
+P03103,Sin Chanchhaya,Sarin Chhak,la-la,0,hard_negative,val,High-similarity different person
+P03104,ស៊ីន ច័ន្ទឆាយា,Sarin Chhak,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03105,Sin Chanchhaya,Touch Sunnix,la-la,0,easy_negative,val,Unrelated Latin names
+P03106,អ៊ូ សំអួន,Ou Sam Oun,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03107,អ៊ូ សំអួន,លោក អ៊ូ សំអួន,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03108,អ៊ូ សំអួន,Kruoch Sam An,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03109,អ៊ូ សំអួន,Doung Vanna,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03110,អ៊ុក ម៉ិច,Ouk Mic,kh-la,1,transliteration,val,Real match (Wikidata)
+P03111,Ouk Mic,Mic Ouk,la-la,1,order_or_format,val,Swapped family/given name order
+P03112,អ៊ុក ម៉ិច,ម៉ិច អ៊ុក,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03113,អ៊ុក ម៉ិច,Mok Maret,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03114,អ៊ុក ម៉ិច,នរោត្ដម ចន្ទរង្សី,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03115,ជា យុទ្ធថន,Chea Yuthorn,kh-la,1,transliteration,val,Real match (Wikidata)
+P03116,Chea Yuthorn,Che Yuthorn,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03117,ជា យុទ្ធថន,លោក ជា យុទ្ធថន,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03118,ជា យុទ្ធថន,Nut Chea,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03119,ជា យុទ្ធថន,សម រង្ស៊ី,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03120,កុល ធារិន,Kol Thearin,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03121,Kol Thearin,Kol Tearin,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03122,កុល ធារិន,ធារិន កុល,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03123,កុល ធារិន,លន់ លឹមថៃ,kh-kh,0,hard_negative,val,High-similarity different person
+P03124,Kol Thearin,Lon Limthai,la-la,0,hard_negative,val,High-similarity different person
+P03125,កុល ធារិន,Lon Limthai,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03126,កុល ធារិន,Khim Borey,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03127,ញ៉ុក ថែម,Nhok Them,kh-la,1,transliteration,val,Real match (Wikidata)
+P03128,Nhok Them,Nhok Tem,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03129,ញ៉ុក ថែម,Nhok Tem,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03130,ញ៉ុក ថែម,ថែម ញ៉ុក,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03131,ញ៉ុក ថែម,Nop Nem,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03132,ញ៉ុក ថែម,ណារ៉ុង កក្កដា,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03133,ឃឹម បូរី,Khim Borey,kh-la,1,transliteration,val,Real match (Wikidata)
+P03134,Khim Borey,Khim Bory,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03135,ឃឹម បូរី,កញ្ញា ឃឹម បូរី,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03136,ឃឹម បូរី,Khim Tit,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03137,ឃឹម បូរី,Hok Sochetra,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03138,ឆន សុវណ្ណរាជ,Chhorn Sovannareach,kh-la,1,transliteration,val,Real match (Wikidata)
+P03139,Chhorn Sovannareach,Chhorn Sovannnareach,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03140,ឆន សុវណ្ណរាជ,Chhorn Sovannnareach,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03141,ឆន សុវណ្ណរាជ,សុវណ្ណរាជ ឆន,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03142,ឆន សុវណ្ណរាជ,ដួង វណ្ណា,kh-kh,0,hard_negative,val,High-similarity different person
+P03143,Chhorn Sovannareach,Doung Vanna,la-la,0,hard_negative,val,High-similarity different person
+P03144,ឆន សុវណ្ណរាជ,Doung Vanna,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03145,ឆន សុវណ្ណរាជ,Sisowath Youtevong,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03146,សៀង ស៊ុតថង,Seang Suththong,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03147,Seang Suththong,Seng Suththong,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03148,សៀង ស៊ុតថង,សៀង​ស៊ុតថង,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03149,សៀង ស៊ុតថង,អង្គស្ងួន,kh-kh,0,hard_negative,val,High-similarity different person
+P03150,Seang Suththong,Ang Snguon,la-la,0,hard_negative,val,High-similarity different person
+P03151,សៀង ស៊ុតថង,Ang Snguon,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03152,សៀង ស៊ុតថង,Sisowath Sirik Matak,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03153,ហោ មុនីរ័ត្ន,Hor Monirath,kh-la,1,transliteration,val,Real match (Wikidata)
+P03154,Hor Monirath,Hor-Monirath,la-la,1,order_or_format,val,Hyphenated name formatting
+P03155,ហោ មុនីរ័ត្ន,ហោមុនីរ័ត្ន,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03156,ហោ មុនីរ័ត្ន,ឆន សុវណ្ណរាជ,kh-kh,0,hard_negative,val,High-similarity different person
+P03157,Hor Monirath,Chhorn Sovannareach,la-la,0,hard_negative,val,High-similarity different person
+P03158,ហោ មុនីរ័ត្ន,Chhorn Sovannareach,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03159,ហោ មុនីរ័ត្ន,ភួ ពុយ,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03160,ប៊ូ ឡាំ,Bu Lam,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03161,Bu Lam,Bu-Lam,la-la,1,order_or_format,val,Hyphenated name formatting
+P03162,ប៊ូ ឡាំ,ឡាំ ប៊ូ,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03163,ប៊ូ ឡាំ,ប៊ុន រ៉ានី,kh-kh,0,hard_negative,val,High-similarity different person
+P03164,Bu Lam,Bun Rany,la-la,0,hard_negative,val,High-similarity different person
+P03165,ប៊ូ ឡាំ,Bun Rany,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03166,Bu Lam,Virak Ou,la-la,0,easy_negative,val,Unrelated Latin names
+P03167,មាន សូនីតា,Mean Sonyta,kh-la,1,transliteration,val,Real match (Wikidata)
+P03168,Mean Sonyta,Men Sonyta,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03169,មាន សូនីតា,មានសូនីតា,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03170,មាន សូនីតា,ម៉ែន ណាត,kh-kh,0,hard_negative,val,High-similarity different person
+P03171,Mean Sonyta,Men Nath,la-la,0,hard_negative,val,High-similarity different person
+P03172,មាន សូនីតា,Men Nath,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03173,មាន សូនីតា,Kong Nay,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03174,សាន្ត អរុណ,San Arun,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03175,សាន្ត អរុណ,សាន្តអរុណ,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03176,សាន្ត អរុណ,ម៉ែន កួន,kh-kh,0,hard_negative,val,High-similarity different person
+P03177,San Arun,Maen Koun,la-la,0,hard_negative,val,High-similarity different person
+P03178,សាន្ត អរុណ,Maen Koun,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03179,San Arun,Thav Kimlong,la-la,0,easy_negative,val,Unrelated Latin names
+P03180,នរោត្តម បុប្ផាទេវី,Norodom Buppha Devi,kh-la,1,transliteration,val,Real match (Wikidata)
+P03181,នរោត្តម បុប្ផាទេវី,លោក នរោត្តម បុប្ផាទេវី,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03182,នរោត្តម បុប្ផាទេវី,នរោត្តម វេជ្ជរ៉ា,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P03183,Norodom Buppha Devi,Norodom Vichara,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P03184,នរោត្តម បុប្ផាទេវី,Norodom Vichara,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03185,Norodom Buppha Devi,Chea Yuthorn,la-la,0,easy_negative,val,Unrelated Latin names
+P03186,សួន សេរីរដ្ឋា,Sourn Serey Ratha,kh-la,1,transliteration,val,Real match (Wikidata)
+P03187,Sourn Serey Ratha,Surn Serey Ratha,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03188,សួន សេរីរដ្ឋា,សេរីរដ្ឋា សួន,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03189,សួន សេរីរដ្ឋា,សួន រិនឌី,kh-kh,0,hard_negative,val,High-similarity different person
+P03190,Sourn Serey Ratha,Soun Rindy,la-la,0,hard_negative,val,High-similarity different person
+P03191,សួន សេរីរដ្ឋា,Soun Rindy,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03192,Sourn Serey Ratha,Khim Tit,la-la,0,easy_negative,val,Unrelated Latin names
+P03193,ប៉ាន់ រិទ្ធី,Rithy Panh,kh-la,1,transliteration,val,Real match (Wikidata)
+P03194,Rithy Panh,Rithyy Panh,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03195,ប៉ាន់ រិទ្ធី,Rithyy Panh,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03196,ប៉ាន់ រិទ្ធី,ប៉ាន់​រិទ្ធី,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03197,ប៉ាន់ រិទ្ធី,ពិសិដ្ឋ ពីលីកា,kh-kh,0,hard_negative,val,High-similarity different person
+P03198,Rithy Panh,Pisith Pilika,la-la,0,hard_negative,val,High-similarity different person
+P03199,ប៉ាន់ រិទ្ធី,Pisith Pilika,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03200,ប៉ាន់ រិទ្ធី,ម៉ែន កួន,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03201,សេង ញ៉ក់,Seng Nhak,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03202,សេង ញ៉ក់,សេង​ញ៉ក់,kh-kh,1,order_or_format,val,Zero-width space instead of regular space
+P03203,សេង ញ៉ក់,ហង្ស ធុនហាក់,kh-kh,0,hard_negative,val,High-similarity different person
+P03204,Seng Nhak,Hang Thun Hak,la-la,0,hard_negative,val,High-similarity different person
+P03205,សេង ញ៉ក់,Hang Thun Hak,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03206,សេង ញ៉ក់,ព្រំ សំណាង,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03207,ហុក សុចិត្រា,Hok Sochetra,kh-la,1,transliteration,val,Real match (Wikidata)
+P03208,Hok Sochetra,Sochetra Hok,la-la,1,order_or_format,val,Swapped family/given name order
+P03209,ហុក សុចិត្រា,ហុកសុចិត្រា,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03210,ហុក សុចិត្រា,សារ៉ន សុវិជ្ជា,kh-kh,0,hard_negative,val,High-similarity different person
+P03211,Hok Sochetra,Saron Sovichea,la-la,0,hard_negative,val,High-similarity different person
+P03212,ហុក សុចិត្រា,Saron Sovichea,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03213,Hok Sochetra,Kong Nay,la-la,0,easy_negative,val,Unrelated Latin names
+P03214,ហង្ស ធុនហាក់,Hang Thun Hak,kh-la,1,transliteration,val,Real match (Wikidata)
+P03215,Hang Thun Hak,Hang Tun Hak,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03216,ហង្ស ធុនហាក់,Hang Tun Hak,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03217,ហង្ស ធុនហាក់,ហង្សធុនហាក់,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03218,ហង្ស ធុនហាក់,Seng Nhak,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03219,Hang Thun Hak,Khim Tit,la-la,0,easy_negative,val,Unrelated Latin names
+P03220,អង្គស្ងួន,Ang Snguon,kh-la,1,transliteration,val,Real match (Wikidata)
+P03221,Ang Snguon,Snguon Ang,la-la,1,order_or_format,val,Swapped family/given name order
+P03222,អង្គស្ងួន,អ្នកស្រី អង្គស្ងួន,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03223,អង្គស្ងួន,អង្គម៉ី,kh-kh,0,hard_negative,val,"Same surname/given name, different person"
+P03224,Ang Snguon,Ang Mey,la-la,0,hard_negative,val,"Same surname/given name, different person"
+P03225,អង្គស្ងួន,Ang Mey,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03226,Ang Snguon,Sin Chanchhaya,la-la,0,easy_negative,val,Unrelated Latin names
+P03227,សារ៉េត គ្រីយ៉ា,Sareth Krya,kh-la,1,transliteration,val,Real match (Wikidata)
+P03228,សារ៉េត គ្រីយ៉ា,សារ៉េតគ្រីយ៉ា,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03229,សារ៉េត គ្រីយ៉ា,ពិសិដ្ឋ ពីលីកា,kh-kh,0,hard_negative,val,High-similarity different person
+P03230,Sareth Krya,Pisith Pilika,la-la,0,hard_negative,val,High-similarity different person
+P03231,សារ៉េត គ្រីយ៉ា,Pisith Pilika,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03232,សារ៉េត គ្រីយ៉ា,នរោត្ដម ចន្ទរង្សី,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03233,ម៉ែន ណាត,Men Nath,kh-la,1,transliteration,val,Real match (Wikidata)
+P03234,Men Nath,Nath Men,la-la,1,order_or_format,val,Swapped family/given name order
+P03235,ម៉ែន ណាត,ណាត ម៉ែន,kh-kh,1,order_or_format,val,Swapped Khmer name order
+P03236,ម៉ែន ណាត,Mean Sonyta,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03237,ម៉ែន ណាត,Hem Chieu,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03238,អ៊ឹង រចនា,Ung Rachana,kh-la,1,transliteration,val,Real match (Wikidata)
+P03239,អ៊ឹង រចនា,អ៊ឹងរចនា,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03240,អ៊ឹង រចនា,Doung Vanna,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03241,Ung Rachana,Sok Sovan,la-la,0,easy_negative,val,Unrelated Latin names
+P03242,នរោត្ដម ចន្ទរង្សី,Norodom Chantaraingsey,kh-la,1,transliteration,val,Real match (Wikidata)
+P03243,Norodom Chantaraingsey,Norodom Chantaraingsy,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03244,នរោត្ដម ចន្ទរង្សី,Norodom Chantaraingsy,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03245,នរោត្ដម ចន្ទរង្សី,នរោត្ដមចន្ទរង្សី,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03246,នរោត្ដម ចន្ទរង្សី,Norodom Vichara,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03247,នរោត្ដម ចន្ទរង្សី,Ouk Mic,kh-la,0,easy_negative,val,Unrelated cross-script names
+P03248,តាន់ អេលែន,Allen Dodgson Tan,kh-la,1,transliteration,val,Real match (Wikidata)
+P03249,តាន់ អេលែន,តាន់អេលែន,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03250,តាន់ អេលែន,មាន សូនីតា,kh-kh,0,hard_negative,val,High-similarity different person
+P03251,Allen Dodgson Tan,Mean Sonyta,la-la,0,hard_negative,val,High-similarity different person
+P03252,តាន់ អេលែន,Mean Sonyta,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03253,តាន់ អេលែន,សារ៉េត គ្រីយ៉ា,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03254,អង្គម៉ី,Ang Mey,kh-la,1,transliteration,val,Real match (Wikidata)
+P03255,Ang Mey,Ang My,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03256,អង្គម៉ី,អ្នកស្រី អង្គម៉ី,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03257,អង្គម៉ី,Ang Snguon,kh-la,0,hard_negative,val,"Cross-script: same surname/given name, different person"
+P03258,អង្គម៉ី,ម៉ែន ណាត,kh-kh,0,easy_negative,val,Unrelated Khmer names
+P03259,យិន គឹមស៊ាន,Yin Kim Sean,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03260,Yin Kim Sean,Yin Kim Sen,la-la,1,romanisation_variant,val,Simulated romanisation spelling variant
+P03261,យិន គឹមស៊ាន,Yin Kim Sen,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03262,យិន គឹមស៊ាន,អ្នកស្រី យិន គឹមស៊ាន,kh-kh,1,order_or_format,val,Added Khmer honorific prefix
+P03263,យិន គឹមស៊ាន,គីង សំណាង,kh-kh,0,hard_negative,val,High-similarity different person
+P03264,Yin Kim Sean,King Samnang,la-la,0,hard_negative,val,High-similarity different person
+P03265,យិន គឹមស៊ាន,King Samnang,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03266,Yin Kim Sean,Choulong Somora,la-la,0,easy_negative,val,Unrelated Latin names
+P03267,ងួន ញ៉ិល,Nguon Nhel,kh-la,1,transliteration,val,Real match (OpenSanctions)
+P03268,Nguon Nhel,Nguon-Nhel,la-la,1,order_or_format,val,Hyphenated name formatting
+P03269,ងួន ញ៉ិល,Nguon-Nhel,kh-la,1,phonetic_variant,val,Khmer to variant Latin spelling
+P03270,ងួន ញ៉ិល,ងួនញ៉ិល,kh-kh,1,order_or_format,val,Removed space in Khmer name
+P03271,ងួន ញ៉ិល,ណុប ណែម,kh-kh,0,hard_negative,val,High-similarity different person
+P03272,Nguon Nhel,Nop Nem,la-la,0,hard_negative,val,High-similarity different person
+P03273,ងួន ញ៉ិល,Nop Nem,kh-la,0,hard_negative,val,Cross-script: high-similarity different person
+P03274,ងួន ញ៉ិល,ហោ មុនីរ័ត្ន,kh-kh,0,easy_negative,val,Unrelated Khmer names
